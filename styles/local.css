@@ -1,0 +1,16 @@
+/* Bundle the DM Sans typeface so previews also work offline (same as CCNU_Seminar). */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url('../assets/fonts/DM-Sans-variable.ttf') format('truetype');
+}
+.nju-subtitle { color: var(--fg-1); font-size: 19px; margin: -8px 0 18px; }
+.nju-caption { font-size: 14px; color: var(--fg-1); margin-top: 8px; }
+.nju-takeaway { margin-top: 18px; font-size: 21px; line-height: 1.35; border-left: 3px solid var(--c-cyan); padding-left: 15px; }
+.nju-source { position: absolute; bottom: 16px; left: 56px; font-size: 11px; color: var(--fg-1); margin-top: 8px; opacity: .72; }
+
+/* Slidev's "go to slide" autocomplete: its input is parked off-screen (-top-20) while closed, but the
+   dropdown list still hangs into view. Hide the list unless the dialog is open. */
+.fixed.-top-20 .autocomplete-list { display: none; }

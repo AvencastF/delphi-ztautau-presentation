@@ -1,0 +1,168 @@
+/* Status-report additions: dense tables, figure grids, verdict boxes. Palette and type from graphite.css. */
+.slidev-layout.st { padding: 38px 56px 34px; }
+.st h1 { margin: 0 0 6px !important; font-size: 30px !important; }
+.st .st-sub { font-size: 14px; color: var(--nju-amber); margin: 0 0 10px; line-height: 1.35; }
+.st table { width: 100%; border-collapse: collapse; font-size: 12px; line-height: 1.25; font-variant-numeric: tabular-nums; margin: 0; }
+.st table th, .st table td { padding: 3px 7px; border: none; border-bottom: 1px solid var(--nju-line); text-align: left; vertical-align: top; }
+.st table th { color: var(--fg-1); font-weight: 500; font-size: 11px; }
+.st table td.num, .st table th.num, .st table.num td:not(:first-child), .st table.num th:not(:first-child) { text-align: right; }
+.st table.xs { font-size: 10.5px; }
+.st table.xs th, .st table.xs td { padding: 2px 5px; }
+.st .st-cols { display: grid; gap: 22px; }
+.st .st-cols-2 { grid-template-columns: 1fr 1fr; }
+.st .st-cols-21 { grid-template-columns: 1.25fr 1fr; }
+.st .st-cols-12 { grid-template-columns: 1fr 1.25fr; }
+.st .st-cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+.st .st-copy { font-size: 14px; line-height: 1.45; color: var(--fg-0); }
+.st .st-copy p { margin: 0 0 8px; }
+.st .st-copy ul { margin: 0 0 8px; padding-left: 18px; }
+.st .st-copy li { margin: 0 0 4px; }
+.st .st-copy strong, .st strong { color: var(--nju-amber); font-weight: 550; }
+.st .st-copy code, .st code { font-size: 0.92em; color: var(--nju-blue); background: rgba(201,210,221,.06); padding: 0 3px; border-radius: 2px; }
+.st .st-note { border-top: 1px solid var(--nju-line); margin-top: 10px; padding-top: 8px; font-size: 12px; color: var(--fg-1); line-height: 1.4; }
+.st .st-note strong { color: var(--nju-amber); }
+.st .st-warn { border-left: 2px solid var(--nju-coral); padding-left: 10px; color: var(--fg-0); font-size: 13px; line-height: 1.4; margin: 8px 0; }
+.st .st-ok { border-left: 2px solid var(--nju-mint); padding-left: 10px; color: var(--fg-0); font-size: 13px; line-height: 1.4; margin: 8px 0; }
+.st .st-source { position: absolute; bottom: 10px; left: 56px; right: 56px; font-size: 10px; color: var(--fg-1); opacity: .8; }
+.st .st-grid { display: grid; gap: 10px; margin-top: 4px; }
+.st .st-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.st .st-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.st .st-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.st .st-fig { background: #fff; padding: 4px; border-radius: 3px; overflow: hidden; }
+.st .st-fig .zoomable-plot-container { height: 100% !important; margin: 0 !important; }
+.st .st-fig .zoomable-plot-image { width: 100% !important; height: 100% !important; object-fit: contain !important; }
+.st .st-fig.h210 { height: 210px; }
+.st .st-fig.h190 { height: 190px; }
+.st .st-fig.h300 { height: 300px; }
+.st .st-fig.h340 { height: 340px; }
+.st .st-fig.h380 { height: 380px; }
+.st .st-cap { font-size: 10.5px; color: var(--fg-1); line-height: 1.3; margin-top: 3px; }
+.st .st-cap b { color: var(--fg-0); font-weight: 550; }
+.st .st-chain { display: grid; grid-template-columns: repeat(5, 1fr) ; gap: 8px; margin: 14px 0 6px; align-items: stretch; }
+.st .st-stage { border: 1px solid var(--nju-line); background: rgba(201,210,221,.035); padding: 10px 11px; font-size: 12px; line-height: 1.35; position: relative; }
+.st .st-stage h3 { margin: 0 0 6px; font-size: 14px; color: var(--nju-blue); font-weight: 550; line-height: 1.2; }
+.st .st-stage b { color: var(--nju-amber); font-weight: 550; }
+.st .st-stage small { display: block; color: var(--fg-1); margin-top: 6px; font-size: 10.5px; }
+.st .st-stage.future { opacity: .55; border-style: dashed; }
+.st .st-kpi { display: flex; gap: 14px; margin: 6px 0 10px; flex-wrap: wrap; }
+.st .st-kpi span { border: 1px solid var(--nju-line); padding: 6px 10px; font-size: 12px; color: var(--fg-1); }
+.st .st-kpi b { display: block; color: var(--fg-0); font-size: 18px; font-weight: 550; }
+.slidev-layout.st-cover { padding: 70px 56px 50px; }
+.st-cover h1 { font-size: 46px !important; line-height: 1.08 !important; margin: 0 0 14px !important; }
+.st-cover .st-cover-sub { font-size: 22px; color: var(--fg-1); margin-bottom: 26px; }
+.st-cover .st-cover-meta { border-top: 1px solid var(--nju-line); padding-top: 16px; font-size: 15px; color: var(--fg-1); line-height: 1.6; }
+.st-cover .st-cover-meta b { color: var(--fg-0); font-weight: 550; }
+.slidev-layout.nju-chapter-bridge .chapter-copy p { font-size: 19px; }
+.nju-chapter-bridge .chapter-context { display: flex; gap: 14px; align-items: center; margin-top: 22px; color: var(--nju-amber); font-size: 15px; }
+.nju-chapter-bridge .context-rule { width: 40px; border-top: 1px solid var(--nju-line); }
+
+/* Dense variant: 980px canvas, keep everything above the source line. */
+.slidev-layout.st.dense { padding: 30px 50px 30px; }
+.st.dense h1 { font-size: 26px !important; margin: 0 0 4px !important; }
+.st.dense .st-sub { font-size: 12.5px; margin-bottom: 8px; }
+.st.dense table { font-size: 11px; }
+.st.dense table.xs { font-size: 9.8px; }
+.st.dense table th, .st.dense table td { padding: 2px 5px; }
+.st.dense .st-copy { font-size: 12.5px; line-height: 1.38; }
+.st.dense .st-copy p, .st.dense .st-copy ul { margin-bottom: 6px; }
+.st.dense .st-warn, .st.dense .st-ok { font-size: 12px; margin: 6px 0; }
+.st.dense .st-note { font-size: 11px; margin-top: 6px; padding-top: 5px; }
+.st.dense .st-stage { font-size: 11px; padding: 8px 9px; }
+.st.dense .st-stage h3 { font-size: 13px; }
+.st.dense .st-stage small { font-size: 10px; }
+.st.dense .st-chain { margin: 8px 0 4px; }
+.st.dense .st-cols { gap: 16px; }
+.st.dense .st-source { font-size: 9px; bottom: 7px; }
+.st .st-source { line-height: 1.2; }
+.st .st-fig.h158 { height: 158px; }
+.st .st-fig.h270 { height: 270px; }
+.st .st-stage, .st .st-grid > div, .st .st-cols > div { min-width: 0; }
+.st .st-stage code, .st .st-copy code, .st table code { overflow-wrap: anywhere; word-break: break-word; }
+.st .st-grid { gap: 8px; }
+.st .st-cap { margin-top: 2px; font-size: 10px; }
+.st .st-fig.h220 { height: 220px; }
+.st .st-fig.h250 { height: 250px; }
+.st .st-fig.h330 { height: 330px; }
+.st .st-fig.h148 { height: 148px; }
+.st .st-fig.h150 { height: 150px; }
+
+/* Plain-words rule: identifiers are small italic notes; links are visible but quiet. */
+.st .id, .nju-chapter-bridge .id, .st-cover .id { font-style: italic; font-size: .86em; color: var(--fg-1); }
+.st .id code { font-style: normal; }
+.st a, .st-cover a, .nju-chapter-bridge a { color: var(--nju-blue); text-decoration: none; border-bottom: 1px dotted rgba(119,201,255,.5); }
+.st a:hover { border-bottom-style: solid; }
+.st .st-anim { margin-top: 6px; }
+
+/* ===== Presentation-density elements (2026-10-23 reformat) ===== */
+.slidev-layout.st.pres { padding: 34px 54px 30px; }
+.st.pres h1 { font-size: 30px !important; margin: 0 0 4px !important; }
+.st.pres .st-sub { font-size: 14px; color: var(--fg-1); margin: 0 0 12px; }
+.st.pres .st-source { font-size: 10.5px; opacity: .7; bottom: 10px; }
+.st.pres table { font-size: 13.5px; }
+.st.pres table th, .st.pres table td { padding: 5px 9px; }
+.st.pres table.lg { font-size: 15px; }
+.st.pres table.lg th, .st.pres table.lg td { padding: 6px 10px; }
+.st.pres table.sm { font-size: 11px; }
+.st.pres table.sm th, .st.pres table.sm td { padding: 3px 6px; }
+.st.pres tr.hl td { color: var(--fg-0); font-weight: 600; background: rgba(240,195,110,.10); }
+/* tiles */
+.st .tiles { display: grid; gap: 12px; margin: 6px 0 12px; }
+.st .tiles-3 { grid-template-columns: repeat(3, 1fr); }
+.st .tiles-4 { grid-template-columns: repeat(4, 1fr); }
+.st .tiles-2 { grid-template-columns: repeat(2, 1fr); }
+.st .tile { border: 1px solid var(--nju-line); background: rgba(201,210,221,.045); padding: 12px 14px; border-top: 2px solid var(--nju-blue); }
+.st .tile b { display: block; font-size: 30px; line-height: 1.05; font-weight: 550; color: var(--fg-0); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.st .tile span { display: block; margin-top: 5px; font-size: 12px; color: var(--fg-1); line-height: 1.3; }
+.st .tile.data { border-top-color: var(--nju-blue); } .st .tile.sim { border-top-color: var(--nju-amber); } .st .tile.sel { border-top-color: var(--nju-mint); } .st .tile.ml { border-top-color: var(--nju-violet); }
+/* key-value cards */
+.st .kv { border: 1px solid var(--nju-line); background: rgba(201,210,221,.035); padding: 10px 14px; font-size: 13px; }
+.st .kv h3 { margin: 0 0 8px; font-size: 14px; font-weight: 550; color: var(--nju-blue); }
+.st .kv dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; }
+.st .kv dt { color: var(--fg-1); white-space: nowrap; }
+.st .kv dd { margin: 0; color: var(--fg-0); }
+.st .kv.sim h3 { color: var(--nju-amber); } .st .kv.ml h3 { color: var(--nju-violet); } .st .kv.sel h3 { color: var(--nju-mint); }
+/* callouts */
+.st .co { border-left: 3px solid; padding: 7px 12px; margin: 6px 0; font-size: 13.5px; line-height: 1.35; background: rgba(201,210,221,.04); color: var(--fg-0); }
+.st .co b { font-weight: 600; margin-right: 6px; }
+.st .co.ok { border-color: var(--nju-mint); } .st .co.ok b { color: var(--nju-mint); }
+.st .co.warn { border-color: var(--nju-amber); } .st .co.warn b { color: var(--nju-amber); }
+.st .co.decision { border-color: #ffbd59; } .st .co.decision b { color: #ffbd59; }
+.st .co.open { border-color: var(--nju-coral); } .st .co.open b { color: var(--nju-coral); }
+/* semantic tags */
+.st .tag, .nju-chapter-bridge .tag { display: inline-block; font-size: 10.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding: 1px 7px; border-radius: 3px; border: 1px solid; vertical-align: middle; margin-right: 4px; }
+.tag.data { color: var(--nju-blue); border-color: var(--nju-blue); }
+.tag.sim { color: var(--nju-amber); border-color: var(--nju-amber); }
+.tag.sel { color: var(--nju-mint); border-color: var(--nju-mint); }
+.tag.ml { color: var(--nju-violet); border-color: var(--nju-violet); }
+.tag.decision { color: #ffbd59; border-color: #ffbd59; background: rgba(255,189,89,.12); }
+.tag.open { color: var(--nju-coral); border-color: var(--nju-coral); background: rgba(246,156,171,.1); }
+/* badges */
+.st .badge { display: inline-block; font-size: 10px; font-weight: 600; padding: 1px 6px; border-radius: 3px; color: #17191c; margin-left: 6px; vertical-align: middle; }
+.badge.g { background: #70dcb2; } .badge.a { background: #f0c36e; } .badge.r { background: #f69cab; } .badge.n { background: #aeb6c1; }
+.st .status { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 3px; }
+.status.clean { background: rgba(112,220,178,.18); color: var(--nju-mint); }
+.status.dirty { background: rgba(246,156,171,.18); color: var(--nju-coral); }
+.status.nogit { background: rgba(240,195,110,.18); color: var(--nju-amber); }
+.status.ref { background: rgba(174,182,193,.18); color: var(--fg-1); }
+/* lists */
+.st ul.bl { margin: 4px 0; padding-left: 18px; font-size: 14px; line-height: 1.45; }
+.st ul.bl li { margin: 0 0 5px; }
+.st ul.bl b { color: var(--nju-amber); font-weight: 600; }
+.st ol.steps { margin: 6px 0; padding-left: 26px; font-size: 16px; line-height: 1.5; }
+.st ol.steps li { margin-bottom: 8px; }
+.st ol.steps b { color: var(--nju-blue); font-weight: 600; }
+/* heat table */
+.st td.heat { color: #17191c; font-weight: 600; text-align: right; }
+/* figure grid 2x2 */
+.st .fig2x2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+.st .fig2x2 .st-fig { height: 172px; }
+.st .fig2x2 .st-cap { font-size: 11.5px; margin-top: 2px; line-height: 1.25; }
+.st .fig-lead { display: grid; grid-template-columns: 1.1fr 1fr; gap: 18px; align-items: start; }
+.st .fig-lead .st-fig { height: 330px; }
+.st .best { color: var(--nju-mint); font-weight: 600; }
+.st .ordering { font-size: 11.5px; color: var(--fg-1); margin: 0 0 6px; }
+.st .legend { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--fg-1); margin-top: 6px; }
+.slidev-layout.nju-chapter-bridge.appendix h1 { font-size: 46px !important; }
+
+.st.pres .st-fig { min-height: 0; }
+.chain-stage small i { display: block; }
