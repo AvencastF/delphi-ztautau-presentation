@@ -7,9 +7,9 @@ clicks: 3
 import TauAmbiguity from '../components/TauAmbiguity.vue'
 </script>
 
-# The τ direction is ambiguous from kinematics alone
+# The <LaTeX formula="\tau" /> direction is ambiguous from kinematics alone
 
-<div class="st-sub">Click through: visible leg → cone → two mirror solutions → the ML prediction.</div>
+<div class="st-sub">Click through: visible leg <LaTeX formula="\to" /> cone <LaTeX formula="\to" /> two mirror solutions <LaTeX formula="\to" /> the ML prediction.</div>
 
 <TauAmbiguity :step="$clicks" />
 

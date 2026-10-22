@@ -11,8 +11,8 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-cols st-cols-2">
 <div>
 <div class="co ok"><b>Equal</b> v5 = v2 within statistics on every metric.</div>
-<div class="co ok"><b>Better</b> v5 beats v3 and v4 on e, μ, ρ legs and every branch accuracy.</div>
-<div class="co warn"><b>Exception</b> π legs in ππ: v5 0.75° vs v3 0.61°.</div>
+<div class="co ok"><b>Better</b> v5 beats v3 and v4 on e, <LaTeX formula="\mu" />, <LaTeX formula="\rho" /> legs and every branch accuracy.</div>
+<div class="co warn"><b>Exception</b> <LaTeX formula="\pi" /> legs in <LaTeX formula="\pi\pi" />: v5 <LaTeX formula="0.75^\circ" /> vs v3 <LaTeX formula="0.61^\circ" />.</div>
 <div class="co warn"><b>Not supported</b> FiLM did not exploit the cone photon information.</div>
 <div class="co decision"><b>Decisions</b> v5 baseline (10-21); classifier retrain on shared inputs pending (10-22).</div>
 <div class="co open"><b>Open</b> Closure only; no test part, no systematics, no data validation.</div>

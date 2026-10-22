@@ -14,14 +14,14 @@ class: st pres
 <div class="co warn"><b>Approval</b> Every job submission on NERSC needs the owner's explicit go-ahead.</div>
 </div>
 <div>
-<table>
+<table class="first-nw">
 <thead><tr><th>Component</th><th>Status</th><th>Action</th></tr></thead>
 <tbody>
 <tr><td>Production scripts</td><td><span class="status nogit">not under git</span></td><td>decide git vs receipts</td></tr>
 <tr><td><a href="https://github.com/AvencastF/delphi-sim-pipeline/tree/feature/nersc-long-production">Simulation pipeline</a></td><td><span class="status clean">clean</span></td><td>none</td></tr>
 <tr><td><a href="https://github.com/AvencastF/delphi-edm4hep/tree/3e40698">Converter</a></td><td><span class="status clean">clean, pinned</span></td><td>none</td></tr>
-<tr><td><a href="https://github.com/AvencastF/delphi-ztautau-ana">Analysis framework</a></td><td><span class="status dirty">uncommitted fit code</span></td><td>review, commit, pull on NERSC</td></tr>
-<tr><td><a href="https://github.com/UW-EPE-ML/EveNet-Align">EveNet-Align</a></td><td><span class="status dirty">v4/v5 uncommitted</span></td><td>commit, push, add chain scripts</td></tr>
+<tr><td><a href="https://github.com/AvencastF/delphi-ztautau-ana">Analysis framework</a></td><td><span class="status dirty">uncommitted fit code</span></td><td>review, commit, pull</td></tr>
+<tr><td><a href="https://github.com/UW-EPE-ML/EveNet-Align">EveNet-Align</a></td><td><span class="status dirty">v4/v5 uncommitted</span></td><td>commit, push, add scripts</td></tr>
 <tr><td>Old ML pipeline</td><td><span class="status ref">reference only</span></td><td>deprecate or archive</td></tr>
 </tbody>
 </table>

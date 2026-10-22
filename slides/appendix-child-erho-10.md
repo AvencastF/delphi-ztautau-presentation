@@ -6,19 +6,19 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# Appendix · child eρ (10/10)
+# Appendix · child <LaTeX formula="e\rho" /> (10/10)
 
-<div class="st-sub">Child eρ <span class="id">inclusive_1p1p_erho</span> · ordering by identified species: candidate 0 = e, candidate 1 = ρ · frozen-run yield 1076 data / 1083 simulated</div>
+<div class="st-sub">Child <LaTeX formula="e\rho" /> <span class="id">inclusive_1p1p_erho</span> · order by species: cand. 0 = <LaTeX formula="e" />, cand. 1 = <LaTeX formula="\rho" /> · yield <span class="nw">1,076 data</span> / <span class="nw">1,083 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc/children-erho/inclusive_1p1p_erho-selected-identified_order_state-rate_lin.svg" alt="candidate-ordering state" /></div><div class="st-cap">candidate-ordering state<span class="badge g">χ²/dof 0.0/1</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc/children-erho/inclusive_1p1p_erho-selected-prad_over_pbeam-rate_lin.svg" alt="radiative track momentum / p_beam" /></div><div class="st-cap">radiative track momentum / p_beam<span class="badge g">χ²/dof 25.9/19</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc/children-erho/inclusive_1p1p_erho-selected-visible_tautau_mass-rate_lin.svg" alt="visible τ-pair mass [GeV]" /></div><div class="st-cap">visible τ-pair mass [GeV]<span class="badge r">χ²/dof 146.3/47</span></div></div>
+<div><div class="st-fig"><NJUPlot src="/figures/datamc/children-erho/inclusive_1p1p_erho-selected-identified_order_state-rate_lin.svg" alt="candidate-ordering state" /></div><div class="st-cap">candidate-ordering state<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 0.0 / 1</span></div></div>
+<div><div class="st-fig"><NJUPlot src="/figures/datamc/children-erho/inclusive_1p1p_erho-selected-prad_over_pbeam-rate_lin.svg" alt="pmathrmrad/pmathrmbeam" /></div><div class="st-cap"><LaTeX formula="p_\mathrm{rad}/p_\mathrm{beam}" /><span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 25.9 / 19</span></div></div>
+<div><div class="st-fig"><NJUPlot src="/figures/datamc/children-erho/inclusive_1p1p_erho-selected-visible_tautau_mass-rate_lin.svg" alt="visible mtautau [GeV]" /></div><div class="st-cap">visible <LaTeX formula="m_{\tau\tau}" /> [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 146.3 / 47</span></div></div>
 </div>
 
 <div class="st-source">Source: archived data/MC plot set with the neutral rule applied to the frozen 2026-10-06 selection production</div>
 
 <!--
-Figures: artifacts/exclusive-neutral-le3-plots-20261007/plots/ (job 59429001, source 4ae9ef3, neutral count <=3 per hemisphere applied to saved histograms). Black points = 1994 data; stack = signed luminosity-normalised simulation by true process, Z_ee excluded; lower panel = data / simulation. Inclusive sample 23,073 data / 23,198.93 MC. chi2/dof from agreement.json ("Total MC", status ok), statistical only, diagnostic.
+Full-precision values are in SOURCES.md and the data folder. Figures: artifacts/exclusive-neutral-le3-plots-20261007/plots/ (job 59429001, source 4ae9ef3, neutral count <=3 per hemisphere applied to saved histograms). Black points = 1994 data; stack = signed luminosity-normalised simulation by true process, Z_ee excluded; lower panel = data / simulation. Inclusive sample 23,073 data / 23,198.93 MC. chi2/dof from agreement.json ("Total MC", status ok), statistical only, diagnostic.
 
 -->

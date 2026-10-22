@@ -8,19 +8,19 @@ class: st pres
 <thead><tr><th>Version</th><th>Inputs</th><th>Target</th><th>Verdict</th></tr></thead>
 <tbody>
 <tr><td>v2 · 2026-10-16</td><td>46 event quantities</td><td>angles to leading track, detector frame</td><td>universal baseline</td></tr>
-<tr><td>v3 · 2026-10-17</td><td>as v2</td><td>cone frame of the leading track</td><td>best π legs in ππ, worse elsewhere</td></tr>
+<tr><td>v3 · 2026-10-17</td><td>as v2</td><td>cone frame of the leading track</td><td>best <LaTeX formula="\pi" /> legs in <LaTeX formula="\pi\pi" />, worse elsewhere</td></tr>
 <tr><td>v4 · 2026-10-21</td><td>74 quantities (per-leg cone)</td><td>frame chosen per leg</td><td>reproduces v3</td></tr>
 <tr class="hl"><td>v5 · 2026-10-21</td><td>as v4</td><td>as v2</td><td>= v2 within statistics; <span class="tag decision">baseline</span></td></tr>
 </tbody>
 </table>
 
 <table class="num" style="margin-top:10px">
-<thead><tr><th>Median direction error [°]</th><th>v2</th><th>v3</th><th>v4</th><th>v5</th></tr></thead>
+<thead><tr><th>Median direction error [<LaTeX formula="^\circ" />]</th><th>v2</th><th>v3</th><th>v4</th><th>v5</th></tr></thead>
 <tbody>
 <tr><td>e legs</td><td><span class="best">1.16</span></td><td>1.35</td><td>1.35</td><td>1.17</td></tr>
-<tr><td>ρ legs</td><td><span class="best">1.01</span></td><td>1.38</td><td>1.36</td><td>1.03</td></tr>
-<tr><td>π legs in ππ</td><td>0.78</td><td><span class="best">0.61</span></td><td>0.68</td><td>0.75</td></tr>
-<tr><td>correct branch, ρρ</td><td><span class="best">0.773</span></td><td>0.673</td><td>0.693</td><td>0.771</td></tr>
+<tr><td><LaTeX formula="\rho" /> legs</td><td><span class="best">1.01</span></td><td>1.38</td><td>1.36</td><td>1.03</td></tr>
+<tr><td><LaTeX formula="\pi" /> legs in <LaTeX formula="\pi\pi" /></td><td>0.78</td><td><span class="best">0.61</span></td><td>0.68</td><td>0.75</td></tr>
+<tr><td>correct branch, <LaTeX formula="\rho\rho" /></td><td><span class="best">0.773</span></td><td>0.673</td><td>0.693</td><td>0.771</td></tr>
 </tbody>
 </table>
 

@@ -9,15 +9,15 @@ class: st pres
 <table class="lg">
 <thead><tr><th>#</th><th>Cut</th><th>Requirement</th><th>Meaning</th></tr></thead>
 <tbody>
-<tr><td>10</td><td>Visible transverse momentum</td><td>&gt; 0.4 GeV</td><td>|Σ p⃗_T| of the visible particles</td></tr>
-<tr><td>11</td><td>Eligible single-prong hemisphere</td><td>≥ 1</td><td>one-track side with leading |cos θ| &lt; 0.732</td></tr>
-<tr><td>12</td><td>Acollinearity</td><td>&gt; 0.5°</td><td>leading tracks not exactly back to back</td></tr>
-<tr><td>13</td><td>Calorimeter-boundary evidence</td><td>pass</td><td>HPC crossing info present when PEmax &gt; 0.8 E_beam</td></tr>
+<tr><td>10</td><td>Visible transverse momentum</td><td><LaTeX formula="\gt 0.4\,\mathrm{GeV}" /></td><td><LaTeX formula="|\textstyle\sum\vec p_T|" /> of the visible particles</td></tr>
+<tr><td>11</td><td>Eligible single-prong hemisphere</td><td><LaTeX formula="\ge1" /></td><td>one-track side with leading <LaTeX formula="|\cos\theta|" /> <LaTeX formula="\lt 0.732" /></td></tr>
+<tr><td>12</td><td>Acollinearity</td><td><LaTeX formula="\gt 0.5^\circ" /></td><td>leading tracks not exactly back to back</td></tr>
+<tr><td>13</td><td>Calorimeter-boundary evidence</td><td>pass</td><td>HPC crossing info present when PEmax <LaTeX formula="\gt 0.8" /> <LaTeX formula="E_\mathrm{beam}" /></td></tr>
 <tr><td>14</td><td>PEmax veto, unknown kept</td><td>pass</td><td>fails only on an explicit veto</td></tr>
 <tr><td>15</td><td>One track on each side</td><td>true</td><td>exactly one charged track per hemisphere</td></tr>
-<tr><td>16</td><td>Radiative EM energy</td><td>&lt; 1 E_beam</td><td>quadrature sum of cone shower energies</td></tr>
-<tr><td>17</td><td>Radiative momentum</td><td>&lt; 1 p_beam</td><td>√(p₁² + p₂²) of the leading tracks</td></tr>
-<tr><td>18</td><td>Neutral multiplicity</td><td>≤ 3 per side</td><td>reconstructed neutrals; missing count fails</td></tr>
+<tr><td>16</td><td>Radiative EM energy</td><td><LaTeX formula="\lt 1" /> <LaTeX formula="E_\mathrm{beam}" /></td><td>quadrature sum of cone shower energies</td></tr>
+<tr><td>17</td><td>Radiative momentum</td><td><LaTeX formula="\lt 1" /> <LaTeX formula="p_\mathrm{beam}" /></td><td><LaTeX formula="\sqrt{p_1^2+p_2^2}" /> of the leading tracks</td></tr>
+<tr><td>18</td><td>Neutral multiplicity</td><td><LaTeX formula="\le3" /> per side</td><td>reconstructed neutrals; missing count fails</td></tr>
 </tbody>
 </table>
 

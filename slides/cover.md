@@ -2,13 +2,13 @@
 class: st-cover no-page-number
 ---
 
-# DELPHI Z → τ⁺τ⁻ in the 1994 data: status of the analysis chain
+# DELPHI <LaTeX formula="Z\to \tau^+\tau^-" /> in the 1994 data: status of the analysis chain
 
-<div class="st-cover-sub">Own simulation + archived data → selection → machine-learning τ reconstruction. Spin fit: later.</div>
+<div class="st-cover-sub">Own simulation + archived data <LaTeX formula="\to" /> selection <LaTeX formula="\to" /> machine-learning <LaTeX formula="\tau" /> reconstruction. Spin fit: later.</div>
 
 <div class="st-cover-meta">
 <b>Group-meeting status report · compiled 2026-10-22</b><br>
-DELPHI at LEP, 1994 data taking, √s = 91.202 GeV, 1994 detector description <span class="id">v94c</span><br>
+DELPHI at LEP, 1994 data taking, <LaTeX formula="\sqrt{s}" /> = 91.202 GeV, 1994 detector description <span class="id">v94c</span><br>
 <span class="tag data">data</span> <span class="tag sim">simulation</span> <span class="tag sel">selection</span> <span class="tag ml">machine learning</span> <span class="tag decision">owner decision</span> <span class="tag open">open issue</span>
 </div>
 

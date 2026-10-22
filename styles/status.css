@@ -111,8 +111,8 @@
 .st .tiles-4 { grid-template-columns: repeat(4, 1fr); }
 .st .tiles-2 { grid-template-columns: repeat(2, 1fr); }
 .st .tile { border: 1px solid var(--nju-line); background: rgba(201,210,221,.045); padding: 12px 14px; border-top: 2px solid var(--nju-blue); }
-.st .tile b { display: block; font-size: 30px; line-height: 1.05; font-weight: 550; color: var(--fg-0); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
-.st .tile span { display: block; margin-top: 5px; font-size: 12px; color: var(--fg-1); line-height: 1.3; }
+.st .tile > b { display: block; font-size: 30px; line-height: 1.05; font-weight: 550; color: var(--fg-0); font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.st .tile > span { display: block; margin-top: 5px; font-size: 12px; color: var(--fg-1); line-height: 1.3; }
 .st .tile.data { border-top-color: var(--nju-blue); } .st .tile.sim { border-top-color: var(--nju-amber); } .st .tile.sel { border-top-color: var(--nju-mint); } .st .tile.ml { border-top-color: var(--nju-violet); }
 /* key-value cards */
 .st .kv { border: 1px solid var(--nju-line); background: rgba(201,210,221,.035); padding: 10px 14px; font-size: 13px; }
@@ -166,3 +166,17 @@
 
 .st.pres .st-fig { min-height: 0; }
 .chain-stage small i { display: block; }
+
+/* ===== LaTeX + wrapping rules (2026-10-23 revision) ===== */
+.st .katex, .nju-chapter-bridge .katex, .st-cover .katex { white-space: nowrap; }
+.st .tag, .nju-chapter-bridge .tag, .st .badge, .st .status, .st .tile b { white-space: nowrap; }
+.st .kv dt, .st .co > b, .st ul.bl b { white-space: nowrap; }
+.st table.num td:not(:first-child), .st table.num th:not(:first-child), .st td.num, .st th.num { white-space: nowrap; text-align: right; }
+.st table th { white-space: nowrap; }
+.st .nw { white-space: nowrap; }
+.st .st-cap { text-wrap-style: pretty; }
+.st .co, .st .kv dd, .st table td, .st ul.bl li, .st .tile > span { text-wrap-style: pretty; }
+/* KaTeX must never break inside a formula (its own CSS allows breaks after relations). */
+.katex, .katex .katex-html, .katex .base, .latex-inline { white-space: nowrap !important; }
+.st .tile > b .katex { font-size: .82em; }
+.st table.first-nw td:first-child, .st table.first-nw th:first-child { white-space: nowrap; }

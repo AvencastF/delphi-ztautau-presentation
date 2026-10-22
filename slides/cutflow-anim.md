@@ -9,7 +9,7 @@ import CutflowBars from '../components/CutflowBars.vue'
 
 # Applying the 18 cuts one after another
 
-<div class="st-sub">Click to apply each cut. White: 1994 data; blue: signed simulation total without Z_ee; log scale.</div>
+<div class="st-sub">Click to apply each cut. White: 1994 data; blue: signed simulation total without <LaTeX formula="Z\to ee" />; log scale.</div>
 
 <CutflowBars :step="$clicks" />
 

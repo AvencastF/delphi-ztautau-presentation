@@ -6,24 +6,24 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# ππ closure test at the full 1994 yield
+# <LaTeX formula="\pi\pi" /> closure test at the full 1994 yield
 
-<div class="st-sub">Half A builds the response, half B is fitted as data. σ = expected statistical error; pull = bias / σ.</div>
+<div class="st-sub">Half A builds the response, half B is fitted as data. <LaTeX formula="\sigma" /> = expected statistical error; pull = bias / <LaTeX formula="\sigma" />.</div>
 
 <div class="fig-lead">
-<div><div class="st-fig"><NJUPlot src="/figures/ml/v5/closure_v5.png" alt="closure bias and sigma per observable" /></div><div class="st-cap">Bias and σ per spin observable: ML v5, v4, v3, analytical</div></div>
+<div><div class="st-fig"><NJUPlot src="/figures/ml/v5/closure_v5.png" alt="closure bias and sigma per observable" /></div><div class="st-cap">Bias and <LaTeX formula="\sigma" /> per spin observable: ML v5, v4, v3, analytical</div></div>
 <div>
-<table class="num">
+<table class="num first-nw">
 <thead><tr><th></th><th>ML v5</th><th>ML v3</th><th>analytical</th></tr></thead>
 <tbody>
-<tr><td>σ range, 15 observables</td><td><span class="best">0.149–0.322</span></td><td>0.150–0.314</td><td>0.249–0.719</td></tr>
-<tr><td>σ ratio to v5</td><td>1</td><td>0.87–1.04</td><td>1.32–2.36</td></tr>
+<tr><td><LaTeX formula="\sigma" /> range (15 obs.)</td><td><span class="best">0.149–0.322</span></td><td>0.150–0.314</td><td>0.249–0.719</td></tr>
+<tr><td><LaTeX formula="\sigma" /> ratio to v5</td><td>1</td><td>0.87–1.04</td><td>1.32–2.36</td></tr>
 <tr><td>largest |pull|</td><td>0.57</td><td>0.81</td><td>0.62</td></tr>
-<tr><td>concurrence bias</td><td>+0.165 ± 0.185</td><td>+0.155 ± 0.234</td><td>−0.064 ± 0.183</td></tr>
-<tr><td>concurrence σ</td><td><span class="best">0.684</span></td><td>0.661</td><td>1.026</td></tr>
+<tr><td>concurr. bias</td><td><LaTeX formula="+0.165\pm0.185" /></td><td><LaTeX formula="+0.155\pm0.234" /></td><td><LaTeX formula="-0.064\pm0.183" /></td></tr>
+<tr><td>concurr. <LaTeX formula="\sigma" /></td><td><span class="best">0.684</span></td><td>0.661</td><td>1.026</td></tr>
 </tbody>
 </table>
-<div class="co ok" style="margin-top:8px"><b>Takeaway</b> No v5 pull beyond 0.6; σ 1.3–2.4× smaller than analytical.</div>
+<div class="co ok" style="margin-top:8px"><b>Takeaway</b> No v5 pull beyond 0.6; <LaTeX formula="\sigma" /> 1.3–2.4<LaTeX formula="\times" /> smaller than analytical.</div>
 </div>
 </div>
 

@@ -4,20 +4,20 @@ class: st pres
 
 # Ordered cuts 1–9: topology and tracking
 
-<div class="st-sub">Bounds are strict unless marked ≤; an undefined variable fails. d0, z0 = impact parameters from the beam spot.</div>
+<div class="st-sub">Bounds are strict unless marked <LaTeX formula="\le" />; an undefined variable fails. <LaTeX formula="d_0" />, <LaTeX formula="z_0" /> = impact parameters from the beam spot.</div>
 
 <table class="lg">
 <thead><tr><th>#</th><th>Cut</th><th>Requirement</th><th>Meaning</th></tr></thead>
 <tbody>
 <tr><td>1</td><td>Both hemispheres populated</td><td>true</td><td>at least one charged track on each side</td></tr>
-<tr><td>2</td><td>Barrel acceptance</td><td>&lt; 0.94</td><td>smaller |cos θ| of the two leading tracks</td></tr>
-<tr><td>3</td><td>Low multiplicity</td><td>≤ 6</td><td>charged tracks in the event</td></tr>
-<tr><td>4</td><td>Back-to-back isolation</td><td>&gt; 160°</td><td>smallest angle between an H0 and an H1 track</td></tr>
-<tr><td>5</td><td>Longitudinal origin</td><td>&lt; 45 mm</td><td>larger |z0| of the leading tracks</td></tr>
-<tr><td>6</td><td>Transverse origin</td><td>&lt; 15 mm</td><td>larger |d0| of the leading tracks</td></tr>
-<tr><td>7</td><td>One track near the beam</td><td>&lt; 3 mm</td><td>smaller |d0| of the leading tracks</td></tr>
-<tr><td>8</td><td>Common vertex in z</td><td>&lt; 30 mm</td><td>|z0(H0) − z0(H1)| of the leading tracks</td></tr>
-<tr><td>9</td><td>Visible energy</td><td>&gt; 8 GeV</td><td>energy sum of accepted charged and neutral particles</td></tr>
+<tr><td>2</td><td>Barrel acceptance</td><td><LaTeX formula="\lt 0.94" /></td><td>smaller <LaTeX formula="|\cos\theta|" /> of the two leading tracks</td></tr>
+<tr><td>3</td><td>Low multiplicity</td><td><LaTeX formula="\le6" /></td><td>charged tracks in the event</td></tr>
+<tr><td>4</td><td>Back-to-back isolation</td><td><LaTeX formula="\gt 160^\circ" /></td><td>smallest angle between an H0 and an H1 track</td></tr>
+<tr><td>5</td><td>Longitudinal origin</td><td><LaTeX formula="\lt 45\,\mathrm{mm}" /></td><td>larger <LaTeX formula="|z_0|" /> of the leading tracks</td></tr>
+<tr><td>6</td><td>Transverse origin</td><td><LaTeX formula="\lt 15\,\mathrm{mm}" /></td><td>larger <LaTeX formula="|d_0|" /> of the leading tracks</td></tr>
+<tr><td>7</td><td>One track near the beam</td><td><LaTeX formula="\lt 3\,\mathrm{mm}" /></td><td>smaller <LaTeX formula="|d_0|" /> of the leading tracks</td></tr>
+<tr><td>8</td><td>Common vertex in z</td><td><LaTeX formula="\lt 30\,\mathrm{mm}" /></td><td><LaTeX formula="|z_0(\mathrm{H0})-z_0(\mathrm{H1})|" /> of the leading tracks</td></tr>
+<tr><td>9</td><td>Visible energy</td><td><LaTeX formula="\gt 8\,\mathrm{GeV}" /></td><td>energy sum of accepted charged and neutral particles</td></tr>
 </tbody>
 </table>
 

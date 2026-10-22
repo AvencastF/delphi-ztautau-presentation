@@ -1,3 +1,4 @@
+import 'katex/dist/katex.min.css'
 import './styles/main.css'
 import './styles/animations.css'
 import './styles/base.css'

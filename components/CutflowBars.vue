@@ -1,27 +1,28 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useStepMotion } from './useStepMotion'
+import { mixed, tex } from './tex'
 const props = defineProps<{ step: number }>()
 // Cumulative counts of the frozen 2026-10-12 selection run (cutflows/cutflow.csv, "Total MC (Z_ee excluded)" row).
 const rows = [
   ['all converted events', 828850, 2698666.249335, 'input'],
   ['both hemispheres have a charged track', 334830, 1732900.217561, 'hemispheres'],
-  ['leading tracks inside |cos θ| < 0.94', 322437, 1673443.487097, 'acceptance'],
+  ['leading tracks inside $|\\cos\\theta|\\lt 0.94$', 322437, 1673443.487097, 'acceptance'],
   ['at most 6 charged tracks', 266778, 340365.020668, 'multiplicity'],
-  ['hemispheres more than 160° apart', 199915, 194466.083756, 'isolation'],
-  ['leading-track |z0| < 45 mm', 193935, 190401.269830, 'z_origin'],
-  ['leading-track |d0| < 15 mm', 188524, 185417.412265, 'd_origin'],
-  ['one leading track within |d0| < 3 mm', 187655, 185042.790106, 'one_close'],
-  ['|Δz0| of the two leading tracks < 30 mm', 187008, 184589.375092, 'relative_z'],
-  ['visible energy > 8 GeV', 184876, 182368.007559, 'energy'],
-  ['visible transverse momentum > 0.4 GeV', 173851, 169339.151477, 'transverse'],
+  ['hemispheres more than $160^\\circ$ apart', 199915, 194466.083756, 'isolation'],
+  ['leading-track $|z_0|\\lt 45\\,\\mathrm{mm}$', 193935, 190401.269830, 'z_origin'],
+  ['leading-track $|d_0|\\lt 15\\,\\mathrm{mm}$', 188524, 185417.412265, 'd_origin'],
+  ['one leading track within $|d_0|\\lt 3\\,\\mathrm{mm}$', 187655, 185042.790106, 'one_close'],
+  ['$|\\Delta z_0|\\lt 30\\,\\mathrm{mm}$ between leading tracks', 187008, 184589.375092, 'relative_z'],
+  ['visible energy $E_\\mathrm{vis}\\gt 8\\,\\mathrm{GeV}$', 184876, 182368.007559, 'energy'],
+  ['visible $p_T\\gt 0.4\\,\\mathrm{GeV}$', 173851, 169339.151477, 'transverse'],
   ['at least one barrel single-prong hemisphere', 123843, 120069.367913, 'nn_one_prong'],
-  ['acollinearity > 0.5° (1-1 topology)', 61620, 59078.423330, 'nn_acol'],
+  ['acollinearity $\\gt 0.5^\\circ$ (1-1 topology)', 61620, 59078.423330, 'nn_acol'],
   ['HPC boundary evidence present when required', 60141, 57740.096872, 'nn_boundary_no_pe'],
   ['PEmax veto not explicitly failed', 48707, 46785.405998, 'nn_pe_keep_unknown'],
   ['exactly one charged track per hemisphere', 33739, 32862.683621, 'nn_is_1p1p'],
-  ['radiative electromagnetic energy < E_beam', 32531, 31795.685713, 'exclusive_erad'],
-  ['radiative track momentum < p_beam', 26631, 25780.069403, 'exclusive_prad'],
+  ['radiative EM energy $E_\\mathrm{rad}\\lt E_\\mathrm{beam}$', 32531, 31795.685713, 'exclusive_erad'],
+  ['radiative momentum $p_\\mathrm{rad}\\lt p_\\mathrm{beam}$', 26631, 25780.069403, 'exclusive_prad'],
   ['at most 3 neutral objects per hemisphere', 23073, 23198.931168, 'neutral_hemisphere_limit'],
 ] as const
 const { motion, stage } = useStepMotion(() => props.step, rows.length - 1, 700)
@@ -41,12 +42,12 @@ const current = computed(() => rows[stage.value])
   <section class="cf" :data-step="step">
     <div class="cf-bars">
       <div class="cf-bar"><span class="cf-label">1994 data</span><div class="cf-track"><div class="cf-fill data" :style="{ width: `${bar(data) * 100}%` }" /></div><span class="cf-num">{{ fmt(data) }}</span></div>
-      <div class="cf-bar"><span class="cf-label">signed MC total</span><div class="cf-track"><div class="cf-fill mc" :style="{ width: `${bar(mc) * 100}%` }" /></div><span class="cf-num">{{ mc.toLocaleString('en-US', { maximumFractionDigits: 0 }) }}</span></div>
-      <div class="cf-axis"><span>10⁴</span><span>10⁵</span><span>10⁶</span><span>logarithmic scale</span></div>
+      <div class="cf-bar"><span class="cf-label">signed MC total</span><div class="cf-track"><div class="cf-fill mc" :style="{ width: `${bar(mc) * 100}%` }" /></div><span class="cf-num">{{ fmt(mc) }}</span></div>
+      <div class="cf-axis"><span v-html="tex('10^4')" /><span v-html="tex('10^5')" /><span v-html="tex('10^6')" /><span>logarithmic scale</span></div>
     </div>
-    <div class="cf-now"><b>{{ stage === 0 ? 'Before any cut' : `After cut ${stage} of 18` }}</b> · {{ current[0] }} <i>({{ current[3] }})</i> · data / MC = {{ (current[1] / current[2]).toFixed(4) }}</div>
+    <div class="cf-now"><b>{{ stage === 0 ? 'Before any cut' : `After cut ${stage} of 18` }}</b> · <span v-html="mixed(current[0])" /> <i>({{ current[3] }})</i> · data / MC = {{ (current[1] / current[2]).toFixed(3) }}</div>
     <ol class="cf-list">
-      <li v-for="(r, i) in rows.slice(1)" :key="i" :class="{ done: i + 1 <= stage, now: i + 1 === stage }"><span>{{ r[0] }}</span><em>{{ fmt(r[1]) }}</em></li>
+      <li v-for="(r, i) in rows.slice(1)" :key="i" :class="{ done: i + 1 <= stage, now: i + 1 === stage }"><span v-html="mixed(r[0])" /><em>{{ fmt(r[1]) }}</em></li>
     </ol>
   </section>
 </template>

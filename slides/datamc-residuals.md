@@ -7,13 +7,13 @@ class: st pres
 <div class="st-sub">Shape comparisons after normalisation; statistical only, diagnostic. From the 2026-10-07 audit scan.</div>
 
 <table class="lg">
-<thead><tr><th>Variable</th><th>Where</th><th>Size (χ²/dof)</th><th>Reason on record</th></tr></thead>
+<thead><tr><th>Variable</th><th>Where</th><th>Size (<LaTeX formula="\chi^2/\mathrm{dof}" />)</th><th>Reason on record</th></tr></thead>
 <tbody>
-<tr><td>Hadron-calorimeter mean per layer</td><td>inclusive H0 / H1</td><td><span class="badge r">364.9/59</span> <span class="badge r">501.8/59</span></td><td>response mismodelled; measured for 65 % / 63 % of events only</td></tr>
-<tr><td>Hadron-source category</td><td>inclusive H0 / H1</td><td><span class="badge r">154.7/6</span> <span class="badge r">297.4/6</span></td><td>follows from the calorimeter mismatch; feeds hadron ID (b)</td></tr>
-<tr><td>Leading-track momentum</td><td>inclusive H0 / H1</td><td><span class="badge g">48.0/45</span> <span class="badge g">61.7/45</span></td><td>within statistics</td></tr>
-<tr><td>Leading-track cos θ</td><td>inclusive H0 / H1</td><td><span class="badge a">56.6/36</span> <span class="badge g">45.9/36</span></td><td>mild; angular splits pending</td></tr>
-<tr><td>Pion-channel composition</td><td>ππ, πρ, eπ, μπ</td><td>matching 0.18–0.44</td><td>ρ with unidentified photons accepted as π</td></tr>
+<tr><td>Hadron-calorimeter mean per layer</td><td>inclusive H0 / H1</td><td><span class="badge r">364.9 / 59</span> <span class="badge r">501.8 / 59</span></td><td>response mismodelled; measured for 65 % / 63 % of events only</td></tr>
+<tr><td>Hadron-source category</td><td>inclusive H0 / H1</td><td><span class="badge r">154.7 / 6</span> <span class="badge r">297.4 / 6</span></td><td>follows from the calorimeter mismatch; feeds hadron ID (b)</td></tr>
+<tr><td>Leading-track momentum</td><td>inclusive H0 / H1</td><td><span class="badge g">48.0 / 45</span> <span class="badge g">61.7 / 45</span></td><td>within statistics</td></tr>
+<tr><td>Leading-track <LaTeX formula="\cos\theta" /></td><td>inclusive H0 / H1</td><td><span class="badge a">56.6 / 36</span> <span class="badge g">45.9 / 36</span></td><td>mild; angular splits pending</td></tr>
+<tr><td>Pion-channel composition</td><td><LaTeX formula="\pi\pi" />, <LaTeX formula="\pi\rho" />, <LaTeX formula="e\pi" />, <LaTeX formula="\mu\pi" /></td><td>matching 0.18–0.44</td><td><LaTeX formula="\rho" /> with unidentified photons accepted as <LaTeX formula="\pi" /></td></tr>
 </tbody>
 </table>
 

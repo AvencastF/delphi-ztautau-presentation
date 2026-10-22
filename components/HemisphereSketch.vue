@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { useStepMotion } from './useStepMotion'
+import { mixed } from './tex'
 const props = defineProps<{ step: number }>()
 const { reveal, stage } = useStepMotion(() => props.step, 3, 900)
 const titles = ['Charged tracks of one event', 'Thrust axis of the charged tracks', 'Two geometric hemispheres, H0 and H1', 'One-prong topology: a leading track per hemisphere, neutrals counted per side']
 const notes = [
   'The event is viewed in the plane transverse to the beam. Only accepted charged tracks enter the thrust computation.',
-  'The thrust axis maximises the summed projected momentum. Its orientation is fixed by making its largest absolute component positive, so H0 and H1 are a geometric labelling, not τ⁺ / τ⁻.',
-  'H0 collects tracks with p·axis < 0, H1 those with p·axis ≥ 0. Both must contain at least one charged track (cut 1). The angle between any H0 track and any H1 track must exceed 160° (cut 4).',
+  'The thrust axis maximises the summed projected momentum. Its orientation is fixed by making its largest absolute component positive, so H0 and H1 are a geometric labelling, not $\\tau^+$ / $\\tau^-$.',
+  'H0 collects tracks with $\\vec p\\cdot\\hat a\\lt 0$, H1 those with $\\vec p\\cdot\\hat a\\ge 0$. Both must contain at least one charged track (cut 1). The angle between any H0 track and any H1 track must exceed $160^\\circ$ (cut 4).',
   'The leading track is the highest-momentum charged track of its hemisphere; the "1-1" cuts require exactly one charged track per side. Neutral objects (photons, here on the right) are counted per hemisphere: at most 3 on each side (cut 18).',
 ]
 </script>
@@ -31,10 +32,10 @@ const notes = [
         <line x1="238" y1="22" x2="322" y2="278" stroke="#bcc2cb" stroke-opacity=".7" stroke-width="1.4" />
         <path d="M238 22 L322 278 L152 278 L152 22 Z" fill="#f69cab" fill-opacity=".07" />
         <path d="M238 22 L322 278 L408 278 L408 22 Z" fill="#70dcb2" fill-opacity=".07" />
-        <text x="168" y="44" class="lab" fill="#f69cab">H0 · p·axis &lt; 0</text>
-        <text x="318" y="44" class="lab" fill="#70dcb2">H1 · p·axis ≥ 0</text>
+        <foreignObject x="160" y="32" width="150" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo lab" style="text-align:left;color:#f69cab" v-html="mixed('H0 · $\\vec p\\cdot\\hat a\\lt 0$')" /></foreignObject>
+        <foreignObject x="312" y="32" width="150" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo lab" style="text-align:left;color:#70dcb2" v-html="mixed('H1 · $\\vec p\\cdot\\hat a\\ge 0$')" /></foreignObject>
         <path d="M250 150 A30 30 0 0 1 310 150" fill="none" stroke="#bcc2cb" stroke-opacity=".6" />
-        <text x="280" y="112" text-anchor="middle" class="sm">opening angle &gt; 160°</text>
+        <foreignObject x="200" y="100" width="160" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo sm" style="text-align:center;" v-html="mixed('opening angle $\\gt 160^\\circ$')" /></foreignObject>
       </g>
       <!-- leading tracks + neutrals -->
       <g :opacity="reveal(3)">
@@ -46,10 +47,10 @@ const notes = [
           <path d="M280 150 L372 232" stroke-dasharray="3 4" /><path d="M280 150 L400 170" stroke-dasharray="3 4" />
         </g>
         <circle cx="372" cy="232" r="4" fill="#baa5ff" /><circle cx="400" cy="170" r="4" fill="#baa5ff" />
-        <text x="380" y="252" class="sm" fill="#baa5ff">2 neutral objects in H1 (≤ 3 allowed) · 0 in H0</text>
+        <foreignObject x="330" y="240" width="230" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo sm" style="text-align:left;color:#baa5ff" v-html="mixed('2 neutrals in H1 ($\\le 3$ allowed) · 0 in H0')" /></foreignObject>
       </g>
     </svg>
-    <div class="hs-text"><h3>{{ titles[stage] }}</h3><p>{{ notes[stage] }}</p><small>Schematic, not a reconstructed event. Charged tracks blue, neutral objects violet.</small></div>
+    <div class="hs-text"><h3>{{ titles[stage] }}</h3><p v-html="mixed(notes[stage])" /><small>Schematic, not a reconstructed event. Charged tracks blue, neutral objects violet.</small></div>
   </section>
 </template>
 
@@ -60,5 +61,8 @@ const notes = [
 .lab { font-size: 12px; fill: #f0f1f3; }
 .hs-text h3 { margin: 0 0 8px; font-size: 17px; color: var(--nju-amber); font-weight: 550; line-height: 1.25; }
 .hs-text p { margin: 0; font-size: 13.5px; line-height: 1.45; color: var(--fg-0); }
+.fo { line-height: 18px; white-space: nowrap; color: #bcc2cb; }
+.fo.lab { font-size: 12px; color: #f0f1f3; }
+.fo.sm { font-size: 10.5px; }
 .hs-text small { display: block; margin-top: 10px; font-size: 11px; color: var(--fg-1); }
 </style>

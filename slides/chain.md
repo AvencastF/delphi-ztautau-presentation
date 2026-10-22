@@ -17,7 +17,7 @@ import ChainFlow from '../components/ChainFlow.vue'
 
 <ul class="bl" style="margin-top:4px; font-size:12.5px">
 <li><b>Code:</b> <a href="https://github.com/AvencastF/delphi-sim-pipeline/tree/feature/nersc-long-production">simulation pipeline</a>, <a href="https://github.com/AvencastF/delphi-edm4hep/tree/3e40698">converter</a>, <a href="https://github.com/AvencastF/delphi-ztautau-ana">analysis</a>, <a href="https://github.com/UW-EPE-ML/EveNet-Align">EveNet-Align</a></li>
-<li><b>Formats:</b> longDST (DELPHI summary tape) → EDM4hep ROOT → Parquet tables</li>
+<li><b>Formats:</b> longDST (DELPHI summary tape) <LaTeX formula="\to" /> EDM4hep ROOT <LaTeX formula="\to" /> Parquet tables</li>
 </ul>
 
 <div class="st-source">Source: the 1994 runbook, chain overview and identity table</div>

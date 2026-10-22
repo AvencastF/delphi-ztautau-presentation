@@ -12,17 +12,17 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div><div class="st-fig"><NJUPlot src="/figures/ml/v5/06_direction.svg" alt="branch accuracy per channel and direction error per leg" /></div><div class="st-cap">Branch accuracy per channel (left), direction error per leg type (right); held-out simulation</div></div>
 <div>
 <table class="num">
-<thead><tr><th>Median error [°]</th><th>analytical</th><th>best branch</th><th>ML v5</th></tr></thead>
+<thead><tr><th>Median error [<LaTeX formula="^\circ" />]</th><th>analytical</th><th>best branch</th><th>ML v5</th></tr></thead>
 <tbody>
 <tr><td>e legs</td><td>2.09</td><td>1.38</td><td><span class="best">1.17</span></td></tr>
-<tr><td>μ legs</td><td>1.96</td><td>1.28</td><td><span class="best">1.09</span></td></tr>
-<tr><td>π legs</td><td>1.52</td><td><span class="best">0.69</span></td><td>0.89</td></tr>
-<tr><td>ρ legs</td><td>1.41</td><td><span class="best">0.77</span></td><td>1.03</td></tr>
+<tr><td><LaTeX formula="\mu" /> legs</td><td>1.96</td><td>1.28</td><td><span class="best">1.09</span></td></tr>
+<tr><td><LaTeX formula="\pi" /> legs</td><td>1.52</td><td><span class="best">0.69</span></td><td>0.89</td></tr>
+<tr><td><LaTeX formula="\rho" /> legs</td><td>1.41</td><td><span class="best">0.77</span></td><td>1.03</td></tr>
 <tr><td>correct branch, inclusive</td><td>0.593</td><td>0.912</td><td><span class="best">0.740</span></td></tr>
-<tr><td>correct branch, ππ</td><td>0.501</td><td>0.982</td><td><span class="best">0.764</span></td></tr>
+<tr><td>correct branch, <LaTeX formula="\pi\pi" /></td><td>0.501</td><td>0.982</td><td><span class="best">0.764</span></td></tr>
 </tbody>
 </table>
-<div class="co ok" style="margin-top:8px"><b>Takeaway</b> ML beats the default branch everywhere; the simulation ceiling stays out of reach for π, ρ.</div>
+<div class="co ok" style="margin-top:8px"><b>Takeaway</b> ML beats the default branch everywhere; the simulation ceiling stays out of reach for <LaTeX formula="\pi" />, <LaTeX formula="\rho" />.</div>
 </div>
 </div>
 

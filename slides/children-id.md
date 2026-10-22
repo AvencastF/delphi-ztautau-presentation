@@ -2,17 +2,17 @@
 class: st pres
 ---
 
-# Ten children: identifying each τ decay
+# Ten children: identifying each <LaTeX formula="\tau" /> decay
 
 <div class="st-sub">Child = inclusive sample + both legs identified as a given pair. "Residual" and "conflict" events stay inclusive-only.</div>
 
 <div class="st-cols st-cols-3">
-<div class="kv sel"><h3>Electron</h3><dl><dt>Tag</dt><dd>DELPHI electron tag <span class="id">ELID</span> ≥ 3</dd><dt>Conflict</dt><dd>two positive lepton tags</dd></dl></div>
-<div class="kv sel"><h3>Muon</h3><dl><dt>Tag</dt><dd>DELPHI muon word <span class="id">MUID</span> ≥ 7</dd><dt>Momentum</dt><dd>no threshold</dd></dl></div>
-<div class="kv sel"><h3>Charged hadron</h3><dl><dt>Veto</dt><dd>neither lepton tag, p &gt; 5 % E_beam</dd><dt>(a)</dt><dd>pion-like tag <span class="id">RPROCO 2/3</span>, HPC E/p &lt; 0.6</dd><dt>(b)</dt><dd>HCAL ≥ 3 GeV per hit layer</dd></dl></div>
-<div class="kv sel"><h3>Photon</h3><dl><dt>Object</dt><dd>neutral with unique HPC shower &gt; 0.5 GeV</dd><dt>Nearby</dt><dd>ΔR &lt; 0.3 to the leading track</dd></dl></div>
-<div class="kv sel"><h3>π</h3><dl><dt>Rule</dt><dd>charged hadron, no nearby photon</dd></dl></div>
-<div class="kv sel"><h3>ρ</h3><dl><dt>Rule</dt><dd>charged hadron + 1–2 nearby photons</dd><dt>Mass</dt><dd>0.5 &lt; m(track + γ) &lt; 1.04 GeV</dd></dl></div>
+<div class="kv sel"><h3>Electron</h3><dl><dt>Tag</dt><dd><span class="id">ELID</span> <LaTeX formula="\ge 3" /></dd><dt>Conflict</dt><dd>two positive lepton tags</dd></dl></div>
+<div class="kv sel"><h3>Muon</h3><dl><dt>Tag</dt><dd><span class="id">MUID</span> <LaTeX formula="\ge 7" /></dd><dt>Momentum</dt><dd>no threshold</dd></dl></div>
+<div class="kv sel"><h3>Charged hadron</h3><dl><dt>Veto</dt><dd>no lepton tag</dd><dt>Momentum</dt><dd><LaTeX formula="p\gt 0.05\,E_\mathrm{beam}" /></dd><dt>(a)</dt><dd><span class="id">RPROCO 2/3</span>, <LaTeX formula="E/p\lt 0.6" /></dd><dt>(b)</dt><dd>HCAL <LaTeX formula="\ge 3\,\mathrm{GeV}" /> per layer</dd></dl></div>
+<div class="kv sel"><h3>Photon</h3><dl><dt>Object</dt><dd>neutral, unique HPC shower</dd><dt>Energy</dt><dd><LaTeX formula="E\gt 0.5\,\mathrm{GeV}" /></dd><dt>Nearby</dt><dd><LaTeX formula="\Delta R\lt 0.3" /> to leading track</dd></dl></div>
+<div class="kv sel"><h3><LaTeX formula="\pi" /></h3><dl><dt>Rule</dt><dd>charged hadron, no nearby photon</dd></dl></div>
+<div class="kv sel"><h3><LaTeX formula="\rho" /></h3><dl><dt>Rule</dt><dd>hadron + 1–2 nearby photons</dd><dt>Mass</dt><dd><LaTeX formula="0.5\lt m(\mathrm{track}+\gamma)\lt 1.04\,\mathrm{GeV}" /></dd></dl></div>
 </div>
 
 <div class="co warn" style="margin-top:10px"><b>Caveat</b> Legacy tags are references, not calibrated working points; nothing here is an efficiency.</div>

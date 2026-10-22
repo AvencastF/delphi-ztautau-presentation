@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { useStepMotion } from './useStepMotion'
+import { mixed } from './tex'
 const props = defineProps<{ step: number }>()
 const { motion, running, stage, reveal } = useStepMotion(() => props.step, 5, 800)
 const stages = [
   { title: '1 · Monte-Carlo production', what: 'Generate events, simulate the DELPHI detector (DELSIM), reconstruct (DELANA), write the long summary format (longDST) and convert it to EDM4hep ROOT files.', who: 'production scripts + simulation pipeline', id: 'campaign tags prod-20260923-v1, tau-extra-20260923-v1' },
   { title: '2 · Real-data conversion', what: 'Convert the archived 1994 leptonic longDST data with the same converter, keeping a unique event identity per event.', who: 'EDM4hep converter', id: '132 files, 828,850 events' },
-  { title: '3 · Event selection', what: 'Apply the 18 ordered cuts, identify the decay of each τ, and write one Parquet table per physics process.', who: 'tau analysis framework', id: 'frozen run of 2026-10-12' },
-  { title: '4 · Machine learning', what: 'Classify the τ-pair decay mode and predict the direction of each τ (the part the neutrinos take away).', who: 'EveNet-Align, two fine-tuned models', id: 'classifier v1 · neutrino model v5' },
-  { title: '5 · Spin fit (future)', what: 'Extract all 15 spin-density-matrix coefficients from the reconstructed τ directions and decay products.', who: 'fit program, downstream', id: 'out of scope for this report' },
+  { title: '3 · Event selection', what: 'Apply the 18 ordered cuts, identify the decay of each $\\tau$, and write one Parquet table per physics process.', who: 'tau analysis framework', id: 'frozen run of 2026-10-12' },
+  { title: '4 · Machine learning', what: 'Classify the $\\tau\\tau$ decay mode and predict the direction of each $\\tau$ (the part the neutrinos take away).', who: 'EveNet-Align, two fine-tuned models', id: 'classifier v1 · neutrino model v5' },
+  { title: '5 · Spin fit (future)', what: 'Extract all 15 spin-density-matrix coefficients from the reconstructed $\\tau$ directions and decay products.', who: 'fit program, downstream', id: 'out of scope for this report' },
 ]
 </script>
 
@@ -21,7 +22,7 @@ const stages = [
         </svg>
         <div class="chain-stage" :class="{ future: i === 4 }" :style="{ opacity: .15 + .85 * reveal(i), transform: `translateY(${(1 - reveal(i)) * 10}px)` }">
           <h3>{{ s.title }}</h3>
-          <p>{{ s.what }}</p>
+          <p v-html="mixed(s.what)" />
           <small><b>{{ s.who }}</b><br><i>{{ s.id }}</i></small>
         </div>
       </template>

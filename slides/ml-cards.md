@@ -6,23 +6,23 @@ class: st pres
 
 <div class="st-cols st-cols-2">
 <div class="kv ml"><h3><span class="tag ml">ML</span> Decay-mode classifier · v1</h3><dl>
-<dt>Target</dt><dd>12 classes: 10 τ channels + other τ + lepton pairs</dd>
+<dt>Target</dt><dd>12 classes: 10 <LaTeX formula="\tau" /> channels + other <LaTeX formula="\tau" /> + lepton pairs</dd>
 <dt>Inputs</dt><dd>first conversion, 229 particle channels, 18 globals</dd>
 <dt>Weights</dt><dd>unit event weights, class loss cap 0.4</dd>
-<dt>Training</dt><dd>2026-10-16; Bhabha replaces Z_ee</dd>
+<dt>Training</dt><dd>2026-10-16; Bhabha replaces <LaTeX formula="Z\to ee" /></dd>
 <dt>Checkpoint</dt><dd>epoch 29, raw weights <span class="id">epoch=29_train=0.1037_val=0.4805</span></dd>
 </dl></div>
 <div class="kv ml"><h3><span class="tag ml">ML</span> Neutrino-direction model · v5</h3><dl>
-<dt>Target</dt><dd>(δθ, δφ) of each τ to its leading track, detector frame</dd>
+<dt>Target</dt><dd><LaTeX formula="(\delta\theta,\delta\phi)" /> of each <LaTeX formula="\tau" /> to its leading track, detector frame</dd>
 <dt>Inputs</dt><dd>fifth conversion; same tokens</dd>
 <dt>Conditioning</dt><dd>74 event quantities via FiLM</dd>
 <dt>Training</dt><dd>2026-10-21, 4 GPUs, 100 epochs, 1 h 57 min</dd>
-<dt>Checkpoint</dt><dd>last epoch, EMA weights; 1 sample × 50 steps</dd>
+<dt>Checkpoint</dt><dd>last epoch, EMA weights; 1 sample <LaTeX formula="\times" /> 50 steps</dd>
 </dl></div>
 </div>
 
 <div style="margin-top:10px;font-size:12.5px;color:var(--fg-1)"><b style="color:var(--fg-0)">Input tags:</b>
-<span class="tag data">E, p_T, η, φ, charge</span> <span class="tag data">mass, track length</span> <span class="tag data">electron tag</span> <span class="tag data">muon word</span> <span class="tag data">hadron tags</span> <span class="tag data">calibrated dE/dx</span> <span class="tag data">lifetime probability</span> <span class="tag data">calorimeter sums</span> <span class="tag data">RICH quantities</span> <span class="tag sim">neutral filter: &lt;1 GeV needs EM shower</span> <span class="tag sim">event bound 137 GeV</span></div>
+<span class="tag data">E, <LaTeX formula="p_T" />, <LaTeX formula="\eta" />, <LaTeX formula="\phi" />, charge</span> <span class="tag data">mass, track length</span> <span class="tag data">electron tag</span> <span class="tag data">muon word</span> <span class="tag data">hadron tags</span> <span class="tag data">calibrated dE/dx</span> <span class="tag data">lifetime probability</span> <span class="tag data">calorimeter sums</span> <span class="tag data">RICH quantities</span> <span class="tag sim">neutral filter: <LaTeX formula="\lt 1\,\mathrm{GeV}" /> needs EM shower</span> <span class="tag sim">event bound 137 GeV</span></div>
 
 <div class="st-source">Source: converter configuration, version-5 archive README and the 1994 runbook (ML stage)</div>
 

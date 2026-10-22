@@ -15,14 +15,14 @@ import NJUPlot from '../components/NJUPlot.vue'
 <thead><tr><th>Median 68 % width</th><th>v2</th><th>v3</th><th>v5</th></tr></thead>
 <tbody>
 <tr><td>ee</td><td>0.291</td><td>0.312</td><td><span class="best">0.289</span></td></tr>
-<tr><td>μμ</td><td><span class="best">0.258</span></td><td>0.278</td><td>0.259</td></tr>
-<tr><td>eρ</td><td><span class="best">0.246</span></td><td>0.310</td><td>0.251</td></tr>
-<tr><td>ππ</td><td>0.146</td><td><span class="best">0.135</span></td><td>0.142</td></tr>
-<tr><td>πρ</td><td>0.185</td><td>0.221</td><td><span class="best">0.182</span></td></tr>
-<tr><td>ρρ</td><td><span class="best">0.222</span></td><td>0.315</td><td>0.223</td></tr>
+<tr><td><LaTeX formula="\mu\mu" /></td><td><span class="best">0.258</span></td><td>0.278</td><td>0.259</td></tr>
+<tr><td><LaTeX formula="e\rho" /></td><td><span class="best">0.246</span></td><td>0.310</td><td>0.251</td></tr>
+<tr><td><LaTeX formula="\pi\pi" /></td><td>0.146</td><td><span class="best">0.135</span></td><td>0.142</td></tr>
+<tr><td><LaTeX formula="\pi\rho" /></td><td>0.185</td><td>0.221</td><td><span class="best">0.182</span></td></tr>
+<tr><td><LaTeX formula="\rho\rho" /></td><td><span class="best">0.222</span></td><td>0.315</td><td>0.223</td></tr>
 </tbody>
 </table>
-<div class="co ok" style="margin-top:8px"><b>Takeaway</b> v5 = v2 within 0.005; 10–30 % better than v3 outside ππ.</div>
+<div class="co ok" style="margin-top:8px"><b>Takeaway</b> v5 = v2 within 0.005; 10–30 % better than v3 outside <LaTeX formula="\pi\pi" />.</div>
 </div>
 </div>
 

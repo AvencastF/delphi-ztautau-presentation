@@ -5,7 +5,7 @@ class: st pres
 # Split policy: what "held-out" means here
 
 <div class="tiles tiles-3">
-<div class="tile ml"><b>200,755</b><span>held-out simulated Z → ττ events, identical for versions 2–5</span></div>
+<div class="tile ml"><b>200,755</b><span>held-out simulated <LaTeX formula="Z\to\tau\tau" /> events, identical for versions 2–5</span></div>
 <div class="tile ml"><b>20 %</b><span>last fifth of the training files = validation and checkpoint choice</span></div>
 <div class="tile ml"><b>0</b><span>independent test events reserved</span></div>
 </div>

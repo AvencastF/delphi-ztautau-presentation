@@ -6,13 +6,13 @@ class: st pres
 
 <div class="tiles tiles-3">
 <div class="tile ml"><b>2</b><span><b style="display:inline;font-size:13px">Ambiguity.</b> Mirror solutions per event; the default branch is right 59.3 % of the time</span></div>
-<div class="tile ml"><b>0.98 → 0.74</b><span><b style="display:inline;font-size:13px">Branch ceiling.</b> Best possible branch choice 0.96–0.98 per channel; analytical 0.50–0.59; ML v5 0.74</span></div>
-<div class="tile ml"><b>1.52° → 0.89°</b><span><b style="display:inline;font-size:13px">Resolution.</b> Median π-leg direction error, analytical → ML v5 (e: 2.09° → 1.17°)</span></div>
+<div class="tile ml"><b>0.98 <LaTeX formula="\to" /> 0.74</b><span><b style="display:inline;font-size:13px">Branch ceiling.</b> Best branch 0.96–0.98 per channel; analytical 0.50–0.59</span></div>
+<div class="tile ml"><b>1.52<LaTeX formula="^\circ" /> <LaTeX formula="\to" /> 0.89<LaTeX formula="^\circ" /></b><span><b style="display:inline;font-size:13px">Resolution.</b> Median <LaTeX formula="\pi" />-leg direction error, analytical <LaTeX formula="\to" /> ML v5</span></div>
 </div>
 
 <div class="st-cols st-cols-2">
-<div class="co warn"><b>Artefact</b> Default branch gives C_rn / C_nr = −1.74 / +1.75; truth ≈ 0; ML −0.01 / +0.01.</div>
-<div class="co warn"><b>Purity</b> Cut-based ππ child matching fraction 0.182 → second task: decay-mode classifier.</div>
+<div class="co warn"><b>Artefact</b> Default branch gives <LaTeX formula="C_{rn}" /> / <LaTeX formula="C_{nr}" /> = <LaTeX formula="-1.74" /> / +1.75; truth <LaTeX formula="\approx" /> 0; ML <LaTeX formula="-0.01" /> / +0.01.</div>
+<div class="co warn"><b>Purity</b> Cut-based <LaTeX formula="\pi\pi" /> child matching fraction 0.182 <LaTeX formula="\to" /> second task: decay-mode classifier.</div>
 </div>
 
 <div class="st-source">Source: version-5 neutrino evaluation summary and the first-model evaluation note</div>
