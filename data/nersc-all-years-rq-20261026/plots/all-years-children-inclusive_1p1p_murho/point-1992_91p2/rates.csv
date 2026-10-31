@@ -1,0 +1,2 @@
+group,kind,value,region,data_n,data_sumw,mc_n,mc_sumw,mc_sumw2,data_over_mc,data_over_mc_stat_err,unavailable_labels
+point-1992_91p2,point,1992_91p2,inclusive_1p1p_murho,605,605.0,45081,528.4174044087882,6.223208328230591,1.1449282233178808,0.046860724692837884,

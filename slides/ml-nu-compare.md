@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Model versions 2 to 5: what changed and what it bought
+# Appendix · 1994 reference: neutrino model versions 2 to 5
 
 <table>
 <thead><tr><th>Version</th><th>Inputs</th><th>Target</th><th>Verdict</th></tr></thead>

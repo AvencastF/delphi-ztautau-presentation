@@ -6,9 +6,9 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# Pseudo-experiments: every simulated event is drawn, all 15 histograms move together
+# Pseudo-experiments: thousands of fake datasets give the error bars
 
-<div class="st-sub">Each toy redraws every event with a Poisson count around its weight and refills all histograms. 2,000 toys at the expected state (1992–1995).</div>
+<div class="st-sub">A toy = one fake dataset drawn from the simulation, fitted like real data. The spread of 2,000 toys gives errors; their co-movement, correlations (1992–1995).</div>
 
 <div class="st-fig" style="height:170px"><NJUPlot src="/figures/fit/modelC-correlation.png" alt="correlation matrix of the 15 coefficients" /></div>
 <div class="st-cap"><b>Correlations</b> of the 15 coefficients: analytic (left), toys minus analytic (middle, within ±0.05), final minus legacy (right)</div>

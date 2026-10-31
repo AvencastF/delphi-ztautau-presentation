@@ -6,7 +6,7 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# <LaTeX formula="\pi\pi" /> closure test at the full 1994 yield
+# Appendix · 1994 reference: <LaTeX formula="\pi\pi" /> closure test at the 1994 yield
 
 <div class="st-sub">Half A builds the response, half B is fitted as data. <LaTeX formula="\sigma" /> = expected statistical error; pull = bias / <LaTeX formula="\sigma" />.</div>
 

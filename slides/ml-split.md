@@ -2,27 +2,28 @@
 class: st pres
 ---
 
-# Split policy: what "held-out" means here
+# Split policy: a fixed half that never enters training
 
 <div class="tiles tiles-3">
-<div class="tile ml"><b>200,755</b><span>held-out simulated <LaTeX formula="Z\to\tau\tau" /> events, identical for versions 2–5</span></div>
-<div class="tile ml"><b>20 %</b><span>last fifth of the training files = validation and checkpoint choice</span></div>
-<div class="tile ml"><b>0</b><span>independent test events reserved</span></div>
+<div class="tile ml"><b>2,380,841</b><span>training-half events; a validation part picks the checkpoint</span></div>
+<div class="tile ml"><b>2,379,380</b><span>hold-half events: evaluations and fits</span></div>
+<div class="tile ml"><b>0</b><span>hold events ever seen in training</span></div>
 </div>
 
 <ul class="bl">
-<li><b>Hash split</b> by event identity, seed 42, 100 files</li>
-<li><b>Evaluation</b> drops training rows, rescales to full yield</li>
+<li><b>Split</b> by a hash of the event identity, fixed once</li>
+<li><b>Evaluation</b> drops training and validation rows</li>
+<li><b>Fits</b> keep the hold half, weights <LaTeX formula="\times 2.00" /></li>
 <li><b>Data</b> is never split, only predicted</li>
 </ul>
 
 <div class="st-cols st-cols-2">
-<div class="co warn"><b>Guard</b> Only the fit's held-out option excludes training rows.</div>
-<div class="co decision"><b>Decision 2026-10-22</b> Retrain the classifier on the shared conversion; not run yet.</div>
+<div class="co decision"><b>Owner 2026-10-27</b> No cross-training: simulation is not limiting.</div>
+<div class="co ok"><b>Cost</b> About 2 % larger fit errors.</div>
 </div>
 
-<div class="st-source">Source: converter configuration (split block), training configuration and the 1994 runbook</div>
+<div class="st-source">Source: project guide (all-years ML decisions, 2026-10-27) and the 1992–1995 run record (conversion)</div>
 
 <!--
-converter-1994.yaml split: seed 42, parts {train: 10}, shards {train: 100}, statistics train; u = sha256({seed, identity})[:8]/2^64. train-neutrino.yaml:131 val_split [0.8, 1.0]. Evaluation mc_split heldout: 200,755 events (200,296 with charged daughters both legs, 2,944 true pipi). Conversions: classifier ml-runs/evenet-inputs-1994; neutrino v5 ml-runs/evenet-inputs-1994-v5 (job 60075055: 3,085,534 rows, 1,018,840 train / 25,223 predict, 74 conditions). predict.py converts each row group once per model. Owner 2026-10-22: predict-1994.yaml (one converted, classifier placeholder), evaluate-1994.yaml acceptance test; not run. RUNBOOK section 4.
+docs/PROJECT_GUIDE.md "2026-10-27 — all-years ML conversion prepared" (owner decisions): one model per task trained on a fixed half of the MC; the other half (hold) never enters any training; evaluations, closure, response and calibration use the hold half (predict <prefix>_split == hold; evaluate*.py mc_split: unseen also drops the validation rows); no odd/even cross-training (MC statistics not limiting; half of 1994 behind the expected data inflates the fit sigma by ~2 %). Conversion job 60348507 (REPORT.md section 4): 14,531,950 rows read -> 4,822,318 written (train 2,380,841, hold 2,379,380, predict 62,097). Hold-half Z_tautau events evaluated: 2,359,482 (nu-eval-hold.md). Fit inputs: hold cohort rule heldout_representative (tau_analysis/legacy_fit/parquet_inputs.py), Z_tautau 1994 scale 2.00070 (inputs-1992-1995 notes). Split seed and hash: converter-all-years.yaml split block (as for 1994: sha256 of seed and identity). The 2026-10-22 version described the 1994 split (200,755 held-out events, no test part).
 -->

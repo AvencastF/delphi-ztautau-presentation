@@ -1,0 +1,2 @@
+group,kind,value,region,data_n,data_sumw,mc_n,mc_sumw,mc_sumw2,data_over_mc,data_over_mc_stat_err,unavailable_labels
+year-1992,year,1992,inclusive_1p1p_pipi,585,585.0,47665,565.5218115971596,8.129599013580446,1.0344428596800355,0.04308577336159919,

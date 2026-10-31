@@ -6,7 +6,7 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# Machine-learning verdict, as recorded 2026-10-21/22
+# Appendix · 1994 reference: machine-learning verdict of 2026-10-21/22
 
 <div class="st-cols st-cols-2">
 <div>

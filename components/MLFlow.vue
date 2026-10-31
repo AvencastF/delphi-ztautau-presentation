@@ -3,12 +3,12 @@ import { useStepMotion } from './useStepMotion'
 import { mixed } from './tex'
 const props = defineProps<{ step: number }>()
 const { motion, running, reveal, stage } = useStepMotion(() => props.step, 3, 900)
-const titles = ['Particle tokens: up to 24 reconstructed particles per event', 'The pretrained EveNet body (unchanged) turns tokens into event features', 'Head 1: the 12-class decay-mode classifier', 'Head 2: the neutrino-direction diffusion head, conditioned on 74 event-level quantities through FiLM']
+const titles = ['Particle tokens: up to 24 reconstructed particles per event', 'The pretrained EveNet body (unchanged) turns tokens into event features', 'Head 1: the 12-class decay-mode classifier', 'Head 2: the neutrino-direction diffusion head, conditioned on 84 event-level quantities through FiLM']
 const notes = [
   'Each particle is one token with seven slots: energy, transverse momentum, pseudorapidity, azimuth, two "tag" slots that carry the embedded detector information (electron / muon / hadron identification, dE/dx, calorimeter and lifetime quantities), and the charge. Twelve slots per thrust hemisphere; the leading track is always kept.',
   'The token layout and the transformer body (PET) are those of the pretrained EveNet model, so both heads start from its checkpoint. The owner measured about 10 % better classification with this pretraining than from scratch, which is why the token is not widened.',
-  'The classifier outputs probabilities for ten $\\tau\\tau$ decay channels ($ee$, $e\\mu$, $e\\pi$, $e\\rho$, $\\mu\\mu$, $\\mu\\pi$, $\\mu\\rho$, $\\pi\\pi$, $\\pi\\rho$, $\\rho\\rho$), an "other $\\tau$ decays" class and a lepton-pair background class. It is trained on the first conversion with unit event weights.',
-  'The neutrino head is a diffusion model that generates, for each leg, the two angles between the $\\tau$ and the saved leading track. Event-level quantities (lead-track lifetime, branch discriminant, per-leg cone photon counts and masses, …) modulate the head layer-wise through FiLM (feature-wise linear modulation). One sample with 50 diffusion steps is drawn at inference.',
+  'The classifier outputs probabilities for ten $\\tau\\tau$ decay channels ($ee$, $e\\mu$, $e\\pi$, $e\\rho$, $\\mu\\mu$, $\\mu\\pi$, $\\mu\\rho$, $\\pi\\pi$, $\\pi\\rho$, $\\rho\\rho$), an "other $\\tau$ decays" class and a lepton-pair background class. The 1992–1995 model is trained on the training half of the simulation of all eight energy points.',
+  'The neutrino head is a diffusion model that generates, for each leg, the two angles between the $\\tau$ and the saved leading track. Event-level quantities (lead-track lifetime, branch discriminant, per-leg cone photon counts and masses, $\\sqrt{s}$ and the year, …) modulate the head layer-wise through FiLM (feature-wise linear modulation). One sample with 50 diffusion steps is drawn at inference.',
 ]
 </script>
 
@@ -49,7 +49,7 @@ const notes = [
         <foreignObject x="379" y="154" width="176" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo sm" style="text-align:center;" v-html="mixed('diffusion · $(\\delta\\theta,\\delta\\phi)$ for $\\tau^\\pm$')" /></foreignObject>
         <foreignObject x="379" y="169" width="176" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo sm" style="text-align:center;" v-html="mixed('1 sample $\\times$ 50 steps at inference')" /></foreignObject>
         <rect x="378" y="206" width="178" height="30" rx="4" fill="#23262b" stroke="#baa5ff" stroke-opacity=".8" />
-        <foreignObject x="379" y="213" width="176" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo sm" style="text-align:center;color:#baa5ff" v-html="mixed('74 event quantities $\\to$ FiLM')" /></foreignObject>
+        <foreignObject x="379" y="213" width="176" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo sm" style="text-align:center;color:#baa5ff" v-html="mixed('84 event quantities $\\to$ FiLM')" /></foreignObject>
         <path d="M467 206 V190" stroke="#baa5ff" stroke-width="1.6" />
         <path d="M462 196 L467 190 L472 196" fill="none" stroke="#baa5ff" stroke-width="1.6" />
       </g>

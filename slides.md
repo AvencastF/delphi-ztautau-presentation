@@ -3,7 +3,7 @@ theme: default
 fonts:
   sans: DM Sans
   local: DM Sans
-title: "DELPHI Z → ττ 1992–1995: ML reconstruction and spin fit, status 2026-10-31"
+title: "DELPHI Z → ττ, the 1992–1995 analysis: ML reconstruction and spin fit, status 2026-10-31"
 colorSchema: dark
 transition: none
 mdc: true
@@ -28,6 +28,10 @@ src: ./slides/ch-inputs.md
 
 ---
 src: ./slides/inputs-data.md
+---
+
+---
+src: ./slides/inputs-goodrun.md
 ---
 
 ---
@@ -79,6 +83,10 @@ src: ./slides/cutflow-inclusive.md
 ---
 
 ---
+src: ./slides/cutflow-points.md
+---
+
+---
 src: ./slides/cutflow-children.md
 ---
 
@@ -104,6 +112,14 @@ src: ./slides/datamc-inclusive-03.md
 
 ---
 src: ./slides/datamc-inclusive-04.md
+---
+
+---
+src: ./slides/datamc-years-1.md
+---
+
+---
+src: ./slides/datamc-years-2.md
 ---
 
 ---
@@ -179,31 +195,19 @@ src: ./slides/ml-split.md
 ---
 
 ---
-src: ./slides/ml-classifier.md
+src: ./slides/ml-cls-allyears.md
 ---
 
 ---
-src: ./slides/ml-classifier-figs.md
+src: ./slides/ml-cls-figs-allyears.md
 ---
 
 ---
-src: ./slides/ml-nu-direction.md
+src: ./slides/ml-nu-allyears.md
 ---
 
 ---
-src: ./slides/ml-nu-widths.md
----
-
----
-src: ./slides/ml-nu-compare.md
----
-
----
-src: ./slides/ml-nu-closure.md
----
-
----
-src: ./slides/ml-verdict.md
+src: ./slides/ml-nu-figs-allyears.md
 ---
 
 ---
@@ -215,7 +219,15 @@ src: ./slides/ch-fit.md
 ---
 
 ---
+src: ./slides/fit-why.md
+---
+
+---
 src: ./slides/fit-observables.md
+---
+
+---
+src: ./slides/fit-flow.md
 ---
 
 ---
@@ -223,11 +235,15 @@ src: ./slides/fit-inputs.md
 ---
 
 ---
+src: ./slides/fit-template.md
+---
+
+---
 src: ./slides/fit-model.md
 ---
 
 ---
-src: ./slides/fit-models.md
+src: ./slides/fit-covariance.md
 ---
 
 ---
@@ -235,15 +251,7 @@ src: ./slides/fit-validation.md
 ---
 
 ---
-src: ./slides/fit-precision.md
----
-
----
 src: ./slides/fit-toys.md
----
-
----
-src: ./slides/fit-ml-gain.md
 ---
 
 ---
@@ -251,7 +259,11 @@ src: ./slides/fit-results.md
 ---
 
 ---
-src: ./slides/fit-tests.md
+src: ./slides/fit-ml-gain.md
+---
+
+---
+src: ./slides/fit-hypothesis.md
 ---
 
 ---
@@ -287,6 +299,18 @@ src: ./slides/appendix-divider.md
 ---
 
 ---
+src: ./slides/fit-models.md
+---
+
+---
+src: ./slides/fit-precision.md
+---
+
+---
+src: ./slides/appendix-fit-tests.md
+---
+
+---
 src: ./slides/appendix-fit-1.md
 ---
 
@@ -311,7 +335,35 @@ src: ./slides/appendix-cutflow-2.md
 ---
 
 ---
+src: ./slides/appendix-ml-allyears-1.md
+---
+
+---
+src: ./slides/appendix-ml-allyears-2.md
+---
+
+---
+src: ./slides/ml-classifier.md
+---
+
+---
+src: ./slides/ml-classifier-figs.md
+---
+
+---
 src: ./slides/appendix-classifier.md
+---
+
+---
+src: ./slides/ml-nu-direction.md
+---
+
+---
+src: ./slides/ml-nu-widths.md
+---
+
+---
+src: ./slides/ml-nu-compare.md
 ---
 
 ---
@@ -323,11 +375,19 @@ src: ./slides/appendix-widths.md
 ---
 
 ---
+src: ./slides/ml-nu-closure.md
+---
+
+---
 src: ./slides/appendix-closure-1.md
 ---
 
 ---
 src: ./slides/appendix-closure-2.md
+---
+
+---
+src: ./slides/ml-verdict.md
 ---
 
 ---
@@ -344,6 +404,14 @@ src: ./slides/appendix-inclusive-03.md
 
 ---
 src: ./slides/appendix-inclusive-04.md
+---
+
+---
+src: ./slides/appendix-years-01.md
+---
+
+---
+src: ./slides/appendix-years-02.md
 ---
 
 ---

@@ -2,9 +2,9 @@
 class: st pres
 ---
 
-# Fit inputs: 16 decay-pair regions, 15 angular histograms each
+# Regions and samples: what is fitted and what is fixed
 
-<div class="st-sub">One 10-bin histogram per coefficient and region: 2,400 bins. Composition after fit cuts, 1994, ML.</div>
+<div class="st-sub">A region = events whose two decays were reconstructed as one pair, e.g. <LaTeX formula="\pi" /> and <LaTeX formula="\rho" />. Composition of the simulation, 1994, ML.</div>
 
 <div class="st-cols st-cols-21">
 <div>
@@ -21,11 +21,11 @@ class: st pres
 <tr class="hl"><td>All 16</td><td>12,970.5</td><td colspan="2" style="text-align:center">87.4 % float in the fit</td><td>11.7 %</td><td>0.9 %</td></tr>
 </tbody>
 </table>
-<div class="st-cap">Percent of the region's simulated events (derived). Floating = spin-dependent signal; the last two columns are fixed.</div>
+<div class="st-cap">Percent of the region's simulated events (derived). First two columns: spin-dependent signal; last two: fixed. Each region gives 15 histograms of 10 bins: 2,400 bins.</div>
 </div>
 <div>
-<div class="co ok"><b>Signal</b> True <LaTeX formula="\pi,\rho,e,\mu" /> pairs, in whichever region they land.</div>
-<div class="co decision"><b>Fixed</b> <LaTeX formula="\tau" /> decays to other modes and non-<LaTeX formula="\tau" /> background: 12.6 %.</div>
+<div class="co ok"><b>Signal</b> Any true <LaTeX formula="\pi,\rho,e,\mu" /> pair, even if mis-identified: its spin is modelled.</div>
+<div class="co decision"><b>Fixed</b> Other <LaTeX formula="\tau" /> decay modes 12 %, non-<LaTeX formula="\tau" /> events 1 %: taken from simulation.</div>
 <div class="co warn"><b>Why fixed</b> No analysing power is defined for the other modes.</div>
 <div class="co ok"><b>Cross-check</b> Mis-identified pairs as background instead: errors grow only 1–3 %.</div>
 </div>

@@ -2,6 +2,8 @@ appendix-inclusive-01.md
 appendix-inclusive-02.md
 appendix-inclusive-03.md
 appendix-inclusive-04.md
+appendix-years-01.md
+appendix-years-02.md
 appendix-child-ee-01.md
 appendix-child-ee-02.md
 appendix-child-ee-03.md

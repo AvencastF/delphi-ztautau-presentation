@@ -6,7 +6,7 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# Precision: up to 6 % better than legacy; simulation size is not limiting
+# Appendix · spin fit: precision of the final model and simulation size
 
 <div class="st-cols st-cols-21">
 <div>

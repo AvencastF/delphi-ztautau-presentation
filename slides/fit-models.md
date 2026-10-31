@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Three fit models on identical pseudo-data: why the final one
+# Appendix · spin fit: three fit models on identical pseudo-data
 
 <div class="st-sub">Combined 1992–1995, ML reconstruction. Same simulated events, same pseudo-experiments.</div>
 

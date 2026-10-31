@@ -1,0 +1,2 @@
+group,kind,value,region,data_n,data_sumw,mc_n,mc_sumw,mc_sumw2,data_over_mc,data_over_mc_stat_err,unavailable_labels
+year-1992,year,1992,inclusive_1p1p_pirho,654,654.0,52117,611.1765302914656,7.23051265413427,1.0700672679432115,0.04210696187830549,

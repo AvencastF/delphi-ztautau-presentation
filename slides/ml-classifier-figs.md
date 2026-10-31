@@ -6,7 +6,7 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# Classifier figures (same 2026-10-15 evaluation)
+# Appendix · 1994 reference: classifier v1 figures (2026-10-15)
 
 <div class="fig2x2">
 <div><div class="st-fig"><NJUPlot src="/figures/ml/classifier/02_confusion_purity.svg" alt="confusion matrix, purity view" /></div><div class="st-cap">Confusion matrix, purity view (per predicted class)</div></div>

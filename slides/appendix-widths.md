@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Appendix · spin-observable resolution, all channels and versions
+# Appendix · 1994 reference: spin-observable resolution, all channels and versions
 
 <div class="st-sub">One column per version; best value per row in green (smallest width, largest correlation).</div>
 

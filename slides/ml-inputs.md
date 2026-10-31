@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Data/simulation audit of the ML inputs (2026-10-14/15)
+# Data/simulation audit of the ML inputs, done on 1994 (2026-10-14/15)
 
 <div class="st-cols st-cols-3">
 <div class="kv"><h3>1 · Symptom</h3><dl><dt>Seen</dt><dd>simulated <LaTeX formula="\pi" /> legs classified as electrons</dd><dt>Yield <LaTeX formula="\chi^2" /></dt><dd>129 over 10 channels</dd></dl></div>
@@ -22,4 +22,5 @@ class: st pres
 
 <!--
 /Users/avencastmini/Downloads/skim-cls-eval/input-datamc/FINDINGS.md sections 1-8: 266 particle channels compared on leading tracks; MTPC.nempty chi2/ndf 17171, dedx65 5556 (data 0.87 vs MC 1.24), nsaturated 2480, dedx80 2215; masking whole MTPC block: chi2 129 -> 27, MC tau accuracy 0.850 -> 0.797; BBDXGET response data 1.444 vs MC 1.406 (chi2/ndf 10.9), error 0.090 vs 0.087; converter change 2026-10-15: 229 particle channels; second model residual pi<->rho migration from sub-GeV HCAL-only neutrals 0.61 vs 0.19 per event; fix neutral_filter require_emnc_below_gev 1.0; neutral multiplicity 1.99 vs 1.98.
+2026-10-31 (second revision): the audit was done on the 1994 inputs; the all-years conversion (evenet-inputs-all-years-v1) is described as "v5 layout + 10" condition channels (PROJECT_GUIDE 2026-10-27), but whether every input fix of this audit is carried into it was not re-checked for this deck; no all-years input audit is on record.
 -->

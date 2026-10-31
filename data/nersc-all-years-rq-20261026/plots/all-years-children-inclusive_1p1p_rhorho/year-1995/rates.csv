@@ -1,0 +1,2 @@
+group,kind,value,region,data_n,data_sumw,mc_n,mc_sumw,mc_sumw2,data_over_mc,data_over_mc_stat_err,unavailable_labels
+year-1995,year,1995,inclusive_1p1p_rhorho,180,180.0,15227,178.86496835408036,2.1010935217072255,1.0063457459354073,0.0754506322547995,

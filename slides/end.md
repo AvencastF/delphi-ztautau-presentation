@@ -9,7 +9,7 @@ class: no-page-number
     <div mt-6 text-base text="zinc-300" style="max-width:740px; line-height:1.5">
       Is the full-covariance reweighted-template fit the right baseline? · Witness and Bell as the pre-registered tests? · Which systematics first: analysing power, reference <LaTeX formula="C_{kk}" />, fixed modes? · Own reference for off-peak points? · Certified luminosity before unblinding.
     </div>
-    <div mt-10 text-sm text="zinc-400">Appendix follows: fit figures, all data/simulation comparisons and full tables · sources per slide in the deck provenance table</div>
+    <div mt-10 text-sm text="zinc-400">Appendix follows: spin-fit details, full cutflows, the 1994 reference studies and every 1992–1995 data/simulation comparison · sources per slide in the deck provenance table</div>
   </div>
 </div>
 

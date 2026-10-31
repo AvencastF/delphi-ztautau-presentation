@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Ordered cuts 10–18: published-preselection cuts, radiative vetoes, neutrals
+# Ordered cuts 10–18: published preselection, radiative vetoes, neutrals (all years)
 
 <div class="st-sub">Cuts 11–15 follow the DELPHI paper's neural-network preselection; HPC = barrel electromagnetic calorimeter.</div>
 
@@ -21,8 +21,9 @@ class: st pres
 </tbody>
 </table>
 
-<div class="st-source">Source: the selection configuration file, the paper-preselection code and the neutral-baseline code</div>
+<div class="st-source">Source: the 1992–1995 selection configuration file, the paper-preselection code and the neutral-baseline code</div>
 
 <!--
 Config keys / variables: 10 transverse / pt min 0.4; 11 nn_one_prong / nn_eligible_count min 0 (strict, i.e. >0); 12 nn_acol / nn_acol_pass equals 1 (acollinearity > 0.5 deg for 1-1 topology, other known topologies pass); 13 nn_boundary_no_pe / nn_boundary_no_pe_pass equals 1 ("HPC boundary decision without PEmax veto"; deferred when PEmax unknown); 14 nn_pe_keep_unknown / nn_keep_unknown_pass equals 1; 15 nn_is_1p1p / nn_is_1p1p equals 1; 16 exclusive_erad / erad_over_ebeam max 1 (EMNC cone energies, quadrature, / E_beam); 17 exclusive_prad / prad_over_pbeam max 1 (p_beam = sqrt(E_beam^2 - m_e^2)); 18 neutral_hemisphere_limit / neutral_hemisphere_all_count_max max 3 inclusive (analysis/neutral_baseline.py; owner decision 2026-10-09; no muon-specific neutral rule; supersedes the 2026-10-07 rule). Code: analysis/paper_nn.py lines 127-158, analysis/physics.py. Saved output: inclusive region defines the skim incl. residual/conflict; every Z_tautau row saved with region_mask; bit 0 = inclusive_1p1p.
+2026-10-31 (second revision): the cuts are unchanged; the all-years configuration tau_analysis/configs/analysis_exclusive_decay_all_years.yaml (run 60333695, revision 67bffe7) has "base: analysis_exclusive_decay.yaml" and replaces only the input selection ("cuts, regions, histograms and the execution recipe come from the base"), for 1992, 1993, 1994 and 1995; the rerun cutflow (data/nersc-all-years-rq-20261026/cutflows/cutflow.csv) lists the same 18 cuts.
 -->

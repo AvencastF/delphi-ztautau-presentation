@@ -4,10 +4,10 @@ import { mixed } from './tex'
 const props = defineProps<{ step: number }>()
 const { motion, running, stage, reveal } = useStepMotion(() => props.step, 5, 800)
 const stages = [
-  { title: '1 · Monte-Carlo production', what: 'Generate events, simulate the DELPHI detector (DELSIM), reconstruct (DELANA), write the long summary format (longDST) and convert it to EDM4hep ROOT files.', who: 'production scripts + simulation pipeline', id: 'campaign tags prod-20260923-v1, tau-extra-20260923-v1' },
-  { title: '2 · Real-data conversion', what: 'Convert the archived 1994 leptonic longDST data with the same converter, keeping a unique event identity per event.', who: 'EDM4hep converter', id: '132 files, 828,850 events' },
-  { title: '3 · Event selection', what: 'Apply the 18 ordered cuts, identify the decay of each $\\tau$, and write one Parquet table per physics process.', who: 'tau analysis framework', id: 'frozen run of 2026-10-12' },
-  { title: '4 · Machine learning', what: 'Classify the $\\tau\\tau$ decay mode and predict the direction of each $\\tau$ (the part the neutrinos take away).', who: 'EveNet-Align, two fine-tuned models', id: 'classifier v1 · neutrino model v5' },
+  { title: '1 · Monte-Carlo production', what: 'Generate events, simulate the DELPHI detector (DELSIM) with the description of each year, reconstruct (DELANA), write the long summary format (longDST) and convert it to EDM4hep ROOT files.', who: 'production scripts + simulation pipeline', id: '17 campaigns, eight energy points, 38.4 M events' },
+  { title: '2 · Real-data conversion', what: 'Convert the archived 1992–1995 leptonic longDST data with the same converter, keeping a unique event identity per event.', who: 'EDM4hep converter', id: '334 files, 2,395,361 events' },
+  { title: '3 · Event selection', what: 'Keep good runs, assign each run to its energy point, apply the 18 ordered cuts, identify the decay of each $\\tau$, write one Parquet table per process.', who: 'tau analysis framework', id: 'run-quality rerun of 2026-10-26' },
+  { title: '4 · Machine learning', what: 'Classify the $\\tau\\tau$ decay mode and predict the direction of each $\\tau$ (the part the neutrinos take away).', who: 'EveNet-Align, two fine-tuned models', id: 'all-years models v1 (2026-10-27)' },
   { title: '5 · Spin fit', what: 'Extract all 15 spin-density-matrix coefficients from the reconstructed $\\tau$ directions and decay products.', who: 'tau analysis framework, fit modules', id: 'expected sensitivity on simulation only' },
 ]
 </script>

@@ -6,7 +6,7 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# Spin-observable resolution per channel
+# Appendix · 1994 reference: spin-observable resolution per channel (v2, v3, v5)
 
 <div class="fig-lead">
 <div><div class="st-fig"><NJUPlot src="/figures/ml/v5/07_residual_width.svg" alt="residual width per observable and channel" /></div><div class="st-cap">68 % residual width per observable and true channel; analytical, ML, hybrid (version 5)</div></div>

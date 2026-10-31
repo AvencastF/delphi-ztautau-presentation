@@ -1,0 +1,2 @@
+group,kind,value,region,data_n,data_sumw,mc_n,mc_sumw,mc_sumw2,data_over_mc,data_over_mc_stat_err,unavailable_labels
+year-1995,year,1995,inclusive_1p1p_murho,554,554.0,47592,559.2491490669231,6.5909599208347736,0.990613934637753,0.04233211885566721,

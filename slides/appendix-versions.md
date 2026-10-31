@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Appendix · model versions 2–5: branch accuracy and direction error
+# Appendix · 1994 reference: model versions 2–5: branch accuracy and direction error
 
 <div class="st-cols st-cols-2">
 <div>

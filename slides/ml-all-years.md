@@ -2,33 +2,25 @@
 class: st pres
 ---
 
-# 1992–1995 models: one classifier and one neutrino model for all years
+# Machine learning, 1992–1995: what is established, what is open
 
-<div class="st-sub">Trained on a fixed half of the simulation; the other half never enters training and feeds every evaluation and fit.</div>
-
-<div class="st-cols st-cols-21">
+<div class="st-cols st-cols-2">
 <div>
-<table class="num first-nw">
-<thead><tr><th>Held-out half</th><th>All years</th><th>1992</th><th>1993</th><th>1994</th><th>1995</th></tr></thead>
-<tbody>
-<tr><td>Decay-pair accuracy</td><td>0.884</td><td>0.875</td><td>0.886</td><td>0.887</td><td>0.886</td></tr>
-<tr><td>Correct neutrino branch</td><td>0.724</td><td>0.695</td><td>0.687</td><td>0.746</td><td>0.747</td></tr>
-<tr><td><LaTeX formula="\pi" /> leg, median error [<LaTeX formula="^\circ" />]</td><td>0.88</td><td>0.97</td><td>1.01</td><td>0.81</td><td>0.83</td></tr>
-<tr><td><LaTeX formula="\rho" /> leg, median error [<LaTeX formula="^\circ" />]</td><td>0.98</td><td>1.04</td><td>1.04</td><td>0.93</td><td>0.95</td></tr>
-</tbody>
-</table>
-<div class="st-cap">For comparison, the 1994-only neutrino model v5: branch 0.740, <LaTeX formula="\pi" /> leg 0.89°, <LaTeX formula="\rho" /> leg 1.03°.</div>
+<div class="co ok"><b>Classifier</b> Accuracy 0.88 in every year, cut-based 0.39–0.42.</div>
+<div class="co ok"><b>Neutrino</b> Correct branch 0.72, best possible 0.91, analytical 0.59.</div>
+<div class="co ok"><b>1994</b> At least as good as the 1994-only models.</div>
+<div class="co warn"><b>1992–1993</b> Weaker direction: no vertex-detector z readout.</div>
 </div>
 <div>
-<div class="co ok"><b>1994</b> Slightly better than v5 on every leg.</div>
-<div class="co warn"><b>1992–1993</b> Weaker: no vertex-detector z measurement before 1994.</div>
-<div class="co open"><b>Data/MC</b> 1994 <LaTeX formula="\rho" /> channels 0.94; 1992 <LaTeX formula="\pi\pi" /> 1.24; 1995 ee 0.85.</div>
-<div class="co decision"><b>Inputs</b> <LaTeX formula="\sqrt{s}" /> and year enter as conditions.</div>
+<div class="co open"><b>Data/MC</b> 1994 <LaTeX formula="\rho" /> channels 0.94; 1992 <LaTeX formula="\pi\pi" /> 1.24; 1995 <LaTeX formula="ee" /> 0.85.</div>
+<div class="co open"><b>Inputs</b> Neutral-shower inputs mismodelled in 1992 and 1995.</div>
+<div class="co open"><b>Acceptance</b> Owner checkpoint review; per-point data/MC views.</div>
+<div class="co decision"><b>Fits</b> Use the hold half only.</div>
 </div>
 </div>
 
-<div class="st-source">Source: all-years machine-learning evaluation of 2026-10-27 (held-out half, per year); simulation closure only</div>
+<div class="st-source">Source: all-years machine-learning record (2026-10-27) and the project guide (all-years ML, EveNet-Align commit of 2026-10-30)</div>
 
 <!--
-artifacts/ml-all-years-v1-20261027/README.md (evaluations cls-eval-hold.md, nu-eval-hold.md, *-year-YYYY.md; mc_split: unseen = train and val rows dropped). Classifier epoch 14 (val loss 0.4405), neutrino epoch 97 (single 4 h allocation of a 200-epoch schedule, owner decision 2026-10-27; val loss 0.225, EMA). Conversion ml-runs/evenet-inputs-all-years-v1 (84 condition channels: v5 layout + ecms + year one-hot); prediction skim-cls-nu (14.4 M Z_tautau rows). pipi eff/purity all years 0.746/0.664. Data/MC yields chi2/10 ML vs classic: all 60.4 vs 70.0; 1994 41.8 vs 25.2. Data/MC per channel (ML selection): 1994 erho/murho/rhorho 0.94 (classic 0.97-1.01); 1992 pipi 1.24 +- 0.08, mupi 1.11 +- 0.04; 1995 ee 0.85 +- 0.04 (classic 0.78); mumu 1.04-1.10. Not done: owner checkpoint acceptance, per-point views. EveNet-Align committed b5cc2c2 on Ztautau-dev (2026-10-30). The 1994 slides before this one describe the 1994-only models (classifier v1, neutrino v5).
+artifacts/ml-all-years-v1-20261027/README.md: classifier accuracy 0.875-0.887 per year (cut-based 0.385-0.416); neutrino branch accuracy all years 0.724 (analytical 0.591, best 0.910); 1994 slightly better than v5 on every leg (pi 0.81 vs 0.89 deg) and in branch accuracy (0.746 vs 0.740); 1992/1993 worse (no VD z). Data/MC (ML selection): 1994 rho channels 0.94, 1992 pipi 1.24 +- 0.08, 1995 ee 0.85 +- 0.04 ("inputs/normalisation effects to be understood before acceptance (photon calibration item)", PROJECT_GUIDE 2026-10-27). Not done: owner checkpoint acceptance, per-point views. EveNet-Align b5cc2c2 on Ztautau-dev committed and pushed 2026-10-30, NERSC checkout fast-forwarded. Neutral-shower inputs (erad_over_ebeam, EMNC energies) kept in this first training (PROJECT_GUIDE 2026-10-27). The 2026-10-22 verdict on the 1994-only models is in the appendix ("1994 reference").
 -->

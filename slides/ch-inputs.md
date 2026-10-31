@@ -5,12 +5,12 @@ class: nju-chapter-bridge
 
 <div class="chapter-copy">
 <h1>Inputs.</h1>
-<p>Archived DELPHI data converted to EDM4hep and our own simulation, first for 1994 (shown in detail), then for all eight 1992–1995 energy points.</p>
-<div class="chapter-context"><span class="tag data">data</span><span>1992–1995 · 334 files · 2,395,361 events</span><span class="context-rule"></span><span class="tag sim">simulation</span><span>four detector descriptions</span></div>
+<p>Archived DELPHI data from 1992 to 1995, each run looked up in the luminosity and run-quality tables, and our own simulation of the same eight energy points with the detector description of each year.</p>
+<div class="chapter-context"><span class="tag data">data</span><span>334 files · 2,395,361 events</span><span class="context-rule"></span><span class="tag sim">simulation</span><span>17 campaigns · 38.4 M events · four detector descriptions</span></div>
 </div>
 
 <NJUChapter :active="1" />
 
 <!--
-1994 detail on the following slides (132 files, 828,850 events; 9,314,096 + 2,440,800 simulated events). All four years converted: 64/61/132/77 files = 334, 2,395,361 events (artifacts/pipeline-review-1992-1995-20261022/REPORT.md Stage 2). Simulation for 1992/1993/1995 produced in October 2026 (docs/PROJECT_GUIDE.md; all-years skim all-years-rq-20261026: 4,733,398 selected Z_tautau events, 1,901,932 of them 1994; 56,472 selected data events).
+Data: 64/61/132/77 files = 334, 2,395,361 events (artifacts/run-record-1992-1995-20261027/REPORT.md section 2; artifacts/pipeline-review-1992-1995-20261022/REPORT.md Stage 2). Simulation: REPORT.md section 1, 17 campaigns, 42,741,000 generated (plan, incl. 26 excluded chunks), 38,440,229 converted; detector descriptions v92e / v93d / v94c / v95d. Run selection and run quality: docs/PROJECT_GUIDE.md 2026-10-26 entries. The 2026-10-22 version of this chapter described 1994 only.
 -->

@@ -1,0 +1,2 @@
+group,kind,value,region,data_n,data_sumw,mc_n,mc_sumw,mc_sumw2,data_over_mc,data_over_mc_stat_err,unavailable_labels
+year-1995,year,1995,inclusive_1p1p_mupi,861,861.0,74342,888.8728811386387,14.504246148631012,0.9686424440096161,0.03327110945334046,

@@ -7,8 +7,8 @@ const titles = ['What is measured: the visible decay product', 'Two-body kinemat
 const notes = [
   'Each $\\tau$ decays to a visible charged particle (plus photons for a $\\rho$) and one or two neutrinos that escape. Only the visible leg\'s momentum is measured.',
   'With $E_\\tau = E_\\mathrm{beam}$ and $m_\\tau$ fixed, the angle between the visible leg and the $\\tau$ is set by the visible energy, so the $\\tau$ lies on a cone around the leg.',
-  'Requiring the two $\\tau$ to be back to back intersects the two cones in two points. The analytical solver must pick one branch: the default choice is right 59.3 % of the time inclusive (50 % in $ee$, $e\\mu$, $\\pi\\pi$), the best possible choice 91.2 %.',
-  'The neutrino model predicts, for each leg, the small angles $(\\delta\\theta,\\delta\\phi)$ between the $\\tau$ and the saved leading track in the detector frame, from the full particle list and 74 event-level quantities. It picks the correct branch 74.0 % of the time; median direction error $0.89$–$1.17^\\circ$ per leg type.',
+  'Requiring the two $\\tau$ to be back to back intersects the two cones in two points. The analytical solver must pick one branch: the default choice is right 59.1 % of the time inclusive (50 % in $ee$, $e\\mu$, $\\pi\\pi$), the best possible choice 91.0 %.',
+  'The neutrino model predicts, for each leg, the small angles $(\\delta\\theta,\\delta\\phi)$ between the $\\tau$ and the saved leading track in the detector frame, from the full particle list and 84 event-level quantities (including $\\sqrt{s}$ and the year). It picks the correct branch 72.4 % of the time (1994: 74.6 %); median direction error $0.88$–$1.18^\\circ$ per leg type.',
 ]
 </script>
 
@@ -47,10 +47,10 @@ const notes = [
         <circle cx="462" cy="62" r="6" fill="none" stroke="#baa5ff" stroke-width="2" />
         <circle cx="462" cy="62" r="2" fill="#baa5ff" />
         <foreignObject x="250" y="66" width="200" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo lab" style="text-align:right;color:#baa5ff" v-html="mixed('ML prediction $(\\delta\\theta,\\delta\\phi)$')" /></foreignObject>
-        <foreignObject x="210" y="82" width="240" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo sm" style="text-align:right;" v-html="mixed('median error $0.89$–$1.17^\\circ$ · correct branch 74 %')" /></foreignObject>
+        <foreignObject x="210" y="82" width="240" height="18"><div xmlns="http://www.w3.org/1999/xhtml" class="fo sm" style="text-align:right;" v-html="mixed('median error $0.88$–$1.18^\\circ$ · correct branch 72 %')" /></foreignObject>
       </g>
     </svg>
-    <div class="ta-text"><h3 v-html="mixed(titles[stage])" /><p v-html="mixed(notes[stage])" /><small v-html="mixed('Schematic geometry; percentages from the v5 evaluation on 200,755 held-out simulated $Z\\to\\tau\\tau$ events.')" /></div>
+    <div class="ta-text"><h3 v-html="mixed(titles[stage])" /><p v-html="mixed(notes[stage])" /><small v-html="mixed('Schematic geometry; percentages from the all-years evaluation on 2,359,482 simulated $Z\\to\\tau\\tau$ events of the hold half, 1992–1995.')" /></div>
   </section>
 </template>
 

@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Appendix · classifier evaluation of 2026-10-15, all channels
+# Appendix · 1994 reference: classifier evaluation of 2026-10-15, all channels
 
 <div class="st-sub">Earlier epoch-27 checkpoint, training events included (optimistic). Efficiency per true channel.</div>
 

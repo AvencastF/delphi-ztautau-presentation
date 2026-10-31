@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Appendix · <LaTeX formula="\pi\pi" /> closure, all observables (1/2)
+# Appendix · 1994 reference: <LaTeX formula="\pi\pi" /> closure, all observables (1/2)
 
 <div class="st-sub">Bias <LaTeX formula="\pm" /> MC error, <LaTeX formula="\sigma" /> at the full 1994 yield, (pull); truth = half-B moments.</div>
 

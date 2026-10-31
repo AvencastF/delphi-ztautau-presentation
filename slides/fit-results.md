@@ -4,7 +4,7 @@ class: st pres
 
 # Expected results: all 15 coefficients, 1992–1995 combined and 1994 alone
 
-<div class="st-sub">Final model, ML reconstruction. Central values are the simulation's own state (Asimov); errors are statistical only.</div>
+<div class="st-sub">Asimov: pseudo-data equal to the simulation prediction, so the central values are the prediction and only the error bars are informative.</div>
 
 <div class="st-cols st-cols-21">
 <table class="lg num first-nw">

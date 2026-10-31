@@ -67,7 +67,7 @@ const zee = computed(() => fmt(current.value.Z_ee as number))
 <template>
   <section class="cf" :data-step="step">
     <div class="cf-bars">
-      <div class="cf-bar"><span class="cf-label">1994 data</span><div class="cf-track"><div class="cf-fill data" :style="{ width: `${bar(data) * 100}%` }" /></div><span class="cf-num">{{ fmt(data) }}</span></div>
+      <div class="cf-bar"><span class="cf-label">1992–1995 data</span><div class="cf-track"><div class="cf-fill data" :style="{ width: `${bar(data) * 100}%` }" /></div><span class="cf-num">{{ fmt(data) }}</span></div>
       <div class="cf-bar"><span class="cf-label">simulation</span><div class="cf-track stack"><div v-for="s in parts" :key="s.p" class="cf-seg" :style="{ width: `${s.w}%`, background: PROC[s.p].color }" :title="`${s.p}: ${fmt(s.n)}`" /></div><span class="cf-num">{{ fmt(total) }}</span></div>
       <div class="cf-axis"><span v-html="tex('10^4')" /><span v-html="tex('10^5')" /><span v-html="tex('10^6')" /><span>log scale</span></div>
       <ul class="cf-legend">

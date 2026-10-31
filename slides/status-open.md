@@ -8,7 +8,7 @@ class: st pres
 <div>
 <div class="co open"><b>Luminosity</b> Per-point values uncertified.</div>
 <div class="co open"><b>Rates</b> 1994 and 1995 data 3 % and 2 % below simulation.</div>
-<div class="co open"><b>Calibration</b> Identification efficiencies from control samples.</div>
+<div class="co open"><b>Calibration</b> Identification efficiencies; 1992 and 1995 photon response.</div>
 <div class="co open"><b>ML acceptance</b> Data/MC per point; 1992 <LaTeX formula="\pi\pi" />, 1995 ee off.</div>
 </div>
 <div>

@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Classifier: the evaluation on record
+# Appendix · 1994 reference: classifier v1, the evaluation on record
 
 <div class="co warn"><b>Caveat</b> Dated 2026-10-15, earlier epoch-27 checkpoint, training events included: optimistic, not the frozen model.</div>
 

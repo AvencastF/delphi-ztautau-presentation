@@ -2,30 +2,34 @@
 class: st pres
 ---
 
-# Classifier versus neutrino model
+# The 1992–1995 models: classifier and neutrino model
 
 <div class="st-cols st-cols-2">
-<div class="kv ml"><h3><span class="tag ml">ML</span> Decay-mode classifier · v1</h3><dl>
+<div class="kv ml"><h3><span class="tag ml">ML</span> Decay-mode classifier · all years v1</h3><dl>
 <dt>Target</dt><dd>12 classes: 10 <LaTeX formula="\tau" /> channels + other <LaTeX formula="\tau" /> + lepton pairs</dd>
-<dt>Inputs</dt><dd>first conversion, 229 particle channels, 18 globals</dd>
-<dt>Weights</dt><dd>unit event weights, class loss cap 0.4</dd>
-<dt>Training</dt><dd>2026-10-16; Bhabha replaces <LaTeX formula="Z\to ee" /></dd>
-<dt>Checkpoint</dt><dd>epoch 29, raw weights <span class="id">epoch=29_train=0.1037_val=0.4805</span></dd>
+<dt>Training</dt><dd>training half of all eight points, 30 epochs, 1 h 14 min</dd>
+<dt>Checkpoint</dt><dd>epoch 14, lowest validation loss, raw weights</dd>
+<dt>Applied to</dt><dd>every selected event, data and simulation</dd>
 </dl></div>
-<div class="kv ml"><h3><span class="tag ml">ML</span> Neutrino-direction model · v5</h3><dl>
-<dt>Target</dt><dd><LaTeX formula="(\delta\theta,\delta\phi)" /> of each <LaTeX formula="\tau" /> to its leading track, detector frame</dd>
-<dt>Inputs</dt><dd>fifth conversion; same tokens</dd>
-<dt>Conditioning</dt><dd>74 event quantities via FiLM</dd>
-<dt>Training</dt><dd>2026-10-21, 4 GPUs, 100 epochs, 1 h 57 min</dd>
-<dt>Checkpoint</dt><dd>last epoch, EMA weights; 1 sample <LaTeX formula="\times" /> 50 steps</dd>
+<div class="kv ml"><h3><span class="tag ml">ML</span> Neutrino-direction model · all years v1</h3><dl>
+<dt>Target</dt><dd><LaTeX formula="(\delta\theta,\delta\phi)" /> of each <LaTeX formula="\tau" /> to its leading track</dd>
+<dt>Conditions</dt><dd>84 event quantities via FiLM, incl. <LaTeX formula="\sqrt{s}" /> and the year</dd>
+<dt>Training</dt><dd>epoch 97 of a 200-epoch schedule, stopped at 4 h</dd>
+<dt>Checkpoint</dt><dd>EMA weights; 1 sample <LaTeX formula="\times" /> 50 steps</dd>
 </dl></div>
 </div>
 
-<div style="margin-top:10px;font-size:12.5px;color:var(--fg-1)"><b style="color:var(--fg-0)">Input tags:</b>
-<span class="tag data">E, <LaTeX formula="p_T" />, <LaTeX formula="\eta" />, <LaTeX formula="\phi" />, charge</span> <span class="tag data">mass, track length</span> <span class="tag data">electron tag</span> <span class="tag data">muon word</span> <span class="tag data">hadron tags</span> <span class="tag data">calibrated dE/dx</span> <span class="tag data">lifetime probability</span> <span class="tag data">calorimeter sums</span> <span class="tag data">RICH quantities</span> <span class="tag sim">neutral filter: <LaTeX formula="\lt 1\,\mathrm{GeV}" /> needs EM shower</span> <span class="tag sim">event bound 137 GeV</span></div>
+<div class="tiles tiles-3" style="margin-top:12px">
+<div class="tile ml"><b>84</b><span>condition channels: the 1994 layout + <LaTeX formula="\sqrt{s}" /> + year one-hot</span></div>
+<div class="tile ml"><b>14.4 M</b><span>simulated <LaTeX formula="Z\to\tau\tau" /> rows predicted, 2 h 40 min on 4 GPUs</span></div>
+<div class="tile ml"><b>1</b><span>model per task for all years and energy points</span></div>
+</div>
 
-<div class="st-source">Source: converter configuration, version-5 archive README and the 1994 runbook (ML stage)</div>
+<div class="co decision"><b>Owner</b> One model per task; neutrino training truncated at one 4 h allocation (2026-10-27).</div>
+
+<div class="st-source">Source: all-years machine-learning record (2026-10-27) and the project guide (all-years ML decisions)</div>
 
 <!--
-converter-1994.yaml: max_particles 24 (12 per hemisphere, leading tracks kept), slots 0-3 kinematics, 4-5 detector embedding, 6 charge; detector: MAIN mass, TrackLength, DetectorMask bits; PID sDST_ELID_ElectronID, sDST_MUID_MuonID, sDST_RPROCO_CombinedTags, sDST_BBDXGET_Dedx (response, error, quality), AABTAG R-phi probability; neutral_filter require_emnc_below_gev 1.0; event_bounds evis/pt/visible_tautau_mass 137 GeV (174 of 1,019,014 training events removed); class_balance_max 0.4; processes Z_mumu, Bhabha, yy_ll -> Zll; Z_ee not trained; Z_qq 0 rows. Neutrino v5: 74 condition channels, job 60075238 train 0.2449 / val 0.2284; prediction job 60079489 appends nu_delta_theta/phi_{plus,minus}, nu_label, nu_status, nu_split. Classifier checkpoint ml-runs/evenet-inputs-1994/runs/classification/checkpoints/epoch=29_train=0.1037_val=0.4805.ckpt. First conversion 229 particle channels after the dE/dx fix; v5 smoke 255 x / 74 condition channels.
+artifacts/ml-all-years-v1-20261027/README.md: conversion ml-runs/evenet-inputs-all-years-v1 (train/hold halves, ecms and year one-hot conditions, 84 condition channels, point energies); classifier epoch 14 (lowest validation loss 0.4405 of 30 epochs, raw weights), job 60349069 (1:13:35, 4 GPUs); neutrino epoch 97 (single 4 h allocation of a 200-epoch schedule, owner decision 2026-10-27; validation loss 0.225, EMA weights), job 60349070 (TIMEOUT at 4:00:11; resume attempts refused); prediction skim-cls-nu (14.4 M Z_tautau rows; job 60360080, 2:40:43). Run record: artifacts/run-record-1992-1995-20261027/REPORT.md section 4 (conversion job 60348507: 14,531,950 rows read, 4,822,318 written: train 2,380,841, hold 2,379,380, predict 62,097).
+docs/PROJECT_GUIDE.md 2026-10-27: sqrt(s) enters as the nominal energy of the event's run period (point energy) for data and MC; data run-header ECMS no longer used by the ML inputs; new conditions ecms + year one-hot. Pretrained EveNet checkpoint and the 7-slot particle token unchanged (owner measured ~10 % better classification with pretraining). Neutrino training was planned at 60 epochs in the conversion entry; the run used the 200-epoch schedule truncated at epoch 97. Checkpoint acceptance by the owner: pending. The 1994-only cards (classifier v1 epoch 29, neutrino v5) are in the appendix.
 -->

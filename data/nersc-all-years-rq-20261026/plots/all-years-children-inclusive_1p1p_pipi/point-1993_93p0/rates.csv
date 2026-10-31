@@ -1,0 +1,2 @@
+group,kind,value,region,data_n,data_sumw,mc_n,mc_sumw,mc_sumw2,data_over_mc,data_over_mc_stat_err,unavailable_labels
+point-1993_93p0,point,1993_93p0,inclusive_1p1p_pipi,108,108.0,8683,104.49753722523467,1.699902304897865,1.0335171800959875,0.10028276230196868,

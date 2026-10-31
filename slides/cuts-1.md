@@ -2,9 +2,9 @@
 class: st pres
 ---
 
-# Ordered cuts 1–9: topology and tracking
+# Ordered cuts 1–9: topology and tracking, identical for 1992–1995
 
-<div class="st-sub">Bounds are strict unless marked <LaTeX formula="\le" />; an undefined variable fails. <LaTeX formula="d_0" />, <LaTeX formula="z_0" /> = impact parameters from the beam spot.</div>
+<div class="st-sub">One configuration for all years. Bounds are strict unless marked <LaTeX formula="\le" />; an undefined variable fails. <LaTeX formula="d_0" />, <LaTeX formula="z_0" /> = impact parameters from the beam spot.</div>
 
 <table class="lg">
 <thead><tr><th>#</th><th>Cut</th><th>Requirement</th><th>Meaning</th></tr></thead>
@@ -21,8 +21,9 @@ class: st pres
 </tbody>
 </table>
 
-<div class="st-source">Source: the selection configuration file and the analysis code</div>
+<div class="st-source">Source: the 1992–1995 selection configuration file and the analysis code</div>
 
 <!--
 tau_analysis/configs/analysis_exclusive_decay.yaml (selection.cuts; region inclusive_1p1p). Config keys / code variables: 1 hemispheres / hemispheres equals 1; 2 acceptance / lead_abs_costheta_min max 0.94; 3 multiplicity / ncharged max 6 inclusive; 4 isolation / isolation min 160; 5 z_origin / lead_abs_z0_max max 45; 6 d_origin / lead_abs_d0_max max 15; 7 one_close / lead_abs_d0_min max 3; 8 relative_z / delta_z0 max 30; 9 energy / evis min 8. Semantics tau_analysis/analysis/config.py:154-161 (max/min strict unless inclusive: true). Definitions analysis/physics.py (variables): charged = accepted MAIN flag 0, track, |q|=1; evis = sum over accepted charged+neutral candidates, invalid if any unknown candidate.
+2026-10-31 (second revision): the cuts are unchanged; the all-years configuration tau_analysis/configs/analysis_exclusive_decay_all_years.yaml (run 60333695, revision 67bffe7) has "base: analysis_exclusive_decay.yaml" and replaces only the input selection ("cuts, regions, histograms and the execution recipe come from the base"), for 1992, 1993, 1994 and 1995; the rerun cutflow (data/nersc-all-years-rq-20261026/cutflows/cutflow.csv) lists the same 18 cuts.
 -->

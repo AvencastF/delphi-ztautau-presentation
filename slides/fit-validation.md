@@ -6,7 +6,7 @@ class: st pres
 import NJUPlot from '../components/NJUPlot.vue'
 </script>
 
-# Validation: the final model closes exactly and its errors are right
+# Validation: the fit returns what was put in, with the right error bars
 
 <div class="fig-lead">
 <div><div class="st-fig" style="height:300px"><NJUPlot src="/figures/fit/modelC-pulls.png" alt="pull distributions of the 15 coefficients" /></div><div class="st-cap"><b>Pulls</b> of the 15 coefficients in 2,000 pseudo-experiments (blue: final model; grey: diagonal-only covariance, too narrow errors)</div></div>
@@ -21,7 +21,7 @@ import NJUPlot from '../components/NJUPlot.vue'
 </tbody>
 </table>
 <div class="st-cap">Closure = fitted / injected shift. Gaussian expectation beyond <LaTeX formula="3\sigma" />: 0.27 %.</div>
-<div class="co ok" style="margin-top:8px"><b>Linear</b> Expectation exact for any injected state, no cross-talk.</div>
+<div class="co ok" style="margin-top:8px"><b>Pull</b> <LaTeX formula="(\text{fitted}-\text{true})/\text{error}" />: width 1 if errors are right.</div>
 <div class="co warn"><b>Caveat</b> Pseudo-data reuse the template events.</div>
 </div>
 </div>
