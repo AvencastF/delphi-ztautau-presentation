@@ -6,10 +6,10 @@ class: no-page-number
   <div flex-1>
     <div mt-30 />
     <div text="[44px]">Questions and decisions for the group</div>
-    <div mt-6 text-base text="zinc-300" style="max-width:720px; line-height:1.5">
-      Rerun 1994 with shared ML inputs, then 1992–1995 · certify luminosity and good runs · start calibration control samples · decide on a <LaTeX formula="\pi\pi" /> cone-target model.
+    <div mt-6 text-base text="zinc-300" style="max-width:740px; line-height:1.5">
+      Is the full-covariance reweighted-template fit the right baseline? · Witness and Bell as the pre-registered tests? · Which systematics first: analysing power, reference <LaTeX formula="C_{kk}" />, fixed modes? · Own reference for off-peak points? · Certified luminosity before unblinding.
     </div>
-    <div mt-10 text-sm text="zinc-400">Appendix follows: all data/simulation comparisons and full tables · sources per slide in <code>SOURCES.md</code></div>
+    <div mt-10 text-sm text="zinc-400">Appendix follows: fit figures, all data/simulation comparisons and full tables · sources per slide in the deck provenance table</div>
   </div>
 </div>
 

@@ -180,3 +180,5 @@
 .katex, .katex .katex-html, .katex .base, .latex-inline { white-space: nowrap !important; }
 .st .tile > b .katex { font-size: .82em; }
 .st table.first-nw td:first-child, .st table.first-nw th:first-child { white-space: nowrap; }
+.tag.fit { color: #c9e86a; border-color: #c9e86a; }
+.st .kv.fit h3 { color: #c9e86a; }

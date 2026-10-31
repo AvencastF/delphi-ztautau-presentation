@@ -1,4 +1,4 @@
-.nju-chapter-rail { position:absolute; bottom:30px; left:56px; right:56px; display:flex; gap:24px; border-top:1px solid var(--nju-line); padding-top:15px; }
+.nju-chapter-rail { position:absolute; bottom:30px; left:56px; right:56px; display:flex; gap:14px; border-top:1px solid var(--nju-line); padding-top:15px; }
 .nju-chapter-rail > span { display:flex; align-items:baseline; gap:9px; color:var(--fg-1); font-size:12px; flex:1; white-space:nowrap; }
 .nju-chapter-rail b { font-size:11px; font-weight:500; }
 .nju-chapter-rail .current { color:var(--nju-amber); }

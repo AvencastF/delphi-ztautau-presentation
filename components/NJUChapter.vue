@@ -1,6 +1,6 @@
 <script setup>
 defineProps({ active: Number })
-const chapters = ['Inputs', 'Selection', 'Cutflows', 'Data / MC', 'Machine learning', 'Status']
+const chapters = ['Inputs', 'Selection', 'Cutflows', 'Data / MC', 'Machine learning', 'Spin fit', 'Status']
 </script>
 
 <template>

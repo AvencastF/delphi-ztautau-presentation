@@ -447,3 +447,29 @@ Every file under `public/figures/` copied from these origin paths on 2026-10-22 
 | `ml/classifier/09_scores.svg` | `/Users/avencastmini/Downloads/skim-cls-eval/09_scores.svg` | `6a86e7c40d9e1861` |
 | `ml/classifier/02_confusion_efficiency.svg` | `/Users/avencastmini/Downloads/skim-cls-eval/svg/02_confusion/efficiency.svg` | `9e3810977403004e` |
 | `ml/classifier/02_confusion_purity.svg` | `/Users/avencastmini/Downloads/skim-cls-eval/svg/02_confusion/purity.svg` | `f9a6fa07dfdf0039` |
+
+## Spin-fit figures (added 2026-10-31)
+
+Copied unmodified on 2026-10-31 from the fit artifacts (PNG; sha256 of the copy, first 16 hex digits).
+
+| deck path | origin path | sha256 |
+|---|---|---|
+| `fit/allyears-per-point.png` | `/Users/avencastmini/ZtautauLEP/artifacts/legacy-fit-ml-allyears-20261030/runs-fits/comparison.png` | `e3b00a05f0bfcb50` |
+| `fit/allyears-combined.png` | `/Users/avencastmini/ZtautauLEP/artifacts/legacy-fit-ml-allyears-20261030/runs-combined/combined.png` | `192d65be4d130391` |
+| `fit/step1-correlation.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/combined-ml/correlation_matrix.png` | `7ca0c1aeb1695b68` |
+| `fit/step1-derived-toys.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/combined-ml/derived_toy_distributions.png` | `b6bf3b4ba454e989` |
+| `fit/step1-pulls.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/combined-ml/pulls.png` | `2d4631c7c821b8db` |
+| `fit/step2-closure-pulls.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/step2/combined-ml/closure_pulls.png` | `6703462011cae40c` |
+| `fit/step2-closure-linearity.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/step2/combined-ml/closure_linearity.png` | `ac7d4aaf5946d010` |
+| `fit/step2-q-null-entanglement.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/step2/combined-ml/q_null_entanglement.png` | `53896148dea44353` |
+| `fit/step2-q-null-witness.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/step2/combined-ml/q_null_witness.png` | `18ce8c9074141a0d` |
+| `fit/step2-W-null.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/step2/combined-ml/W_null_distribution.png` | `503c842b973f156a` |
+| `fit/step2-Bell-null.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/step2/combined-ml/Bell_null_distribution.png` | `a2faaa6e5a6d1571` |
+| `fit/modelC-pulls.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/modelC/combined-ml/pulls_modelC.png` | `67890bfcdae22506` |
+| `fit/modelC-correlation.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/modelC/combined-ml/correlation_modelC.png` | `b270a34128bc2999` |
+| `fit/modelC-q-null-witness.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/modelC/combined-ml/q_null_witness_modelC.png` | `57ba6022be55cff3` |
+| `fit/modelC-sigma-ratio.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/modelC/combined-ml/sigma_ratio_C_over_A.png` | `632bd6e553694418` |
+| `fit/modelC-closure.png` | `/Users/avencastmini/ZtautauLEP/artifacts/joint-fit-20261031/modelC/combined-ml/closure_A_vs_C.png` | `4a4fe69daa0d89ae` |
+| `fit/ml1994-analytical-vs-ml.png` | `/Users/avencastmini/ZtautauLEP/artifacts/legacy-fit-ml-20261024/comparison.png` | `66e834a866509343` |
+| `fit/ml1994-gain-decomposition.png` | `/Users/avencastmini/ZtautauLEP/artifacts/legacy-fit-ml-20261024/per-region/gain_decomposition.png` | `aecbd0c322525283` |
+| `fit/mcstat-inflation.png` | `/Users/avencastmini/ZtautauLEP/artifacts/legacy-fit-mcstat-20261025/mcstat_inflation.png` | `7e98bd1cfa80cd30` |

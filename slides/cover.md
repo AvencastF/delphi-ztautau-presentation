@@ -2,18 +2,18 @@
 class: st-cover no-page-number
 ---
 
-# DELPHI <LaTeX formula="Z\to \tau^+\tau^-" /> in the 1994 data: status of the analysis chain
+# DELPHI <LaTeX formula="Z\to \tau^+\tau^-" />, 1992–1995: machine-learning reconstruction and the spin-density-matrix fit
 
-<div class="st-cover-sub">Own simulation + archived data <LaTeX formula="\to" /> selection <LaTeX formula="\to" /> machine-learning <LaTeX formula="\tau" /> reconstruction. Spin fit: later.</div>
+<div class="st-cover-sub">Status 2026-10-31. Chain established on 1994, run for all eight energy points; first expected sensitivities of the full spin fit, on simulation only.</div>
 
 <div class="st-cover-meta">
-<b>Group-meeting status report · compiled 2026-10-22</b><br>
-DELPHI at LEP, 1994 data taking, <LaTeX formula="\sqrt{s}" /> = 91.202 GeV, 1994 detector description <span class="id">v94c</span><br>
-<span class="tag data">data</span> <span class="tag sim">simulation</span> <span class="tag sel">selection</span> <span class="tag ml">machine learning</span> <span class="tag decision">owner decision</span> <span class="tag open">open issue</span>
+<b>Group-meeting status report · 2026-10-31</b><br>
+DELPHI at LEP, 1992–1995: eight <LaTeX formula="\sqrt{s}" /> points (89.4, 91.2, 93.0 GeV), four detector descriptions <span class="id">v92e · v93d · v94c · v95d</span><br>
+<span class="tag data">data</span> <span class="tag sim">simulation</span> <span class="tag sel">selection</span> <span class="tag ml">machine learning</span> <span class="tag fit">spin fit</span> <span class="tag decision">owner decision</span> <span class="tag open">open issue</span>
 </div>
 
-<div class="st-source">Source: the 1994 runbook of 2026-10-22; every slide lists its source, raw paths are in SOURCES.md</div>
+<div class="st-source">Source: project guide (decisions to 2026-10-30) and the fit studies of 2026-10-30/31; every slide lists its source; raw paths are in the presenter notes</div>
 
 <!--
-Identities from docs/RUNBOOK_1994.md (draft 2026-10-22) sections 0 and 7. Analysis point 1994_91p2, detector profile v94c. The luminosity 46.301362 pb-1 is user-supplied and not certified; conversion success is not detector validation; ML results are closure on simulation only. NERSC reachable 2026-10-22/23; frozen-run count tables read there; its plot directory is empty so figures come from local archived copies.
+Status 2026-10-31. Chain: docs/RUNBOOK_1994.md (1994 reference), docs/PROJECT_GUIDE.md decisions 2026-10-26 (run quality, all-years-rq-20261026 rerun, job 60333695) and 2026-10-27 (all-years ML v1). Fits: artifacts/legacy-fit-ml-allyears-20261030 (per-point and pooled legacy forward-folding Asimov fits), artifacts/joint-fit-20261031 (step 1 toys, step 2 hypothesis tests, model B, model C = target model, owner decision 2026-10-31). Everything in the spin-fit chapter is MC-only, Asimov / expected, statistics-only; no real-data spin fit has been run. Luminosities are user-supplied and uncertified. The 2026-10-22 version of this deck covered 1994 only and left the spin fit out of scope.
 -->

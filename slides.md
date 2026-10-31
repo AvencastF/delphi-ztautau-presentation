@@ -3,7 +3,7 @@ theme: default
 fonts:
   sans: DM Sans
   local: DM Sans
-title: "DELPHI Z → ττ (1994): analysis-chain status, 2026-10-22"
+title: "DELPHI Z → ττ 1992–1995: ML reconstruction and spin fit, status 2026-10-31"
 colorSchema: dark
 transition: none
 mdc: true
@@ -36,6 +36,10 @@ src: ./slides/inputs-mc.md
 
 ---
 src: ./slides/inputs-mc-norm.md
+---
+
+---
+src: ./slides/inputs-1992-1995.md
 ---
 
 ---
@@ -203,6 +207,62 @@ src: ./slides/ml-verdict.md
 ---
 
 ---
+src: ./slides/ml-all-years.md
+---
+
+---
+src: ./slides/ch-fit.md
+---
+
+---
+src: ./slides/fit-observables.md
+---
+
+---
+src: ./slides/fit-inputs.md
+---
+
+---
+src: ./slides/fit-model.md
+---
+
+---
+src: ./slides/fit-models.md
+---
+
+---
+src: ./slides/fit-validation.md
+---
+
+---
+src: ./slides/fit-precision.md
+---
+
+---
+src: ./slides/fit-toys.md
+---
+
+---
+src: ./slides/fit-ml-gain.md
+---
+
+---
+src: ./slides/fit-results.md
+---
+
+---
+src: ./slides/fit-tests.md
+---
+
+---
+src: ./slides/fit-significance.md
+---
+
+---
+src: ./slides/fit-caveats.md
+---
+
+---
 src: ./slides/ch-status.md
 ---
 
@@ -224,6 +284,22 @@ src: ./slides/end.md
 
 ---
 src: ./slides/appendix-divider.md
+---
+
+---
+src: ./slides/appendix-fit-1.md
+---
+
+---
+src: ./slides/appendix-fit-2.md
+---
+
+---
+src: ./slides/appendix-fit-3.md
+---
+
+---
+src: ./slides/appendix-fit-yields.md
 ---
 
 ---

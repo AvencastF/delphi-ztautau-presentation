@@ -8,7 +8,7 @@ const stages = [
   { title: '2 · Real-data conversion', what: 'Convert the archived 1994 leptonic longDST data with the same converter, keeping a unique event identity per event.', who: 'EDM4hep converter', id: '132 files, 828,850 events' },
   { title: '3 · Event selection', what: 'Apply the 18 ordered cuts, identify the decay of each $\\tau$, and write one Parquet table per physics process.', who: 'tau analysis framework', id: 'frozen run of 2026-10-12' },
   { title: '4 · Machine learning', what: 'Classify the $\\tau\\tau$ decay mode and predict the direction of each $\\tau$ (the part the neutrinos take away).', who: 'EveNet-Align, two fine-tuned models', id: 'classifier v1 · neutrino model v5' },
-  { title: '5 · Spin fit (future)', what: 'Extract all 15 spin-density-matrix coefficients from the reconstructed $\\tau$ directions and decay products.', who: 'fit program, downstream', id: 'out of scope for this report' },
+  { title: '5 · Spin fit', what: 'Extract all 15 spin-density-matrix coefficients from the reconstructed $\\tau$ directions and decay products.', who: 'tau analysis framework, fit modules', id: 'expected sensitivity on simulation only' },
 ]
 </script>
 
