@@ -757,15 +757,15 @@
       const talks = [
         {
           title:
-            "Group meeting — DELPHI Z → ττ, the 1992–1995 analysis: machine-learning reconstruction and the spin-density-matrix fit (status 2026-10-31)",
+            "Internal note — DELPHI Z → ττ, the 1992–1995 analysis: machine-learning reconstruction and the spin-density-matrix fit (status 2026-10-31)",
           date: "2026-10-31",
-          path: "/ztautau-status-1994-20261022/",
-          href: "./ztautau-status-1994-20261022/",
-          tags: ["Group meeting", "2026"],
+          path: "/Internal_Note_20261031/",
+          href: "./Internal_Note_20261031/",
+          tags: ["Internal note", "2026"],
         },
       ]
 
-      const typeOrder = ["Group meeting", "Seminar", "Conference", "Workshop"]
+      const typeOrder = ["Internal note", "Group meeting", "Seminar", "Conference", "Workshop"]
       const extraTags = [...new Set(talks.flatMap((t) => t.tags.filter((tag) => !typeOrder.includes(tag))))]
       const filterTags = ["All", ...typeOrder, ...extraTags]
       const sortedTalks = [...talks].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))

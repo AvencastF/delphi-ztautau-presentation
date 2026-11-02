@@ -1,6 +1,6 @@
 # DELPHI Z → ττ, the 1992–1995 analysis — deck of 2026-10-22, revised 2026-10-31
 
-> This deck now lives in the multi-deck repository (see the [repository README](../README.md) and [AGENTS.md](../AGENTS.md)). Install and run it from the repository root; shared components, styles and fonts come from [`shared/`](../shared/README.md).
+> **Internal note, not a presentation** (owner decision 2026-11-02): this deck is kept as the internal record of the analysis status as of 2026-10-31; the presentation decks for this topic will be written separately. It lives in the multi-deck repository (see the [repository README](../README.md) and [AGENTS.md](../AGENTS.md)) and is installed and run from the repository root; shared components, styles and fonts come from [`shared/`](../shared/README.md).
 
 Slidev deck for the owner's group meeting. First version (2026-10-22): status of the 1994 chain. **Revision of 2026-10-31 (after the owner review of commit b496960):** the whole deck presents the **1992–1995 analysis**: data with the run-to-energy-point lookup and the good-run (run-quality) selection, the simulation of eight energy points with four detector descriptions, the unchanged selection, cutflows and data/MC comparisons from the all-years run-quality rerun (NERSC `all-years-rq-20261026`, jobs 60333695 / 60340876), the all-years ML models v1, and a "Spin fit" chapter written for a general audience (entanglement in one picture, analysing powers, one click-driven animation of the whole fit, template fits, reweighted simulation, covariance, pseudo-experiments, hypothesis tests). Every spin-fit number is simulation-only, Asimov / expected, statistics-only, and unchanged from the audited fit studies. The 1994-only ML studies are kept in the appendix as the "1994 reference".
 
@@ -11,13 +11,13 @@ Styled after `/Users/avencastmini/EveNet-Presentation/CCNU_Seminar` (same theme-
 ```bash
 cd /Users/avencastmini/ZtautauLEP/slides                    # repository root
 npm ci                                                      # one root install; pins @slidev/cli 52.11.3
-npm run dev -- ztautau-status-1994-20261022                 # http://localhost:3030, opens the browser
-npm run build -- ztautau-status-1994-20261022               # static site in ztautau-status-1994-20261022/dist/
+npm run dev -- Internal_Note_20261031                 # http://localhost:3030, opens the browser
+npm run build -- Internal_Note_20261031               # static site in Internal_Note_20261031/dist/
 # Before the move, the standalone layout built without errors on 2026-10-23 and twice on 2026-10-31.
 # The owner presents from the dev server; PDF/PNG exports are not used (long exports also capture half-painted slides).
 ```
 
-Deployment: GitHub Pages serves the deck at https://avencastf.github.io/delphi-ztautau-presentation/ztautau-status-1994-20261022/ (base `/delphi-ztautau-presentation/ztautau-status-1994-20261022/`, built with every deck by `npm run build:all` from the repository root).
+Deployment: GitHub Pages serves the deck at https://avencastf.github.io/delphi-ztautau-presentation/Internal_Note_20261031/ (base `/delphi-ztautau-presentation/Internal_Note_20261031/`, built with every deck by `npm run build:all` from the repository root).
 
 ## Layout
 

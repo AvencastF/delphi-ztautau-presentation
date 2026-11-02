@@ -83,7 +83,7 @@ The entry file controls ordering; a Markdown file is not included merely because
 
 ### Provenance and labelling
 
-Start `My_Talk/SOURCES.md` with the first slide. For each slide, record the file(s), tables, revisions, and dates every number was read from, and mark values derived on the slide. Follow the dated-section convention of the [status deck's SOURCES.md](../ztautau-status-1994-20261022/SOURCES.md). A runbook or plan is not evidence that a result was produced or validated. Label simulation-only, Asimov/expected, closure-on-simulation, and statistics-only results on the slide itself. Record anything you could not source in the deck README's TODO list rather than filling it in.
+Start `My_Talk/SOURCES.md` with the first slide. For each slide, record the file(s), tables, revisions, and dates every number was read from, and mark values derived on the slide. Follow the dated-section convention of the [status deck's SOURCES.md](../Internal_Note_20261031/SOURCES.md). A runbook or plan is not evidence that a result was produced or validated. Label simulation-only, Asimov/expected, closure-on-simulation, and statistics-only results on the slide itself. Record anything you could not source in the deck README's TODO list rather than filling it in.
 
 ### Presentation defaults
 
@@ -120,8 +120,8 @@ Search the existing implementations and their callers first:
 
 ```bash
 rg --files shared
-rg -n 'LaTeX|ZoomablePlot|ChapterRail|useStepMotion' shared ztautau-status-1994-20261022/slides ztautau-status-1994-20261022/components
-rg --files ztautau-status-1994-20261022/components
+rg -n 'LaTeX|ZoomablePlot|ChapterRail|useStepMotion' shared Internal_Note_20261031/slides Internal_Note_20261031/components
+rg --files Internal_Note_20261031/components
 ```
 
 The shared addon provides:
@@ -180,7 +180,7 @@ import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 
 1. Use an existing component's props or wrap it in a distinctly named local component for one talk. The status deck's `DeckChapters.vue` is the pattern: it fixes that talk's seven chapter names and renders the shared `ChapterRail`.
 2. If multiple talks genuinely need a new capability, make a small backwards-compatible shared API. Keep current defaults unchanged; pass labels, data, colors, or asset URLs from the deck.
-3. Shared modules must not reach into `ztautau-status-1994-20261022/` or another deck. Dependency direction is deck → shared, never shared → deck.
+3. Shared modules must not reach into `Internal_Note_20261031/` or another deck. Dependency direction is deck → shared, never shared → deck.
 4. Keep a unique implementation local until its reuse and stable interface are clear. Do not create `ComponentV2.vue` as a near-copy to change one label or color.
 5. Before extracting apparently identical code, compare all copies and callers. Preserve intentional differences and output. Test every consumer after extraction.
 

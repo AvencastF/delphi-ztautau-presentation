@@ -14,7 +14,7 @@ aspectRatio: 16/9
 canvasWidth: 980
 drawings:
   persist: false
-exportFilename: ztautau-status-1994-20261022
+exportFilename: Internal_Note_20261031
 lineNumbers: false
 preload: false
 src: ./slides/cover.md
