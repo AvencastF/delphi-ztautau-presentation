@@ -24,8 +24,8 @@ def badge(ch,var,sub=''):
     except Exception: return '<span class="badge n">no '+m('$\\chi^2$')+'</span>'
 def fig(path,cap,ch,var,sub=''):
     alt=_re.sub(r'[$\\{}^_]','',cap)
-    return f'<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/{path}" alt="{alt}" /></div><div class="st-cap">{m(cap)}{badge(ch,var,sub)}</div></div>'
-HEAD="---\nclass: st pres\n---\n\n<script setup>\nimport NJUPlot from '../components/NJUPlot.vue'\n</script>\n"
+    return f'<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/{path}" alt="{alt}" /></div><div class="st-cap">{m(cap)}{badge(ch,var,sub)}</div></div>'
+HEAD="---\nclass: st pres\n---\n\n<script setup>\nimport ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'\n</script>\n"
 def slide(fname,title,sub,cells,note_extra=''):
     md=HEAD+f"\n# {m(title)}\n\n<div class=\"st-sub\">{m(sub)}</div>\n\n<div class=\"fig2x2\">\n{chr(10).join(cells)}\n</div>\n\n<div class=\"st-source\">{SRC}</div>\n\n<!--\n{NOTE}\n{note_extra}\n-->\n"
     open(f'slides/{fname}','w').write(md)

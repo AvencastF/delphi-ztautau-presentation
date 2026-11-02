@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · 1994 reference: <LaTeX formula="\pi\pi" /> closure test at the 1994 yield
@@ -11,7 +11,7 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">Half A builds the response, half B is fitted as data. <LaTeX formula="\sigma" /> = expected statistical error; pull = bias / <LaTeX formula="\sigma" />.</div>
 
 <div class="fig-lead">
-<div><div class="st-fig"><NJUPlot src="/figures/ml/v5/closure_v5.png" alt="closure bias and sigma per observable" /></div><div class="st-cap">Bias and <LaTeX formula="\sigma" /> per spin observable: ML v5, v4, v3, analytical</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml/v5/closure_v5.png" alt="closure bias and sigma per observable" /></div><div class="st-cap">Bias and <LaTeX formula="\sigma" /> per spin observable: ML v5, v4, v3, analytical</div></div>
 <div>
 <table class="num first-nw">
 <thead><tr><th></th><th>ML v5</th><th>ML v3</th><th>analytical</th></tr></thead>

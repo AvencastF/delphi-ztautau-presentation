@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · 1992–1995 fit inputs per region, and legacy-model closure
@@ -35,7 +35,7 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-cap">Eight points pooled; the two orderings of a pair (e.g. πe, eπ) are separate regions. Ratios derived.</div>
 </div>
 <div>
-<div class="st-fig" style="height:300px"><NJUPlot src="/figures/fit/step2-closure-pulls.png" alt="legacy-model closure pulls per region and observable" /></div>
+<div class="st-fig" style="height:300px"><ZoomablePlot src="/figures/fit/step2-closure-pulls.png" alt="legacy-model closure pulls per region and observable" /></div>
 <div class="st-cap"><b>Legacy model</b> on reweighted simulation: largest bin pull per observable and region, for each injected state</div>
 </div>
 </div>

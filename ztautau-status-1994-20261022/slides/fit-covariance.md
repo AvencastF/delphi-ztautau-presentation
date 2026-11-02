@@ -3,13 +3,13 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Why a covariance: every event fills all 15 histograms
 
 <div class="fig-lead">
-<div><div class="st-fig" style="height:280px"><NJUPlot src="/figures/fit-explainer/pull-widths.svg" alt="pull width per coefficient, Poisson per histogram vs full covariance" /></div><div class="st-cap"><b>Pull width</b> per coefficient in 2,000 pseudo-experiments, 1992–1995. Correct errors give 1.</div></div>
+<div><div class="st-fig" style="height:280px"><ZoomablePlot src="/figures/fit-explainer/pull-widths.svg" alt="pull width per coefficient, Poisson per histogram vs full covariance" /></div><div class="st-cap"><b>Pull width</b> per coefficient in 2,000 pseudo-experiments, 1992–1995. Correct errors give 1.</div></div>
 <div>
 <div class="co warn"><b>Naive</b> Each histogram treated as independent counts every event up to 15 times.</div>
 <div class="co warn"><b>Result</b> Quoted errors too small: pulls up to 2.3 wide.</div>

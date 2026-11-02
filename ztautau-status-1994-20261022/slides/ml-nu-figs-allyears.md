@@ -3,16 +3,16 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Neutrino model per year: branch choice and direction error
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/ml-all-years/year-1992/06_direction.svg" alt="1992 branch accuracy and direction error" /></div><div class="st-cap"><b>1992</b> branch accuracy per channel (left), direction error per leg (right)</div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/ml-all-years/year-1993/06_direction.svg" alt="1993 branch accuracy and direction error" /></div><div class="st-cap"><b>1993</b>, three energy points together</div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/ml-all-years/year-1994/06_direction.svg" alt="1994 branch accuracy and direction error" /></div><div class="st-cap"><b>1994</b></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/ml-all-years/year-1995/06_direction.svg" alt="1995 branch accuracy and direction error" /></div><div class="st-cap"><b>1995</b>, three energy points together</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml-all-years/year-1992/06_direction.svg" alt="1992 branch accuracy and direction error" /></div><div class="st-cap"><b>1992</b> branch accuracy per channel (left), direction error per leg (right)</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml-all-years/year-1993/06_direction.svg" alt="1993 branch accuracy and direction error" /></div><div class="st-cap"><b>1993</b>, three energy points together</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml-all-years/year-1994/06_direction.svg" alt="1994 branch accuracy and direction error" /></div><div class="st-cap"><b>1994</b></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml-all-years/year-1995/06_direction.svg" alt="1995 branch accuracy and direction error" /></div><div class="st-cap"><b>1995</b>, three energy points together</div></div>
 </div>
 
 <div class="st-source">Source: per-year neutrino evaluation figures (hold half, 2026-10-27); simulation only</div>

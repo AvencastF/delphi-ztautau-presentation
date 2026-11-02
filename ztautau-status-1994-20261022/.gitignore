@@ -1,7 +1,0 @@
-node_modules/
-dist/
-.slidev/
-export-png*/
-*.pdf
-*.log
-.DS_Store

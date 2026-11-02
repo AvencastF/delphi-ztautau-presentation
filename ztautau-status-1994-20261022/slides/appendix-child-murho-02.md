@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="\mu\rho" /> (2/10)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\mu\rho" /> <span class="id">inclusive_1p1p_murho</span> · order by species: cand. 0 = <LaTeX formula="\mu" />, cand. 1 = <LaTeX formula="\rho" /> · yield <span class="nw">2,996 data</span> / <span class="nw">2,899 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-murho/inclusive_1p1p_murho-selected-candidate0_track_charge-rate_lin.svg" alt="cand. 0 (mu): track charge" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): track charge<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 3.7 / 2</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-murho/inclusive_1p1p_murho-selected-candidate0_track_costheta-rate_lin.svg" alt="cand. 0 (mu): costheta" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): <LaTeX formula="\cos\theta" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 116.0 / 38</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-murho/inclusive_1p1p_murho-selected-candidate0_track_e_over_p-rate_lin.svg" alt="cand. 0 (mu): EM-calorimeter E/p" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): EM-calorimeter <LaTeX formula="E/p" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 272.3 / 59</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-murho/inclusive_1p1p_murho-selected-candidate0_track_energy-rate_lin.svg" alt="cand. 0 (mu): track E [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): track <LaTeX formula="E" /> [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 45.0 / 46</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-murho/inclusive_1p1p_murho-selected-candidate0_track_charge-rate_lin.svg" alt="cand. 0 (mu): track charge" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): track charge<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 3.7 / 2</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-murho/inclusive_1p1p_murho-selected-candidate0_track_costheta-rate_lin.svg" alt="cand. 0 (mu): costheta" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): <LaTeX formula="\cos\theta" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 116.0 / 38</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-murho/inclusive_1p1p_murho-selected-candidate0_track_e_over_p-rate_lin.svg" alt="cand. 0 (mu): EM-calorimeter E/p" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): EM-calorimeter <LaTeX formula="E/p" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 272.3 / 59</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-murho/inclusive_1p1p_murho-selected-candidate0_track_energy-rate_lin.svg" alt="cand. 0 (mu): track E [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): track <LaTeX formula="E" /> [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 45.0 / 46</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Child <LaTeX formula="e\mu" />: four most informative variables
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="e\mu" /> <span class="id">inclusive_1p1p_emu</span> · order by species: cand. 0 = <LaTeX formula="e" />, cand. 1 = <LaTeX formula="\mu" /> · yield <span class="nw">3,919 data</span> / <span class="nw">4,134 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate0_track_p_over_pbeam-rate_lin.svg" alt="cand. 0 (e): p/pmathrmbeam" /></div><div class="st-cap">cand. 0 (<LaTeX formula="e" />): <LaTeX formula="p/p_\mathrm{beam}" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 166.6 / 42</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_p_over_pbeam-rate_lin.svg" alt="cand. 1 (mu): p/pmathrmbeam" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): <LaTeX formula="p/p_\mathrm{beam}" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 78.6 / 41</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate0_track_e_over_p-rate_lin.svg" alt="cand. 0 (e): EM-calorimeter E/p" /></div><div class="st-cap">cand. 0 (<LaTeX formula="e" />): EM-calorimeter <LaTeX formula="E/p" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 619.2 / 60</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_hcal_mean-rate_lin.svg" alt="cand. 1 (mu): HCAL mean per hit layer [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 282.5 / 31</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate0_track_p_over_pbeam-rate_lin.svg" alt="cand. 0 (e): p/pmathrmbeam" /></div><div class="st-cap">cand. 0 (<LaTeX formula="e" />): <LaTeX formula="p/p_\mathrm{beam}" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 166.6 / 42</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_p_over_pbeam-rate_lin.svg" alt="cand. 1 (mu): p/pmathrmbeam" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): <LaTeX formula="p/p_\mathrm{beam}" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 78.6 / 41</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate0_track_e_over_p-rate_lin.svg" alt="cand. 0 (e): EM-calorimeter E/p" /></div><div class="st-cap">cand. 0 (<LaTeX formula="e" />): EM-calorimeter <LaTeX formula="E/p" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 619.2 / 60</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_hcal_mean-rate_lin.svg" alt="cand. 1 (mu): HCAL mean per hit layer [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 282.5 / 31</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

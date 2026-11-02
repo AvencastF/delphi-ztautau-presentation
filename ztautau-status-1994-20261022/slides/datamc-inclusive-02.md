@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Inclusive sample: calorimeter response
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995, all eight points · inclusive <LaTeX formula="\tau\tau" /> sample, all 18 cuts <span class="id">inclusive_1p1p</span> · H0 / H1 = thrust hemispheres · points: data, stack: simulation</div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_e_over_p-rate_lin.svg" alt="EM-calorimeter E/p per track" /></div><div class="st-cap">EM-calorimeter <LaTeX formula="E/p" /> per track<span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi0_hcal_mean-rate_lin.svg" alt="H0 HCAL mean per hit layer [GeV]" /></div><div class="st-cap">H0 HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 384.0 / 60</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi1_hcal_mean-rate_lin.svg" alt="H1 HCAL mean per hit layer [GeV]" /></div><div class="st-cap">H1 HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 682.0 / 60</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi0_hadron_source-rate_lin.svg" alt="H0 hadron-source category" /></div><div class="st-cap">H0 hadron-source category<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 549.3 / 7</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_e_over_p-rate_lin.svg" alt="EM-calorimeter E/p per track" /></div><div class="st-cap">EM-calorimeter <LaTeX formula="E/p" /> per track<span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi0_hcal_mean-rate_lin.svg" alt="H0 HCAL mean per hit layer [GeV]" /></div><div class="st-cap">H0 HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 384.0 / 60</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi1_hcal_mean-rate_lin.svg" alt="H1 HCAL mean per hit layer [GeV]" /></div><div class="st-cap">H1 HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 682.0 / 60</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi0_hadron_source-rate_lin.svg" alt="H0 hadron-source category" /></div><div class="st-cap">H0 hadron-source category<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 549.3 / 7</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · inclusive sample (2/4)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995, all eight points · inclusive <LaTeX formula="\tau\tau" /> sample, all 18 cuts <span class="id">inclusive_1p1p</span> · H0 / H1 = thrust hemispheres · points: data, stack: simulation</div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi1_nearby_photon_energy-rate_lin.svg" alt="H1 nearby photon E [GeV]" /></div><div class="st-cap">H1 nearby photon <LaTeX formula="E" /> [GeV]<span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi1_hadron_photon_mass-rate_lin.svg" alt="H1 m(mathrmtrack+gamma) [GeV]" /></div><div class="st-cap">H1 <LaTeX formula="m(\mathrm{track}+\gamma)" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 146.6 / 58</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi0_nearby_diphoton_mass-rate_lin.svg" alt="H0 mgammagamma [GeV]" /></div><div class="st-cap">H0 <LaTeX formula="m_{\gamma\gamma}" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 113.8 / 50</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi1_nearby_diphoton_mass-rate_lin.svg" alt="H1 mgammagamma [GeV]" /></div><div class="st-cap">H1 <LaTeX formula="m_{\gamma\gamma}" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 143.0 / 50</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi1_nearby_photon_energy-rate_lin.svg" alt="H1 nearby photon E [GeV]" /></div><div class="st-cap">H1 nearby photon <LaTeX formula="E" /> [GeV]<span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi1_hadron_photon_mass-rate_lin.svg" alt="H1 m(mathrmtrack+gamma) [GeV]" /></div><div class="st-cap">H1 <LaTeX formula="m(\mathrm{track}+\gamma)" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 146.6 / 58</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi0_nearby_diphoton_mass-rate_lin.svg" alt="H0 mgammagamma [GeV]" /></div><div class="st-cap">H0 <LaTeX formula="m_{\gamma\gamma}" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 113.8 / 50</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/inclusive/inclusive_1p1p-selected-exclusive_hemi1_nearby_diphoton_mass-rate_lin.svg" alt="H1 mgammagamma [GeV]" /></div><div class="st-cap">H1 <LaTeX formula="m_{\gamma\gamma}" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 143.0 / 50</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

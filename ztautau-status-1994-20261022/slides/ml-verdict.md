@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · 1994 reference: machine-learning verdict of 2026-10-21/22
@@ -18,8 +18,8 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="co open"><b>Open</b> Closure only; no test part, no systematics, no data validation.</div>
 </div>
 <div>
-<div class="st-fig" style="height:150px"><NJUPlot src="/figures/ml/v5/10_overview.svg" alt="v5 overview per channel" /></div><div class="st-cap">Overview per channel, version 5: bias, width, correlation, branch accuracy</div>
-<div class="st-fig" style="height:150px;margin-top:6px"><NJUPlot src="/figures/ml/v2/10_overview.svg" alt="v2 overview per channel" /></div><div class="st-cap">The same overview for version 2</div>
+<div class="st-fig" style="height:150px"><ZoomablePlot src="/figures/ml/v5/10_overview.svg" alt="v5 overview per channel" /></div><div class="st-cap">Overview per channel, version 5: bias, width, correlation, branch accuracy</div>
+<div class="st-fig" style="height:150px;margin-top:6px"><ZoomablePlot src="/figures/ml/v2/10_overview.svg" alt="v2 overview per channel" /></div><div class="st-cap">The same overview for version 2</div>
 </div>
 </div>
 

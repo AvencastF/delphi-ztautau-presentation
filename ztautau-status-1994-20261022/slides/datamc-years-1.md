@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Year by year: do the shapes change between 1992 and 1995?
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">Inclusive sample · overlays: each year normalised to unit area, ratio panel to 1994, data and simulation separately</div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/overlay-year/inclusive_1p1p-selected-leadtrack_hemi0_p_over_pbeam-overlay.svg" alt="H0 leading-track p/pmathrmbeam, shape per year" /></div><div class="st-cap">H0 leading-track <LaTeX formula="p/p_\mathrm{beam}" />, shape per year<span class="badge n">shape, no <LaTeX formula="\chi^2" /></span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/overlay-year/inclusive_1p1p-selected-leadtrack_hemi0_costheta-overlay.svg" alt="H0 leading-track costheta, shape per year" /></div><div class="st-cap">H0 leading-track <LaTeX formula="\cos\theta" />, shape per year<span class="badge n">shape, no <LaTeX formula="\chi^2" /></span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/overlay-year/inclusive_1p1p-selected-exclusive_e_over_p-overlay.svg" alt="EM-calorimeter E/p per track, shape per year" /></div><div class="st-cap">EM-calorimeter <LaTeX formula="E/p" /> per track, shape per year<span class="badge n">shape, no <LaTeX formula="\chi^2" /></span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/overlay-year/inclusive_1p1p-selected-exclusive_hemi0_hcal_mean-overlay.svg" alt="H0 HCAL mean per hit layer [GeV], shape per year" /></div><div class="st-cap">H0 HCAL mean per hit layer [GeV], shape per year<span class="badge n">shape, no <LaTeX formula="\chi^2" /></span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/overlay-year/inclusive_1p1p-selected-leadtrack_hemi0_p_over_pbeam-overlay.svg" alt="H0 leading-track p/pmathrmbeam, shape per year" /></div><div class="st-cap">H0 leading-track <LaTeX formula="p/p_\mathrm{beam}" />, shape per year<span class="badge n">shape, no <LaTeX formula="\chi^2" /></span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/overlay-year/inclusive_1p1p-selected-leadtrack_hemi0_costheta-overlay.svg" alt="H0 leading-track costheta, shape per year" /></div><div class="st-cap">H0 leading-track <LaTeX formula="\cos\theta" />, shape per year<span class="badge n">shape, no <LaTeX formula="\chi^2" /></span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/overlay-year/inclusive_1p1p-selected-exclusive_e_over_p-overlay.svg" alt="EM-calorimeter E/p per track, shape per year" /></div><div class="st-cap">EM-calorimeter <LaTeX formula="E/p" /> per track, shape per year<span class="badge n">shape, no <LaTeX formula="\chi^2" /></span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/overlay-year/inclusive_1p1p-selected-exclusive_hemi0_hcal_mean-overlay.svg" alt="H0 HCAL mean per hit layer [GeV], shape per year" /></div><div class="st-cap">H0 HCAL mean per hit layer [GeV], shape per year<span class="badge n">shape, no <LaTeX formula="\chi^2" /></span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

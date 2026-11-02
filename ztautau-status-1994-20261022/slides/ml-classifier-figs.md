@@ -3,16 +3,16 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · 1994 reference: classifier v1 figures (2026-10-15)
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/ml/classifier/02_confusion_purity.svg" alt="confusion matrix, purity view" /></div><div class="st-cap">Confusion matrix, purity view (per predicted class)</div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/ml/classifier/08_migration.svg" alt="cut-based child to ML class migration" /></div><div class="st-cap">Migration: cut-based child <LaTeX formula="\to" /> ML class, data vs simulation</div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/ml/classifier/05_efficiency_purity.svg" alt="efficiency and purity per channel" /></div><div class="st-cap">Efficiency and purity per channel, cuts vs ML</div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/ml/classifier/06_agreement.svg" alt="data/MC channel yields" /></div><div class="st-cap">Data/simulation channel yields, cuts vs ML</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml/classifier/02_confusion_purity.svg" alt="confusion matrix, purity view" /></div><div class="st-cap">Confusion matrix, purity view (per predicted class)</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml/classifier/08_migration.svg" alt="cut-based child to ML class migration" /></div><div class="st-cap">Migration: cut-based child <LaTeX formula="\to" /> ML class, data vs simulation</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml/classifier/05_efficiency_purity.svg" alt="efficiency and purity per channel" /></div><div class="st-cap">Efficiency and purity per channel, cuts vs ML</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml/classifier/06_agreement.svg" alt="data/MC channel yields" /></div><div class="st-cap">Data/simulation channel yields, cuts vs ML</div></div>
 </div>
 
 <div class="st-source">Source: classifier evaluation figures of 2026-10-15 (optimistic: training events included)</div>

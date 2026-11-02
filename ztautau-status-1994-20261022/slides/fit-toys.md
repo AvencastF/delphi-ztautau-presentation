@@ -3,14 +3,14 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Pseudo-experiments: thousands of fake datasets give the error bars
 
 <div class="st-sub">A toy = one fake dataset drawn from the simulation, fitted like real data. The spread of 2,000 toys gives errors; their co-movement, correlations (1992–1995).</div>
 
-<div class="st-fig" style="height:170px"><NJUPlot src="/figures/fit/modelC-correlation.png" alt="correlation matrix of the 15 coefficients" /></div>
+<div class="st-fig" style="height:170px"><ZoomablePlot src="/figures/fit/modelC-correlation.png" alt="correlation matrix of the 15 coefficients" /></div>
 <div class="st-cap"><b>Correlations</b> of the 15 coefficients: analytic (left), toys minus analytic (middle, within ±0.05), final minus legacy (right)</div>
 
 <div class="st-cols st-cols-21" style="margin-top:8px">

@@ -3,13 +3,13 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Validation: the fit returns what was put in, with the right error bars
 
 <div class="fig-lead">
-<div><div class="st-fig" style="height:300px"><NJUPlot src="/figures/fit/modelC-pulls.png" alt="pull distributions of the 15 coefficients" /></div><div class="st-cap"><b>Pulls</b> of the 15 coefficients in 2,000 pseudo-experiments (blue: final model; grey: diagonal-only covariance, too narrow errors)</div></div>
+<div><div class="st-fig" style="height:300px"><ZoomablePlot src="/figures/fit/modelC-pulls.png" alt="pull distributions of the 15 coefficients" /></div><div class="st-cap"><b>Pulls</b> of the 15 coefficients in 2,000 pseudo-experiments (blue: final model; grey: diagonal-only covariance, too narrow errors)</div></div>
 <div>
 <table class="num first-nw">
 <thead><tr><th>Check</th><th>1992–1995</th><th>1994</th></tr></thead>

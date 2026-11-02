@@ -1,5 +1,7 @@
 ---
 theme: default
+addons:
+  - slidev-addon-ztautau
 fonts:
   sans: DM Sans
   local: DM Sans

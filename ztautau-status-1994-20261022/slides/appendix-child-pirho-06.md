@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="\pi\rho" /> (6/10)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\pi\rho" /> <span class="id">inclusive_1p1p_pirho</span> · order by species: cand. 0 = <LaTeX formula="\pi" />, cand. 1 = <LaTeX formula="\rho" /> · yield <span class="nw">3,075 data</span> / <span class="nw">2,999 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_neutral_p-rate_lin.svg" alt="cand. 1 (rho): neutral-system p [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): neutral-system <LaTeX formula="p" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 116.6 / 47</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_photon_costheta-rate_lin.svg" alt="cand. 1 (rho): nearby photon costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): nearby photon <LaTeX formula="\cos\theta" /><span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_photon_mass-rate_lin.svg" alt="cand. 1 (rho): nearby photon mass [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): nearby photon mass [GeV]<span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_photon_p-rate_lin.svg" alt="cand. 1 (rho): nearby photon p [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): nearby photon <LaTeX formula="p" /> [GeV]<span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_neutral_p-rate_lin.svg" alt="cand. 1 (rho): neutral-system p [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): neutral-system <LaTeX formula="p" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 116.6 / 47</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_photon_costheta-rate_lin.svg" alt="cand. 1 (rho): nearby photon costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): nearby photon <LaTeX formula="\cos\theta" /><span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_photon_mass-rate_lin.svg" alt="cand. 1 (rho): nearby photon mass [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): nearby photon mass [GeV]<span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_photon_p-rate_lin.svg" alt="cand. 1 (rho): nearby photon p [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): nearby photon <LaTeX formula="p" /> [GeV]<span class="badge n">no <LaTeX formula="\chi^2" />: correlated entries</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

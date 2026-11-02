@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useStepMotion } from './useStepMotion'
-import { mixed } from './tex'
+import { useStepMotion } from 'slidev-addon-ztautau/composable/useStepMotion'
+import { mixed } from 'slidev-addon-ztautau/composable/tex'
 const props = defineProps<{ step: number }>()
 const { motion, running, reveal, stage } = useStepMotion(() => props.step, 3, 900)
 const titles = ['Particle tokens: up to 24 reconstructed particles per event', 'The pretrained EveNet body (unchanged) turns tokens into event features', 'Head 1: the 12-class decay-mode classifier', 'Head 2: the neutrino-direction diffusion head, conditioned on 84 event-level quantities through FiLM']

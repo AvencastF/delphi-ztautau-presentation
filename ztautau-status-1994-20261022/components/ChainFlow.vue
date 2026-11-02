@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useStepMotion } from './useStepMotion'
-import { mixed } from './tex'
+import { useStepMotion } from 'slidev-addon-ztautau/composable/useStepMotion'
+import { mixed } from 'slidev-addon-ztautau/composable/tex'
 const props = defineProps<{ step: number }>()
 const { motion, running, stage, reveal } = useStepMotion(() => props.step, 5, 800)
 const stages = [

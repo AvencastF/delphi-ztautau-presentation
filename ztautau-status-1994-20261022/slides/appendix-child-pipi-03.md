@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="\pi\pi" /> (3/7)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\pi\pi" /> <span class="id">inclusive_1p1p_pipi</span> · order by charge: cand. 0 negative, cand. 1 positive · yield <span class="nw">2,488 data</span> / <span class="nw">2,480 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pipi/inclusive_1p1p_pipi-selected-candidate0_track_mass-rate_lin.svg" alt="cand. 0 (pi): track mass [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): track mass [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 0.0 / 1</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pipi/inclusive_1p1p_pipi-selected-candidate0_track_p-rate_lin.svg" alt="cand. 0 (pi): p [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): <LaTeX formula="p" /> [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 48.0 / 45</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pipi/inclusive_1p1p_pipi-selected-candidate0_truth_species-rate_lin.svg" alt="cand. 0 (pi): true species (simulation)" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): true species (simulation)<span class="badge n">no <LaTeX formula="\chi^2" /></span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pipi/inclusive_1p1p_pipi-selected-candidate1_neutral_all_count-rate_lin.svg" alt="cand. 1 (pi): all neutrals" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\pi" />): all neutrals<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 3.2 / 4</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pipi/inclusive_1p1p_pipi-selected-candidate0_track_mass-rate_lin.svg" alt="cand. 0 (pi): track mass [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): track mass [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 0.0 / 1</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pipi/inclusive_1p1p_pipi-selected-candidate0_track_p-rate_lin.svg" alt="cand. 0 (pi): p [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): <LaTeX formula="p" /> [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 48.0 / 45</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pipi/inclusive_1p1p_pipi-selected-candidate0_truth_species-rate_lin.svg" alt="cand. 0 (pi): true species (simulation)" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): true species (simulation)<span class="badge n">no <LaTeX formula="\chi^2" /></span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pipi/inclusive_1p1p_pipi-selected-candidate1_neutral_all_count-rate_lin.svg" alt="cand. 1 (pi): all neutrals" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\pi" />): all neutrals<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 3.2 / 4</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

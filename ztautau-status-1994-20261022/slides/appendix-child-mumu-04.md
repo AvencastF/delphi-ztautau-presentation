@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="\mu\mu" /> (4/7)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\mu\mu" /> <span class="id">inclusive_1p1p_mumu</span> · order by charge: cand. 0 negative, cand. 1 positive · yield <span class="nw">2,728 data</span> / <span class="nw">2,545 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-mumu/inclusive_1p1p_mumu-selected-candidate1_neutral_all_dr03_count-rate_lin.svg" alt="cand. 1 (mu): all neutrals, Delta Rlt 0.3" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): all neutrals, <LaTeX formula="\Delta R\lt 0.3" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 20.8 / 4</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-mumu/inclusive_1p1p_mumu-selected-candidate1_neutral_failed_photon_count-rate_lin.svg" alt="cand. 1 (mu): non-photon neutrals" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): non-photon neutrals<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 50.9 / 4</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-mumu/inclusive_1p1p_mumu-selected-candidate1_neutral_identified_photon_count-rate_lin.svg" alt="cand. 1 (mu): identified photons" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): identified photons<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 14.3 / 4</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-mumu/inclusive_1p1p_mumu-selected-candidate1_track_charge-rate_lin.svg" alt="cand. 1 (mu): track charge" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): track charge<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 12.2 / 1</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-mumu/inclusive_1p1p_mumu-selected-candidate1_neutral_all_dr03_count-rate_lin.svg" alt="cand. 1 (mu): all neutrals, Delta Rlt 0.3" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): all neutrals, <LaTeX formula="\Delta R\lt 0.3" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 20.8 / 4</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-mumu/inclusive_1p1p_mumu-selected-candidate1_neutral_failed_photon_count-rate_lin.svg" alt="cand. 1 (mu): non-photon neutrals" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): non-photon neutrals<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 50.9 / 4</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-mumu/inclusive_1p1p_mumu-selected-candidate1_neutral_identified_photon_count-rate_lin.svg" alt="cand. 1 (mu): identified photons" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): identified photons<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 14.3 / 4</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-mumu/inclusive_1p1p_mumu-selected-candidate1_track_charge-rate_lin.svg" alt="cand. 1 (mu): track charge" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): track charge<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 12.2 / 1</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="\rho\rho" /> (7/13)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\rho\rho" /> <span class="id">inclusive_1p1p_rhorho</span> · order by charge: cand. 0 negative, cand. 1 positive · yield <span class="nw">979 data</span> / <span class="nw">922 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_neutral_all_count-rate_lin.svg" alt="cand. 1 (rho): all neutrals" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): all neutrals<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 7.5 / 3</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_neutral_all_dr03_count-rate_lin.svg" alt="cand. 1 (rho): all neutrals, Delta Rlt 0.3" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): all neutrals, <LaTeX formula="\Delta R\lt 0.3" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 6.8 / 3</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_neutral_costheta-rate_lin.svg" alt="cand. 1 (rho): neutral-system costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): neutral-system <LaTeX formula="\cos\theta" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 111.0 / 32</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_neutral_count-rate_lin.svg" alt="cand. 1 (rho): photons in neutral system" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): photons in neutral system<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 3.7 / 2</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_neutral_all_count-rate_lin.svg" alt="cand. 1 (rho): all neutrals" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): all neutrals<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 7.5 / 3</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_neutral_all_dr03_count-rate_lin.svg" alt="cand. 1 (rho): all neutrals, Delta Rlt 0.3" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): all neutrals, <LaTeX formula="\Delta R\lt 0.3" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 6.8 / 3</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_neutral_costheta-rate_lin.svg" alt="cand. 1 (rho): neutral-system costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): neutral-system <LaTeX formula="\cos\theta" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 111.0 / 32</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_neutral_count-rate_lin.svg" alt="cand. 1 (rho): photons in neutral system" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): photons in neutral system<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 3.7 / 2</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="ee" /> (6/7)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="ee" /> <span class="id">inclusive_1p1p_ee</span> · order by charge: cand. 0 negative, cand. 1 positive · yield <span class="nw">2,028 data</span> / <span class="nw">2,266 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_p-rate_lin.svg" alt="cand. 1 (e): p [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): <LaTeX formula="p" /> [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 168.1 / 46</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_truth_species-rate_lin.svg" alt="cand. 1 (e): true species (simulation)" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): true species (simulation)<span class="badge n">no <LaTeX formula="\chi^2" /></span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-erad_over_ebeam-rate_lin.svg" alt="Emathrmrad/Emathrmbeam" /></div><div class="st-cap"><LaTeX formula="E_\mathrm{rad}/E_\mathrm{beam}" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 59.6 / 20</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-identified_order_state-rate_lin.svg" alt="candidate-ordering state" /></div><div class="st-cap">candidate-ordering state<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 26.9 / 2</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_p-rate_lin.svg" alt="cand. 1 (e): p [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): <LaTeX formula="p" /> [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 168.1 / 46</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_truth_species-rate_lin.svg" alt="cand. 1 (e): true species (simulation)" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): true species (simulation)<span class="badge n">no <LaTeX formula="\chi^2" /></span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-erad_over_ebeam-rate_lin.svg" alt="Emathrmrad/Emathrmbeam" /></div><div class="st-cap"><LaTeX formula="E_\mathrm{rad}/E_\mathrm{beam}" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 59.6 / 20</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-identified_order_state-rate_lin.svg" alt="candidate-ordering state" /></div><div class="st-cap">candidate-ordering state<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 26.9 / 2</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

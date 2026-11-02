@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Child <LaTeX formula="\rho\rho" />: four most informative variables
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\rho\rho" /> <span class="id">inclusive_1p1p_rhorho</span> · order by charge: cand. 0 negative, cand. 1 positive · yield <span class="nw">979 data</span> / <span class="nw">922 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate0_track_p_over_pbeam-rate_lin.svg" alt="cand. 0 (rho): p/pmathrmbeam" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\rho" />): <LaTeX formula="p/p_\mathrm{beam}" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 166.9 / 40</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_track_p_over_pbeam-rate_lin.svg" alt="cand. 1 (rho): p/pmathrmbeam" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="p/p_\mathrm{beam}" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 123.9 / 40</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate0_rho_mass-rate_lin.svg" alt="cand. 0 (rho): mrho candidate [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\rho" />): <LaTeX formula="m_\rho" /> candidate [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 8.4 / 11</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_rho_mass-rate_lin.svg" alt="cand. 1 (rho): mrho candidate [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="m_\rho" /> candidate [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 14.5 / 11</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate0_track_p_over_pbeam-rate_lin.svg" alt="cand. 0 (rho): p/pmathrmbeam" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\rho" />): <LaTeX formula="p/p_\mathrm{beam}" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 166.9 / 40</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_track_p_over_pbeam-rate_lin.svg" alt="cand. 1 (rho): p/pmathrmbeam" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="p/p_\mathrm{beam}" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 123.9 / 40</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate0_rho_mass-rate_lin.svg" alt="cand. 0 (rho): mrho candidate [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\rho" />): <LaTeX formula="m_\rho" /> candidate [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 8.4 / 11</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-rhorho/inclusive_1p1p_rhorho-selected-candidate1_rho_mass-rate_lin.svg" alt="cand. 1 (rho): mrho candidate [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="m_\rho" /> candidate [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 14.5 / 11</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

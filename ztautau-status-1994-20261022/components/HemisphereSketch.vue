@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useStepMotion } from './useStepMotion'
-import { mixed } from './tex'
+import { useStepMotion } from 'slidev-addon-ztautau/composable/useStepMotion'
+import { mixed } from 'slidev-addon-ztautau/composable/tex'
 const props = defineProps<{ step: number }>()
 const { reveal, stage } = useStepMotion(() => props.step, 3, 900)
 const titles = ['Charged tracks of one event', 'Thrust axis of the charged tracks', 'Two geometric hemispheres, H0 and H1', 'One-prong topology: a leading track per hemisphere, neutrals counted per side']

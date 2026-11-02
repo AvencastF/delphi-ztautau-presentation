@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="ee" /> (5/7)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="ee" /> <span class="id">inclusive_1p1p_ee</span> · order by charge: cand. 0 negative, cand. 1 positive · yield <span class="nw">2,028 data</span> / <span class="nw">2,266 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_costheta-rate_lin.svg" alt="cand. 1 (e): costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): <LaTeX formula="\cos\theta" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 70.8 / 37</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_energy-rate_lin.svg" alt="cand. 1 (e): track E [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): track <LaTeX formula="E" /> [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 168.0 / 46</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_hcal_mean-rate_lin.svg" alt="cand. 1 (e): HCAL mean per hit layer [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 328.9 / 58</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_mass-rate_lin.svg" alt="cand. 1 (e): track mass [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): track mass [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 26.9 / 1</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_costheta-rate_lin.svg" alt="cand. 1 (e): costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): <LaTeX formula="\cos\theta" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 70.8 / 37</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_energy-rate_lin.svg" alt="cand. 1 (e): track E [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): track <LaTeX formula="E" /> [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 168.0 / 46</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_hcal_mean-rate_lin.svg" alt="cand. 1 (e): HCAL mean per hit layer [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 328.9 / 58</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-ee/inclusive_1p1p_ee-selected-candidate1_track_mass-rate_lin.svg" alt="cand. 1 (e): track mass [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="e" />): track mass [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 26.9 / 1</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Machine learning halves the expected errors at every energy point
@@ -12,7 +12,7 @@ import NJUPlot from '../components/NJUPlot.vue'
 
 <div class="st-cols st-cols-2">
 <div>
-<div class="st-fig" style="height:300px"><NJUPlot src="/figures/fit/allyears-per-point.png" alt="concurrence error per point, analytical vs ML" /></div>
+<div class="st-fig" style="height:300px"><ZoomablePlot src="/figures/fit/allyears-per-point.png" alt="concurrence error per point, analytical vs ML" /></div>
 <div class="st-cap"><b>Top</b> concurrence error per point with <LaTeX formula="\sqrt N" /> expectation from 1994; <b>bottom</b> ML / cut-based error ratio for all 15 coefficients</div>
 </div>
 <div>

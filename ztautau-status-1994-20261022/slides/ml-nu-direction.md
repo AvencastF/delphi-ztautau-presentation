@@ -3,13 +3,13 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · 1994 reference: neutrino model v5, direction error and branch
 
 <div class="fig-lead">
-<div><div class="st-fig"><NJUPlot src="/figures/ml/v5/06_direction.svg" alt="branch accuracy per channel and direction error per leg" /></div><div class="st-cap">Branch accuracy per channel (left), direction error per leg type (right); held-out simulation</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/ml/v5/06_direction.svg" alt="branch accuracy per channel and direction error per leg" /></div><div class="st-cap">Branch accuracy per channel (left), direction error per leg type (right); held-out simulation</div></div>
 <div>
 <table class="num">
 <thead><tr><th>Median error [<LaTeX formula="^\circ" />]</th><th>analytical</th><th>best branch</th><th>ML v5</th></tr></thead>

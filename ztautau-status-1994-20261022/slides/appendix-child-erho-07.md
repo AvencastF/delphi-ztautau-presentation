@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="e\rho" /> (7/10)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="e\rho" /> <span class="id">inclusive_1p1p_erho</span> · order by species: cand. 0 = <LaTeX formula="e" />, cand. 1 = <LaTeX formula="\rho" /> · yield <span class="nw">2,628 data</span> / <span class="nw">2,644 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-erho/inclusive_1p1p_erho-selected-candidate1_rho_costheta-rate_lin.svg" alt="cand. 1 (rho): rho candidate costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="\rho" /> candidate <LaTeX formula="\cos\theta" /><span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 35.1 / 33</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-erho/inclusive_1p1p_erho-selected-candidate1_rho_energy-rate_lin.svg" alt="cand. 1 (rho): Erho candidate [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="E_\rho" /> candidate [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 43.3 / 46</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-erho/inclusive_1p1p_erho-selected-candidate1_rho_p-rate_lin.svg" alt="cand. 1 (rho): prho candidate [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="p_\rho" /> candidate [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 42.1 / 47</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-erho/inclusive_1p1p_erho-selected-candidate1_track_charge-rate_lin.svg" alt="cand. 1 (rho): track charge" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): track charge<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 0.6 / 2</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-erho/inclusive_1p1p_erho-selected-candidate1_rho_costheta-rate_lin.svg" alt="cand. 1 (rho): rho candidate costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="\rho" /> candidate <LaTeX formula="\cos\theta" /><span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 35.1 / 33</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-erho/inclusive_1p1p_erho-selected-candidate1_rho_energy-rate_lin.svg" alt="cand. 1 (rho): Erho candidate [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="E_\rho" /> candidate [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 43.3 / 46</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-erho/inclusive_1p1p_erho-selected-candidate1_rho_p-rate_lin.svg" alt="cand. 1 (rho): prho candidate [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="p_\rho" /> candidate [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 42.1 / 47</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-erho/inclusive_1p1p_erho-selected-candidate1_track_charge-rate_lin.svg" alt="cand. 1 (rho): track charge" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): track charge<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 0.6 / 2</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

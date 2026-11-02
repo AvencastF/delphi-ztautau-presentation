@@ -1,4 +1,4 @@
-/* NJU-only Graphite & Gold. Scientific plot assets and series are untouched. */
+/* Graphite & Gold theme shared by all decks in this repository. Scientific plot assets and series are untouched. */
 :root { --bg-0:#17191c; --bg-1:#23262b; --fg-0:#f0f1f3; --fg-1:#bcc2cb; --fg-2:#aeb6c1; --nju-accent:#77c9ff; --nju-blue:#77c9ff; --nju-amber:#f0c36e; --nju-violet:#baa5ff; --nju-mint:#70dcb2; --nju-coral:#f69cab; --nju-line:rgba(190,201,214,.18); --c-cyan:#77c9ff; --c-magenta:#f69cab; --c-violet:#baa5ff; --card-bg:rgba(201,210,221,.045); --card-border:var(--nju-line); --accent:linear-gradient(90deg,#ffbd59 0%,#fff0ba 32%,#ff91b5 68%,#ffbd59 100%); }
 .slidev-layout { background:#17191c!important; isolation:isolate; font-family:'DM Sans',sans-serif; color:var(--fg-0); }
 .slidev-layout::before { content:''; position:absolute; inset:-18%; z-index:-1; pointer-events:none; background:radial-gradient(ellipse at 75% 25%,rgba(94,159,222,.15),transparent 58%),radial-gradient(ellipse at 15% 85%,rgba(163,132,203,.09),transparent 55%); animation:nju-graphite-drift 28s ease-in-out infinite alternate; }
@@ -393,3 +393,13 @@
 .slidev-layout .align-subtitle { color:var(--fg-1)!important; }
 
 .slidev-layout .hub-z { background:none!important; color:var(--nju-blue)!important; -webkit-text-fill-color:var(--nju-blue); font-style:italic; }
+
+/* Generic text helpers and Slidev UI fix, formerly in the deck-local local.css. */
+.nju-subtitle { color: var(--fg-1); font-size: 19px; margin: -8px 0 18px; }
+.nju-caption { font-size: 14px; color: var(--fg-1); margin-top: 8px; }
+.nju-takeaway { margin-top: 18px; font-size: 21px; line-height: 1.35; border-left: 3px solid var(--c-cyan); padding-left: 15px; }
+.nju-source { position: absolute; bottom: 16px; left: 56px; font-size: 11px; color: var(--fg-1); margin-top: 8px; opacity: .72; }
+
+/* Slidev's "go to slide" autocomplete: its input is parked off-screen (-top-20) while closed, but the
+   dropdown list still hangs into view. Hide the list unless the dialog is open. */
+.fixed.-top-20 .autocomplete-list { display: none; }

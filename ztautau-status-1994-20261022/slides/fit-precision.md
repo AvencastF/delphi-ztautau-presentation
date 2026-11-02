@@ -3,14 +3,14 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · spin fit: precision of the final model and simulation size
 
 <div class="st-cols st-cols-21">
 <div>
-<div class="st-fig" style="height:205px"><NJUPlot src="/figures/fit/modelC-sigma-ratio.png" alt="sigma ratio final over legacy per coefficient" /></div>
+<div class="st-fig" style="height:205px"><ZoomablePlot src="/figures/fit/modelC-sigma-ratio.png" alt="sigma ratio final over legacy per coefficient" /></div>
 <div class="st-cap"><b>Error ratio</b> final / legacy model per coefficient, 1992–1995 (filled triangles: same pseudo-experiments)</div>
 <table class="num first-nw" style="margin-top:8px">
 <thead><tr><th>Final / legacy error</th><th>1992–1995</th><th>1994</th></tr></thead>

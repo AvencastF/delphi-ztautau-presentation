@@ -9,4 +9,4 @@ class: nju-chapter-bridge
 <div class="chapter-context"><span class="tag decision">decision</span><span>owner approves every NERSC job</span><span class="context-rule"></span><span class="tag open">open</span><span>luminosity · calibration · systematics</span></div>
 </div>
 
-<NJUChapter :active="7" />
+<DeckChapters :active="7" />

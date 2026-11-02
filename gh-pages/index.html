@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DELPHI Z → τ⁺τ⁻ spin · Presentations</title>
+    <meta name="description" content="Presentations on measuring the full tau-pair spin density matrix in archived DELPHI data at the Z pole." />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <style>
+      @font-face {
+        font-family: "DM Sans";
+        font-weight: 100 1000;
+        src: url("./assets/DM-Sans-variable.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      :root {
+        color-scheme: dark;
+        --bg: #17191c;
+        --surface: #23262b;
+        --fg: #f0f1f3;
+        --fg-1: #bcc2cb;
+        --fg-2: #aeb6c1;
+        --fg-3: rgba(174, 182, 193, 0.7);
+        --line: rgba(190, 201, 214, 0.18);
+        --line-soft: rgba(190, 201, 214, 0.1);
+        --amber: #f0c36e;
+        --amber-hi: #fff0ba;
+        --blue: #77c9ff;
+        --violet: #baa5ff;
+        --mint: #70dcb2;
+        --coral: #f69cab;
+        --accent: linear-gradient(90deg, #ffbd59 0%, #fff0ba 32%, #ff91b5 68%, #ffbd59 100%);
+        --gutter-w: 13.5rem;
+        --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+        --pad-x: clamp(1.25rem, 4vw, 3.5rem);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: "DM Sans", "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--fg);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      ::selection {
+        background: rgba(240, 195, 110, 0.3);
+        color: #fff8e8;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font: inherit;
+        color: inherit;
+        background: none;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      sup {
+        font-size: 0.58em;
+        line-height: 0;
+        position: relative;
+        top: -0.78em;
+        vertical-align: baseline;
+        margin-left: 0.02em;
+      }
+
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: hidden;
+        background: var(--bg);
+      }
+
+      .hero-scene {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .hero-scene canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0.92;
+      }
+
+      .hero-shade {
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(
+            90deg,
+            #17191c 0%,
+            rgba(23, 25, 28, 0.94) 28%,
+            rgba(23, 25, 28, 0.55) 48%,
+            rgba(23, 25, 28, 0.06) 72%
+          ),
+          linear-gradient(0deg, rgba(23, 25, 28, 0.9), transparent 24%, transparent 78%, rgba(23, 25, 28, 0.4));
+      }
+
+      .hero-copy {
+        position: relative;
+        z-index: 1;
+        max-width: 42rem;
+        padding: clamp(2rem, 6vh, 4.5rem) var(--pad-x) 1.75rem;
+      }
+
+      .hero-kicker {
+        margin: 0 0 0.9rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+        color: var(--amber);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .hero-identity {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .hero-emblem {
+        width: clamp(46px, 5vw, 62px);
+        height: clamp(46px, 5vw, 62px);
+        flex: none;
+        filter: drop-shadow(0 0 18px rgba(240, 195, 110, 0.16));
+      }
+
+      .hero-title {
+        margin: 0;
+        font-size: clamp(2.7rem, 7vw, 4.6rem);
+        font-weight: 580;
+        letter-spacing: -0.035em;
+        line-height: 1.04;
+        color: var(--fg);
+        white-space: nowrap;
+      }
+
+      .hero-title i {
+        font-style: italic;
+        padding-right: 0.03em;
+      }
+
+      .hero-title .arrow {
+        color: var(--amber);
+        font-weight: 420;
+        margin: 0 0.16em 0 0.12em;
+      }
+
+      .hero-title .word {
+        color: var(--amber);
+        margin-left: 0.18em;
+      }
+
+      .hero-lead {
+        margin: 0.95rem 0 0;
+        font-size: clamp(1.12rem, 2.1vw, 1.38rem);
+        line-height: 1.4;
+        font-weight: 380;
+        color: var(--fg-1);
+        max-width: 34rem;
+      }
+
+      .hero-divider {
+        width: min(100%, 28rem);
+        height: 2px;
+        margin: 1.4rem 0 1.15rem;
+        background: var(--accent);
+        opacity: 0.72;
+        -webkit-mask-image: linear-gradient(90deg, #000 55%, transparent);
+        mask-image: linear-gradient(90deg, #000 55%, transparent);
+        transform-origin: left center;
+      }
+
+      .hero-meta {
+        margin: 0;
+        font-size: 1.02rem;
+        letter-spacing: 0.01em;
+        color: var(--fg-2);
+      }
+
+      .hero-cta {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        margin-top: 1.5rem;
+        padding: 0.85rem 1.25rem;
+        border-radius: 2px;
+        color: var(--amber-hi);
+        font-size: 0.95rem;
+        font-weight: 560;
+        letter-spacing: 0.02em;
+        background: rgba(240, 195, 110, 0.06);
+        transition: background 160ms var(--ease-out);
+      }
+
+      .hero-cta::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: var(--accent);
+        opacity: 0.5;
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        mask-composite: exclude;
+        transition: opacity 160ms var(--ease-out);
+        pointer-events: none;
+      }
+
+      .hero-cta:hover,
+      .hero-cta:focus-visible {
+        background: rgba(240, 195, 110, 0.12);
+        outline: none;
+      }
+
+      .hero-cta:hover::before,
+      .hero-cta:focus-visible::before {
+        opacity: 0.95;
+      }
+
+      .hero-cta:focus-visible {
+        box-shadow: 0 0 0 3px rgba(240, 195, 110, 0.28);
+      }
+
+      .hero-cta-arrow {
+        display: inline-block;
+        transition: transform 200ms var(--ease-out);
+      }
+
+      .hero-cta:hover .hero-cta-arrow,
+      .hero-cta:focus-visible .hero-cta-arrow {
+        transform: translateY(3px);
+      }
+
+      .glance {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem 1.5rem;
+        max-width: 62rem;
+        margin: 0.5rem var(--pad-x) 0;
+        padding: 1.1rem 0 clamp(1.5rem, 4vh, 2.4rem);
+        border-top: 1px solid var(--line);
+        list-style: none;
+      }
+
+      .fact {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: baseline;
+        column-gap: 0.7rem;
+      }
+
+      .fact-num {
+        font-size: clamp(1.7rem, 3vw, 2.15rem);
+        font-weight: 560;
+        letter-spacing: -0.03em;
+        line-height: 1;
+        color: var(--amber);
+        font-variant-numeric: tabular-nums;
+        min-width: 1.3ch;
+      }
+
+      .fact-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+        min-width: 0;
+      }
+
+      .fact-label {
+        font-size: 0.88rem;
+        line-height: 1.3;
+        color: var(--fg-1);
+      }
+
+      .fact-sub {
+        font-size: 0.76rem;
+        color: var(--fg-3);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .catalog {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        min-height: 100dvh;
+        background: linear-gradient(180deg, rgba(23, 25, 28, 0.92), var(--bg) 4rem);
+        border-top: 1px solid var(--line-soft);
+      }
+
+      .index {
+        flex: 1;
+        display: grid;
+        grid-template-columns: var(--gutter-w) 1fr;
+        position: relative;
+        min-height: 70vh;
+      }
+
+      .index::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(var(--gutter-w) - 1px);
+        width: 1px;
+        background: var(--line-soft);
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .gutter {
+        position: sticky;
+        top: 0;
+        align-self: start;
+        padding: 1.5rem 0.85rem 2rem clamp(1.1rem, 3vw, 2.4rem);
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+        min-height: 70vh;
+        background: rgba(23, 25, 28, 0.72);
+        backdrop-filter: blur(8px);
+      }
+
+      .tag {
+        display: grid;
+        grid-template-columns: 1.7rem 1fr;
+        align-items: baseline;
+        gap: 0.55rem;
+        width: 100%;
+        text-align: left;
+        padding: 0.55rem 0.5rem;
+        border-radius: 2px;
+        color: var(--fg-2);
+        transition: color 160ms var(--ease-out), background 160ms var(--ease-out);
+      }
+
+      .tag:hover,
+      .tag:focus-visible {
+        color: var(--fg);
+        background: rgba(255, 255, 255, 0.035);
+        outline: none;
+      }
+
+      .tag:focus-visible {
+        box-shadow: inset 0 0 0 1px rgba(240, 195, 110, 0.6);
+      }
+
+      .tag-step {
+        font-variant-numeric: tabular-nums;
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        color: var(--fg-3);
+      }
+
+      .tag-name {
+        font-size: 0.95rem;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .tag.is-empty .tag-name {
+        color: var(--fg-3);
+      }
+
+      .tag.is-live {
+        color: var(--amber-hi);
+      }
+
+      .tag.is-live .tag-step {
+        color: var(--amber);
+      }
+
+      .tag.is-live .tag-name {
+        color: var(--amber-hi);
+        font-weight: 650;
+      }
+
+      .connective {
+        position: absolute;
+        left: calc(var(--gutter-w) - 1px);
+        top: 0;
+        width: 2px;
+        height: 0;
+        background: linear-gradient(180deg, var(--amber), rgba(240, 195, 110, 0));
+        opacity: 0;
+        pointer-events: none;
+        z-index: 5;
+        transform-origin: top center;
+      }
+
+      .stack {
+        padding: 1.35rem clamp(1.1rem, 3vw, 2.4rem) 3.5rem 1.25rem;
+        min-width: 0;
+      }
+
+      .stack-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.35rem 0 0.85rem;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 0.15rem;
+      }
+
+      .stack-count,
+      .stack-landmark {
+        margin: 0;
+        font-size: 0.86rem;
+        color: var(--fg-2);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .stack-landmark .mark {
+        color: var(--amber);
+        font-weight: 600;
+      }
+
+      .strip {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(8.5rem, 11rem) 6.2rem auto;
+        gap: 0.85rem 1.1rem;
+        align-items: center;
+        padding: 1rem 0.5rem;
+        border-bottom: 1px solid var(--line-soft);
+        color: inherit;
+        transition: background 160ms var(--ease-out), border-color 160ms var(--ease-out);
+      }
+
+      .strip:hover,
+      .strip:focus-visible {
+        background: rgba(240, 195, 110, 0.04);
+        border-bottom-color: rgba(240, 195, 110, 0.45);
+        outline: none;
+      }
+
+      .strip:focus-visible {
+        box-shadow: inset 0 0 0 1px rgba(240, 195, 110, 0.5);
+      }
+
+      .strip-title {
+        margin: 0;
+        font-size: 1.02rem;
+        line-height: 1.4;
+        font-weight: 550;
+        letter-spacing: -0.01em;
+        color: var(--fg);
+      }
+
+      .strip-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .strip-tag {
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: rgba(255, 240, 186, 0.78);
+        border: 1px solid rgba(240, 195, 110, 0.26);
+        padding: 0.4rem 0.65rem;
+        border-radius: 2px;
+        white-space: nowrap;
+      }
+
+      .strip-date {
+        margin: 0;
+        font-size: 0.84rem;
+        color: var(--fg-2);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+
+      .strip-path {
+        margin: 0;
+        justify-self: end;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        font-size: 0.78rem;
+        color: rgba(255, 240, 186, 0.78);
+        white-space: nowrap;
+      }
+
+      .empty {
+        margin: 0;
+        padding: 2.5rem 0.5rem;
+        color: var(--fg-2);
+        font-size: 0.95rem;
+      }
+
+      .foot {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 0.5rem 1.5rem;
+        padding: 1.4rem var(--pad-x) 2rem;
+        border-top: 1px solid var(--line-soft);
+        font-size: 0.8rem;
+        color: var(--fg-3);
+      }
+
+      .foot p {
+        margin: 0;
+      }
+
+      .foot a {
+        color: var(--fg-1);
+        border-bottom: 1px solid rgba(240, 195, 110, 0.35);
+        padding-bottom: 1px;
+        transition: color 160ms var(--ease-out), border-color 160ms var(--ease-out);
+      }
+
+      .foot a:hover,
+      .foot a:focus-visible {
+        color: var(--amber-hi);
+        border-bottom-color: var(--amber);
+        outline: none;
+      }
+
+      .foot a:focus-visible {
+        box-shadow: 0 0 0 2px rgba(240, 195, 110, 0.35);
+      }
+
+      .enter-hide {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+
+      @media (max-width: 820px) {
+        :root {
+          --gutter-w: 100%;
+        }
+
+        .hero-shade {
+          background:
+            linear-gradient(
+              180deg,
+              rgba(23, 25, 28, 0.12) 0%,
+              rgba(23, 25, 28, 0.3) 22%,
+              rgba(23, 25, 28, 0.88) 37%,
+              #17191c 100%
+            ),
+            linear-gradient(90deg, rgba(23, 25, 28, 0.45), rgba(23, 25, 28, 0));
+        }
+
+        .hero-title {
+          white-space: normal;
+        }
+
+        .glance {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 1rem 1.1rem;
+        }
+
+        .index {
+          grid-template-columns: 1fr;
+          align-content: start;
+          min-height: 0;
+        }
+
+        .index::before {
+          display: none;
+        }
+
+        .gutter {
+          position: static;
+          min-height: 0;
+          border-bottom: 1px solid var(--line-soft);
+          padding-bottom: 1rem;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0.35rem 0.5rem;
+        }
+
+        .tag {
+          width: auto;
+          grid-template-columns: auto auto;
+          padding: 0.5rem 0.75rem;
+          border: 1px solid var(--line-soft);
+        }
+
+        .tag.is-live {
+          border-color: rgba(240, 195, 110, 0.45);
+          background: rgba(240, 195, 110, 0.08);
+        }
+
+        .connective {
+          display: none;
+        }
+
+        .stack {
+          padding-left: clamp(1.1rem, 3vw, 2.4rem);
+        }
+
+        .strip {
+          grid-template-columns: 1fr;
+          gap: 0.5rem;
+        }
+
+        .strip-path {
+          justify-self: start;
+          white-space: normal;
+          overflow-wrap: anywhere;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        .enter-hide {
+          opacity: 1;
+          transform: none;
+        }
+
+        .hero-scene canvas {
+          opacity: 0.6;
+        }
+
+        .hero-cta-arrow,
+        .hero-cta,
+        .hero-cta::before {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero" aria-label="DELPHI Z to tau-pair spin analysis introduction">
+      <div class="hero-scene" aria-hidden="true">
+        <canvas id="tau-canvas"></canvas>
+        <div class="hero-shade"></div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="hero-kicker enter-hide" data-enter="hero">DELPHI · LEP · 1992–1995</p>
+        <div class="hero-identity enter-hide" data-enter="hero">
+          <img class="hero-emblem" src="./assets/favicon.svg" width="62" height="62" alt="" />
+          <h1 class="hero-title" aria-label="Z to tau-plus tau-minus spin">
+            <i>Z</i><span class="arrow">→</span><i>τ</i><sup>+</sup><i>τ</i><sup>−</sup><span class="word">spin</span>
+          </h1>
+        </div>
+        <p class="hero-lead enter-hide" data-enter="hero">
+          Measuring the full tau-pair spin density matrix in archived DELPHI data at the Z pole.
+        </p>
+        <div class="hero-divider enter-hide" data-enter="hero" aria-hidden="true"></div>
+        <p class="hero-meta enter-hide" data-enter="hero">Presentations · group meetings, seminars, and conferences</p>
+        <a class="hero-cta enter-hide" data-enter="hero" href="#talks">
+          Browse talks
+          <span class="hero-cta-arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <ul class="glance" aria-label="At a glance">
+        <li class="fact enter-hide" data-enter="glance">
+          <span class="fact-num" data-count="4">4</span>
+          <span class="fact-text">
+            <span class="fact-label">years of data</span>
+            <span class="fact-sub">1992–1995</span>
+          </span>
+        </li>
+        <li class="fact enter-hide" data-enter="glance">
+          <span class="fact-num" data-count="8">8</span>
+          <span class="fact-text">
+            <span class="fact-label">data-taking points</span>
+            <span class="fact-sub">year × energy</span>
+          </span>
+        </li>
+        <li class="fact enter-hide" data-enter="glance">
+          <span class="fact-num" data-count="3">3</span>
+          <span class="fact-text">
+            <span class="fact-label">centre-of-mass energies</span>
+            <span class="fact-sub">89.4, 91.2, 93.0 GeV</span>
+          </span>
+        </li>
+        <li class="fact enter-hide" data-enter="glance">
+          <span class="fact-num" data-count="15">15</span>
+          <span class="fact-text">
+            <span class="fact-label">independent spin coefficients</span>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <main class="catalog" id="talks">
+      <div class="index">
+        <aside class="gutter enter-hide" data-enter="catalog" aria-label="Filter talks by tag"></aside>
+        <div class="connective" id="connective" aria-hidden="true"></div>
+        <section class="stack" aria-label="Talks">
+          <div class="stack-head enter-hide" data-enter="catalog">
+            <p class="stack-count" id="stack-count" aria-live="polite">0 talks</p>
+            <p class="stack-landmark">
+              <span class="mark"><i>Z</i> → <i>τ</i><sup>+</sup><i>τ</i><sup>−</sup> spin</span> · presentations
+            </p>
+          </div>
+          <div id="talk-list"></div>
+        </section>
+      </div>
+      <footer class="foot">
+        <p>Slides are built with Slidev; this page lists every deck in the repository.</p>
+        <a href="https://github.com/AvencastF/delphi-ztautau-presentation" rel="noopener">Source on GitHub</a>
+      </footer>
+    </main>
+
+    <script src="./assets/anime.umd.min.js"></script>
+    <script src="./assets/tau-scene.js"></script>
+    <script>
+      /* To add a deck, append an object to `talks`:
+           title — full talk title shown in the list
+           date  — ISO date "YYYY-MM-DD" (the list is sorted newest first)
+           path  — the deck's base path, shown in monospace (e.g. "/my-deck/")
+           href  — relative link to the built deck (e.g. "./my-deck/")
+           tags  — one type tag from `typeOrder` plus any extra tags (e.g. the year);
+                   extra tags automatically get their own filter button. */
+      const talks = [
+        {
+          title:
+            "Group meeting — DELPHI Z → ττ, the 1992–1995 analysis: machine-learning reconstruction and the spin-density-matrix fit (status 2026-10-31)",
+          date: "2026-10-31",
+          path: "/ztautau-status-1994-20261022/",
+          href: "./ztautau-status-1994-20261022/",
+          tags: ["Group meeting", "2026"],
+        },
+      ]
+
+      const typeOrder = ["Group meeting", "Seminar", "Conference", "Workshop"]
+      const extraTags = [...new Set(talks.flatMap((t) => t.tags.filter((tag) => !typeOrder.includes(tag))))]
+      const filterTags = ["All", ...typeOrder, ...extraTags]
+      const sortedTalks = [...talks].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
+
+      const gutter = document.querySelector(".gutter")
+      const list = document.getElementById("talk-list")
+      const countEl = document.getElementById("stack-count")
+      const connective = document.getElementById("connective")
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      const hasAnime = !!(window.anime && window.anime.animate)
+
+      let liveTag = "All"
+      if (window.createTauScene) window.createTauScene(document.getElementById("tau-canvas"))
+
+      function pad(n) {
+        return String(n).padStart(2, "0")
+      }
+
+      function esc(value) {
+        return String(value).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c])
+      }
+
+      filterTags.forEach((tag, i) => {
+        const count = tag === "All" ? talks.length : talks.filter((t) => t.tags.includes(tag)).length
+        const btn = document.createElement("button")
+        btn.type = "button"
+        btn.className = "tag" + (tag === "All" ? " is-live" : "") + (count ? "" : " is-empty")
+        btn.dataset.tag = tag
+        btn.setAttribute("aria-pressed", tag === "All" ? "true" : "false")
+        btn.setAttribute("aria-label", tag + " (" + count + (count === 1 ? " talk" : " talks") + ")")
+        btn.innerHTML = '<span class="tag-step">' + pad(i) + '</span><span class="tag-name">' + esc(tag) + "</span>"
+        btn.addEventListener("click", () => setFilter(tag, btn))
+        gutter.appendChild(btn)
+      })
+
+      function filteredTalks() {
+        if (liveTag === "All") return sortedTalks
+        return sortedTalks.filter((t) => t.tags.includes(liveTag))
+      }
+
+      function renderTalks() {
+        const rows = filteredTalks()
+        countEl.textContent = rows.length + (rows.length === 1 ? " talk" : " talks")
+        if (!rows.length) {
+          list.innerHTML = '<p class="empty">No talks with this tag yet.</p>'
+          return
+        }
+        list.innerHTML = rows
+          .map(
+            (talk) =>
+              '<a class="strip" href="' +
+              esc(talk.href) +
+              '">' +
+              '<p class="strip-title">' +
+              esc(talk.title) +
+              "</p>" +
+              '<ul class="strip-tags" aria-label="Tags">' +
+              talk.tags.map((tag) => '<li class="strip-tag">' + esc(tag) + "</li>").join("") +
+              "</ul>" +
+              '<p class="strip-date"><time datetime="' +
+              esc(talk.date) +
+              '">' +
+              esc(talk.date) +
+              "</time></p>" +
+              '<p class="strip-path"><code>' +
+              esc(talk.path) +
+              "</code></p>" +
+              "</a>"
+          )
+          .join("")
+      }
+
+      function pulseConnective(fromBtn) {
+        if (reduced || !fromBtn || !hasAnime) return
+        const btnBox = fromBtn.getBoundingClientRect()
+        const indexBox = document.querySelector(".index").getBoundingClientRect()
+        const top = btnBox.top - indexBox.top + btnBox.height / 2
+        connective.style.top = top + "px"
+        connective.style.height = Math.max(48, indexBox.height - top - 24) + "px"
+        window.anime.set(connective, { opacity: 0, scaleY: 0.2 })
+        window.anime.animate(connective, {
+          opacity: [0, 0.9, 0],
+          scaleY: [0.2, 1],
+          duration: 700,
+          ease: "outExpo",
+        })
+      }
+
+      function setFilter(tag, btn) {
+        liveTag = tag
+        gutter.querySelectorAll(".tag").forEach((el) => {
+          const on = el.dataset.tag === tag
+          el.classList.toggle("is-live", on)
+          el.setAttribute("aria-pressed", on ? "true" : "false")
+        })
+        renderTalks()
+        pulseConnective(btn)
+        if (!reduced && hasAnime) {
+          window.anime.animate(list.querySelectorAll(".strip, .empty"), {
+            opacity: [0, 1],
+            translateY: [10, 0],
+            delay: window.anime.stagger(28),
+            duration: 420,
+            ease: "outQuad",
+          })
+        }
+      }
+
+      function countUp(nodes, start) {
+        nodes.forEach((el, i) => {
+          const target = Number(el.dataset.count)
+          const state = { v: 0 }
+          el.textContent = "0"
+          window.anime.animate(state, {
+            v: target,
+            duration: 1100,
+            delay: start + i * 90,
+            ease: "outExpo",
+            onUpdate: () => {
+              el.textContent = String(Math.round(state.v))
+            },
+            onComplete: () => {
+              el.textContent = el.dataset.count
+            },
+          })
+        })
+      }
+
+      function enter() {
+        renderTalks()
+        const heroNodes = document.querySelectorAll('[data-enter="hero"]')
+        const glanceNodes = document.querySelectorAll('[data-enter="glance"]')
+        const catalogNodes = document.querySelectorAll('[data-enter="catalog"]')
+        if (reduced || !hasAnime) {
+          document.querySelectorAll(".enter-hide").forEach((el) => el.classList.remove("enter-hide"))
+          return
+        }
+        window.anime.animate(heroNodes, {
+          opacity: [0, 1],
+          translateY: [28, 0],
+          delay: window.anime.stagger(90, { start: 120 }),
+          duration: 900,
+          ease: "outExpo",
+          onComplete: () => heroNodes.forEach((el) => el.classList.remove("enter-hide")),
+        })
+        window.anime.animate(document.querySelector(".hero-divider"), {
+          scaleX: [0, 1],
+          duration: 1100,
+          delay: 380,
+          ease: "outExpo",
+        })
+        window.anime.animate(glanceNodes, {
+          opacity: [0, 1],
+          translateY: [16, 0],
+          delay: window.anime.stagger(80, { start: 640 }),
+          duration: 800,
+          ease: "outExpo",
+          onComplete: () => glanceNodes.forEach((el) => el.classList.remove("enter-hide")),
+        })
+        countUp(document.querySelectorAll(".fact-num"), 640)
+        window.anime.animate(catalogNodes, {
+          opacity: [0, 1],
+          translateY: [18, 0],
+          delay: window.anime.stagger(40, { start: 500 }),
+          duration: 700,
+          ease: "outExpo",
+          onComplete: () => catalogNodes.forEach((el) => el.classList.remove("enter-hide")),
+        })
+      }
+
+      enter()
+    </script>
+  </body>
+</html>

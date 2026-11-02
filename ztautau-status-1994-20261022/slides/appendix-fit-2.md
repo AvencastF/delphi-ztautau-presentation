@@ -3,16 +3,16 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · spin fit: closure and null distributions
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/fit/modelC-closure.png" alt="modelC-closure.png" /></div><div class="st-cap">Closure: fitted / injected (left) and largest deviation per injected state (right); final model on its own pseudo-data at 1e-12</div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/fit/step2-closure-linearity.png" alt="step2-closure-linearity.png" /></div><div class="st-cap">Legacy model: fitted vs injected shift, all vs listed templates reweighted</div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/fit/step2-q-null-witness.png" alt="step2-q-null-witness.png" /></div><div class="st-cap">Witness and eigenvalue statistics on the same 40,000 null toys, legacy model</div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/fit/step2-q-null-entanglement.png" alt="step2-q-null-entanglement.png" /></div><div class="st-cap">Eigenvalue test statistic under the null at three separable points, legacy model</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/fit/modelC-closure.png" alt="modelC-closure.png" /></div><div class="st-cap">Closure: fitted / injected (left) and largest deviation per injected state (right); final model on its own pseudo-data at 1e-12</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/fit/step2-closure-linearity.png" alt="step2-closure-linearity.png" /></div><div class="st-cap">Legacy model: fitted vs injected shift, all vs listed templates reweighted</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/fit/step2-q-null-witness.png" alt="step2-q-null-witness.png" /></div><div class="st-cap">Witness and eigenvalue statistics on the same 40,000 null toys, legacy model</div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/fit/step2-q-null-entanglement.png" alt="step2-q-null-entanglement.png" /></div><div class="st-cap">Eigenvalue test statistic under the null at three separable points, legacy model</div></div>
 </div>
 
 <div class="st-source">Source: closure and hypothesis-test studies of 2026-10-31, combined 1992–1995; simulation only, statistics only</div>

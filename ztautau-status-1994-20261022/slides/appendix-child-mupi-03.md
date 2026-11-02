@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="\mu\pi" /> (3/7)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\mu\pi" /> <span class="id">inclusive_1p1p_mupi</span> · order by species: cand. 0 = <LaTeX formula="\mu" />, cand. 1 = <LaTeX formula="\pi" /> · yield <span class="nw">4,727 data</span> / <span class="nw">4,819 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-mupi/inclusive_1p1p_mupi-selected-candidate0_track_hcal_mean-rate_lin.svg" alt="cand. 0 (mu): HCAL mean per hit layer [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 347.3 / 32</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-mupi/inclusive_1p1p_mupi-selected-candidate0_track_mass-rate_lin.svg" alt="cand. 0 (mu): track mass [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): track mass [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 1.7 / 1</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-mupi/inclusive_1p1p_mupi-selected-candidate0_track_p-rate_lin.svg" alt="cand. 0 (mu): p [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): <LaTeX formula="p" /> [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 33.1 / 45</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-mupi/inclusive_1p1p_mupi-selected-candidate0_truth_species-rate_lin.svg" alt="cand. 0 (mu): true species (simulation)" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): true species (simulation)<span class="badge n">no <LaTeX formula="\chi^2" /></span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-mupi/inclusive_1p1p_mupi-selected-candidate0_track_hcal_mean-rate_lin.svg" alt="cand. 0 (mu): HCAL mean per hit layer [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 347.3 / 32</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-mupi/inclusive_1p1p_mupi-selected-candidate0_track_mass-rate_lin.svg" alt="cand. 0 (mu): track mass [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): track mass [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 1.7 / 1</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-mupi/inclusive_1p1p_mupi-selected-candidate0_track_p-rate_lin.svg" alt="cand. 0 (mu): p [GeV]" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): <LaTeX formula="p" /> [GeV]<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 33.1 / 45</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-mupi/inclusive_1p1p_mupi-selected-candidate0_truth_species-rate_lin.svg" alt="cand. 0 (mu): true species (simulation)" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\mu" />): true species (simulation)<span class="badge n">no <LaTeX formula="\chi^2" /></span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

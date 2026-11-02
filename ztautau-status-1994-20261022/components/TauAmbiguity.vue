@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useStepMotion } from './useStepMotion'
-import { mixed } from './tex'
+import { useStepMotion } from 'slidev-addon-ztautau/composable/useStepMotion'
+import { mixed } from 'slidev-addon-ztautau/composable/tex'
 const props = defineProps<{ step: number }>()
 const { reveal, stage } = useStepMotion(() => props.step, 3, 900)
 const titles = ['What is measured: the visible decay product', 'Two-body kinematics put the $\\tau$ on a cone', 'The pair constraint leaves two mirror solutions', 'The ML model predicts the direction directly']

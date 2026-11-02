@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Back-to-back tau emblem">
+  <circle cx="32" cy="32" r="30" fill="#23262b"/>
+  <circle cx="32" cy="32" r="29" fill="none" stroke="rgba(190,201,214,0.28)" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="rgba(190,201,214,0.14)" stroke-width="1"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+    <path d="M35.5 28.5 L47 17" stroke="#f0c36e"/>
+    <path d="M38.5 16.5 H47.5 V25.5" stroke="#f0c36e"/>
+    <path d="M28.5 35.5 L17 47" stroke="#77c9ff"/>
+    <path d="M25.5 47.5 H16.5 V38.5" stroke="#77c9ff"/>
+  </g>
+  <circle cx="32" cy="32" r="3.6" fill="#fff0ba"/>
+</svg>

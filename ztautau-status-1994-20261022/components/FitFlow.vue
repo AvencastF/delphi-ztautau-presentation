@@ -1,8 +1,8 @@
 <script setup lang="ts">
 // The whole spin-fit chain as one click-driven animation (pattern of MLFlow.vue / useStepMotion.ts).
 // Each click moves the highlight to the next stage and shows one sentence for a general audience.
-import { useStepMotion } from './useStepMotion'
-import { mixed } from './tex'
+import { useStepMotion } from 'slidev-addon-ztautau/composable/useStepMotion'
+import { mixed } from 'slidev-addon-ztautau/composable/tex'
 const props = defineProps<{ step: number }>()
 const N = 8
 const { motion, running, stage, reveal } = useStepMotion(() => props.step, N - 1, 700)

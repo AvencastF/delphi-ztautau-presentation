@@ -3,13 +3,13 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # How a template fit works: one histogram, one coefficient
 
 <div class="fig-lead">
-<div><div class="st-fig" style="height:300px"><NJUPlot src="/figures/fit-explainer/template-ckk.svg" alt="pi-pi histogram of the product of the two k-axis decay angles, prediction for three values of C_kk" /></div><div class="st-cap"><LaTeX formula="\pi\pi" /> events, 1992–1995, ML. Lines: simulation for three values of <LaTeX formula="C_{kk}" />. Points: pseudo-data equal to the simulation, <LaTeX formula="\sqrt N" /> errors.</div></div>
+<div><div class="st-fig" style="height:300px"><ZoomablePlot src="/figures/fit-explainer/template-ckk.svg" alt="pi-pi histogram of the product of the two k-axis decay angles, prediction for three values of C_kk" /></div><div class="st-cap"><LaTeX formula="\pi\pi" /> events, 1992–1995, ML. Lines: simulation for three values of <LaTeX formula="C_{kk}" />. Points: pseudo-data equal to the simulation, <LaTeX formula="\sqrt N" /> errors.</div></div>
 <div>
 <ol class="steps" style="font-size:14.5px">
 <li><b>Measure</b> a histogram of one decay-angle combination</li>

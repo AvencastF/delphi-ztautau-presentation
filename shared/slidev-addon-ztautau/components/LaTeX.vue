@@ -3,6 +3,7 @@
 // but rendered synchronously with the bundled KaTeX so there is no flash of raw TeX and no CDN stylesheet.
 import { computed } from 'vue'
 import katex from 'katex'
+import 'katex/dist/katex.min.css'
 const props = withDefaults(defineProps<{ formula: string, block?: boolean }>(), { block: false })
 const html = computed(() => katex.renderToString(props.formula, { throwOnError: false, displayMode: props.block, strict: 'ignore' }))
 </script>

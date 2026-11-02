@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="\pi\rho" /> (1/10)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\pi\rho" /> <span class="id">inclusive_1p1p_pirho</span> · order by species: cand. 0 = <LaTeX formula="\pi" />, cand. 1 = <LaTeX formula="\rho" /> · yield <span class="nw">3,075 data</span> / <span class="nw">2,999 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate0_neutral_all_count-rate_lin.svg" alt="cand. 0 (pi): all neutrals" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): all neutrals<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 12.5 / 4</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate0_neutral_all_dr03_count-rate_lin.svg" alt="cand. 0 (pi): all neutrals, Delta Rlt 0.3" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): all neutrals, <LaTeX formula="\Delta R\lt 0.3" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 7.5 / 4</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate0_neutral_failed_photon_count-rate_lin.svg" alt="cand. 0 (pi): non-photon neutrals" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): non-photon neutrals<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 13.9 / 4</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate0_neutral_identified_photon_count-rate_lin.svg" alt="cand. 0 (pi): identified photons" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): identified photons<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 4.2 / 4</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate0_neutral_all_count-rate_lin.svg" alt="cand. 0 (pi): all neutrals" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): all neutrals<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 12.5 / 4</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate0_neutral_all_dr03_count-rate_lin.svg" alt="cand. 0 (pi): all neutrals, Delta Rlt 0.3" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): all neutrals, <LaTeX formula="\Delta R\lt 0.3" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 7.5 / 4</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate0_neutral_failed_photon_count-rate_lin.svg" alt="cand. 0 (pi): non-photon neutrals" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): non-photon neutrals<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 13.9 / 4</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate0_neutral_identified_photon_count-rate_lin.svg" alt="cand. 0 (pi): identified photons" /></div><div class="st-cap">cand. 0 (<LaTeX formula="\pi" />): identified photons<span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 4.2 / 4</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

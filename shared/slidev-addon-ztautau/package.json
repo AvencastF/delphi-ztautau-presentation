@@ -1,0 +1,8 @@
+{
+  "name": "slidev-addon-ztautau",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "keywords": ["slidev-addon", "slidev"],
+  "engines": { "slidev": "52.11.3" }
+}

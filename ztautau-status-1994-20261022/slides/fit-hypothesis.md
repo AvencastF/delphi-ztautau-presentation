@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Testing entanglement: could a world without it produce our result?
@@ -20,7 +20,7 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="co ok"><b>Bell</b> Same recipe with <LaTeX formula="|C_{kk}-C_{rr}|\le\sqrt2" /> as the null.</div>
 </div>
 <div>
-<div class="st-fig" style="height:250px"><NJUPlot src="/figures/fit/step2-W-null.png" alt="witness from fits: no-entanglement fake experiments vs expected" /></div>
+<div class="st-fig" style="height:250px"><ZoomablePlot src="/figures/fit/step2-W-null.png" alt="witness from fits: no-entanglement fake experiments vs expected" /></div>
 <div class="st-cap"><b>Witness</b> from fits to fake experiments, 1992–1995: world without entanglement (blue) vs the expected entangled state (orange); legacy fit model</div>
 </div>
 </div>

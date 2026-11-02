@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="e\mu" /> (5/7)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="e\mu" /> <span class="id">inclusive_1p1p_emu</span> · order by species: cand. 0 = <LaTeX formula="e" />, cand. 1 = <LaTeX formula="\mu" /> · yield <span class="nw">3,919 data</span> / <span class="nw">4,134 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_costheta-rate_lin.svg" alt="cand. 1 (mu): costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): <LaTeX formula="\cos\theta" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 80.9 / 36</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_e_over_p-rate_lin.svg" alt="cand. 1 (mu): EM-calorimeter E/p" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): EM-calorimeter <LaTeX formula="E/p" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 441.3 / 57</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_energy-rate_lin.svg" alt="cand. 1 (mu): track E [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): track <LaTeX formula="E" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 120.9 / 46</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_mass-rate_lin.svg" alt="cand. 1 (mu): track mass [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): track mass [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 11.6 / 1</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_costheta-rate_lin.svg" alt="cand. 1 (mu): costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): <LaTeX formula="\cos\theta" /><span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 80.9 / 36</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_e_over_p-rate_lin.svg" alt="cand. 1 (mu): EM-calorimeter E/p" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): EM-calorimeter <LaTeX formula="E/p" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 441.3 / 57</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_energy-rate_lin.svg" alt="cand. 1 (mu): track E [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): track <LaTeX formula="E" /> [GeV]<span class="badge a"><LaTeX formula="\chi^2/\mathrm{dof}" /> 120.9 / 46</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-emu/inclusive_1p1p_emu-selected-candidate1_track_mass-rate_lin.svg" alt="cand. 1 (mu): track mass [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\mu" />): track mass [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 11.6 / 1</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

@@ -1,6 +1,5 @@
-<script setup>
-defineProps({ active: Number })
-const chapters = ['Inputs', 'Selection', 'Cutflows', 'Data / MC', 'Machine learning', 'Spin fit', 'Status']
+<script setup lang="ts">
+defineProps<{ chapters: string[], active?: number }>()
 </script>
 
 <template>

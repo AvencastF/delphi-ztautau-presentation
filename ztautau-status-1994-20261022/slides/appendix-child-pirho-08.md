@@ -3,7 +3,7 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · child <LaTeX formula="\pi\rho" /> (8/10)
@@ -11,10 +11,10 @@ import NJUPlot from '../components/NJUPlot.vue'
 <div class="st-sub">1992–1995 · child <LaTeX formula="\pi\rho" /> <span class="id">inclusive_1p1p_pirho</span> · order by species: cand. 0 = <LaTeX formula="\pi" />, cand. 1 = <LaTeX formula="\rho" /> · yield <span class="nw">3,075 data</span> / <span class="nw">2,999 simulated</span></div>
 
 <div class="fig2x2">
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_track_costheta-rate_lin.svg" alt="cand. 1 (rho): costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="\cos\theta" /><span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 47.2 / 34</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_track_e_over_p-rate_lin.svg" alt="cand. 1 (rho): EM-calorimeter E/p" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): EM-calorimeter <LaTeX formula="E/p" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 1202.9 / 57</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_track_energy-rate_lin.svg" alt="cand. 1 (rho): track E [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): track <LaTeX formula="E" /> [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 268.2 / 44</span></div></div>
-<div><div class="st-fig"><NJUPlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_track_hcal_mean-rate_lin.svg" alt="cand. 1 (rho): HCAL mean per hit layer [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 1486.7 / 60</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_track_costheta-rate_lin.svg" alt="cand. 1 (rho): costheta" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): <LaTeX formula="\cos\theta" /><span class="badge g"><LaTeX formula="\chi^2/\mathrm{dof}" /> 47.2 / 34</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_track_e_over_p-rate_lin.svg" alt="cand. 1 (rho): EM-calorimeter E/p" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): EM-calorimeter <LaTeX formula="E/p" /><span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 1202.9 / 57</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_track_energy-rate_lin.svg" alt="cand. 1 (rho): track E [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): track <LaTeX formula="E" /> [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 268.2 / 44</span></div></div>
+<div><div class="st-fig"><ZoomablePlot src="/figures/datamc-1992-1995/children-pirho/inclusive_1p1p_pirho-selected-candidate1_track_hcal_mean-rate_lin.svg" alt="cand. 1 (rho): HCAL mean per hit layer [GeV]" /></div><div class="st-cap">cand. 1 (<LaTeX formula="\rho" />): HCAL mean per hit layer [GeV]<span class="badge r"><LaTeX formula="\chi^2/\mathrm{dof}" /> 1486.7 / 60</span></div></div>
 </div>
 
 <div class="st-source">Source: data/MC plots of the 1992–1995 run-quality rerun (selection job 60333695, plots job 60340876)</div>

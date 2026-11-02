@@ -3,14 +3,14 @@ class: st pres
 ---
 
 <script setup>
-import NJUPlot from '../components/NJUPlot.vue'
+import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 </script>
 
 # Appendix · spin fit: test statistics under the null hypothesis
 
 <div class="st-sub">Null hypothesis = closest separable (or Bell-local) state, found by a constrained fit to the expected data. Test statistic <LaTeX formula="q=\chi^2_{\mathrm{null}}-\chi^2_{\mathrm{free}}" />.</div>
 
-<div class="st-fig" style="height:185px"><NJUPlot src="/figures/fit/modelC-q-null-witness.png" alt="witness test statistic under the null" /></div>
+<div class="st-fig" style="height:185px"><ZoomablePlot src="/figures/fit/modelC-q-null-witness.png" alt="witness test statistic under the null" /></div>
 <div class="st-cap"><b>Witness test under the null</b>, 1992–1995: distribution, tail probability and quantiles of <LaTeX formula="q" /> against the textbook <LaTeX formula="\tfrac12\chi^2_1" /> (black); final model in blue</div>
 
 <div class="st-cols st-cols-21" style="margin-top:8px">

@@ -9,4 +9,4 @@ class: nju-chapter-bridge
 <div class="chapter-context"><span class="tag sel">selection</span><span>inclusive region <span class="id">inclusive_1p1p</span></span><span class="context-rule"></span><span>10 children: ee <LaTeX formula="e\mu" /> <LaTeX formula="e\pi" /> <LaTeX formula="e\rho" /> <LaTeX formula="\mu\mu" /> <LaTeX formula="\mu\pi" /> <LaTeX formula="\mu\rho" /> <LaTeX formula="\pi\pi" /> <LaTeX formula="\pi\rho" /> <LaTeX formula="\rho\rho" /></span></div>
 </div>
 
-<NJUChapter :active="2" />
+<DeckChapters :active="2" />

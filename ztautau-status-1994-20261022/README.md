@@ -1,20 +1,23 @@
 # DELPHI Z → ττ, the 1992–1995 analysis — deck of 2026-10-22, revised 2026-10-31
 
+> This deck now lives in the multi-deck repository (see the [repository README](../README.md) and [AGENTS.md](../AGENTS.md)). Install and run it from the repository root; shared components, styles and fonts come from [`shared/`](../shared/README.md).
+
 Slidev deck for the owner's group meeting. First version (2026-10-22): status of the 1994 chain. **Revision of 2026-10-31 (after the owner review of commit b496960):** the whole deck presents the **1992–1995 analysis**: data with the run-to-energy-point lookup and the good-run (run-quality) selection, the simulation of eight energy points with four detector descriptions, the unchanged selection, cutflows and data/MC comparisons from the all-years run-quality rerun (NERSC `all-years-rq-20261026`, jobs 60333695 / 60340876), the all-years ML models v1, and a "Spin fit" chapter written for a general audience (entanglement in one picture, analysing powers, one click-driven animation of the whole fit, template fits, reweighted simulation, covariance, pseudo-experiments, hypothesis tests). Every spin-fit number is simulation-only, Asimov / expected, statistics-only, and unchanged from the audited fit studies. The 1994-only ML studies are kept in the appendix as the "1994 reference".
 
-Standalone project in the style of `/Users/avencastmini/EveNet-Presentation/CCNU_Seminar` (same theme-default + Graphite & Gold CSS, DM Sans, `NJUPlot` zoomable figures, chapter rails). It is its own git repository (github.com/AvencastF/delphi-ztautau-presentation) with a GitHub Pages workflow.
+Styled after `/Users/avencastmini/EveNet-Presentation/CCNU_Seminar` (same theme-default + Graphite & Gold CSS, DM Sans, `ZoomablePlot` zoomable figures, chapter rails). Until 2026-11-02 it was a standalone git repository; it is now the first deck of the multi-deck repository github.com/AvencastF/delphi-ztautau-presentation, built and published by the root GitHub Pages workflow.
 
 ## Run
 
 ```bash
-cd /Users/avencastmini/ZtautauLEP/slides/ztautau-status-1994-20261022
-npm install          # pins @slidev/cli 52.11.3 as the reference project does
-npm run dev          # http://localhost:3030, opens the browser
-npm run build        # static site in dist/ (verified: builds without errors, 2026-10-23 and twice on 2026-10-31)
+cd /Users/avencastmini/ZtautauLEP/slides                    # repository root
+npm ci                                                      # one root install; pins @slidev/cli 52.11.3
+npm run dev -- ztautau-status-1994-20261022                 # http://localhost:3030, opens the browser
+npm run build -- ztautau-status-1994-20261022               # static site in ztautau-status-1994-20261022/dist/
+# Before the move, the standalone layout built without errors on 2026-10-23 and twice on 2026-10-31.
 # The owner presents from the dev server; PDF/PNG exports are not used (long exports also capture half-painted slides).
 ```
 
-Deployment under a sub-path: `npx slidev build slides.md --base /ztautau-status-1994-20261022/`.
+Deployment: GitHub Pages serves the deck at https://avencastf.github.io/delphi-ztautau-presentation/ztautau-status-1994-20261022/ (base `/delphi-ztautau-presentation/ztautau-status-1994-20261022/`, built with every deck by `npm run build:all` from the repository root).
 
 ## Layout
 
@@ -26,12 +29,12 @@ Deployment under a sub-path: `npx slidev build slides.md --base /ztautau-status-
 | `public/figures/` + `MANIFEST.md` | figures with origin paths and sha256: `datamc-1992-1995/` (410 SVG from the NERSC rerun plots), `ml-all-years/` (15 SVG from the all-years ML evaluations), `fit/` (19 PNG), `fit-explainer/` (2 SVG made by `data/make_fit_explainer_figs.py`), `ml/` (1994 reference). The 1994-only `datamc/` set was removed (git history) |
 | `data/nersc-all-years-rq-20261026/` | `cutflows/{cutflow.csv, exclusive_confusion.csv/.json, inclusive_1p1p.md}` and every `agreement.json`, `overlay.json`, `rates*`, `cutflow-by-group*` of the rerun plots, copied read-only from NERSC; `aggregated.md` from `data/aggregate_allyears.py` |
 | `data/nersc-all-event-detector-1994-20261012/` | the frozen 1994 run's count tables (reference for the earlier deck) |
-| `styles/` | `main/animations/base.css` (shared EveNet styles), `graphite.css`, `chapters.css`, `delphi-section.css`, `local.css`, `status.css` (this deck's tables/grids, `.tag.fit` / `.kv.fit`) |
-| `components/NJUPlot.vue`, `NJUChapter.vue` | zoomable figure viewer; chapter rail with seven chapters |
-| `components/useStepMotion.ts` | shared anime.js 4.5.0 step driver (animates toward the slide's click count while the slide is active and motion is allowed; jumps to the final state otherwise) |
+| `style.ts` → [`../shared/styles/`](../shared/styles/) | `main/animations/base.css` (shared EveNet styles), `graphite.css`, `chapters.css`, `status.css` (status-report tables/grids, `.tag.fit` / `.kv.fit`), imported in that order after `../shared/brand/fonts.css`; the former `local.css` rules are in `graphite.css` (helpers) and `shared/brand/fonts.css` (font face); `delphi-section.css` was dropped as unused |
+| `components/DeckChapters.vue` + shared [`ChapterRail.vue`](../shared/slidev-addon-ztautau/components/ChapterRail.vue), shared [`ZoomablePlot.vue`](../shared/slidev-addon-ztautau/components/ZoomablePlot.vue) | chapter rail with seven chapters (the deck-local wrapper fixes the chapter names); zoomable figure viewer |
+| [`../shared/slidev-addon-ztautau/composable/useStepMotion.ts`](../shared/slidev-addon-ztautau/composable/useStepMotion.ts) | shared anime.js 4.5.0 step driver (animates toward the slide's click count while the slide is active and motion is allowed; jumps to the final state otherwise) |
 | `components/ChainFlow.vue`, `CutflowBars.vue`, `HemisphereSketch.vue`, `TauAmbiguity.vue`, `MLFlow.vue`, `FitFlow.vue` | the six click-driven animations (chain; cuts one after another, all years summed; thrust axis and hemispheres; two-fold ambiguity vs the ML prediction; the two ML heads; **the whole spin fit in eight stages**, new). Each slide declares `clicks:` and passes `$clicks` as `step` |
-| `global-top.vue` | page number |
-| `assets/fonts/` | DM Sans variable font + OFL licence |
+| [`../shared/slidev-addon-ztautau/global-top.vue`](../shared/slidev-addon-ztautau/global-top.vue) | page number (addon global layer) |
+| [`../shared/brand/fonts/`](../shared/brand/fonts/) | DM Sans variable font + OFL licence |
 
 Regenerate after changing figures, captions or count tables (all from the deck root; any Python 3 with numpy + matplotlib for the last one, e.g. `/Users/avencastmini/miniforge3/bin/python3`):
 
@@ -63,7 +66,7 @@ Body text ≤ 70 words per slide (table cells, figure captions, key-value entrie
 
 ## Math, numbers and wrapping (owner revision of 2026-10-23)
 
-- All symbols, variables, units and formulas are rendered with KaTeX through `components/LaTeX.vue` (same interface as the reference deck's `<LaTeX formula="..." />`, rendered synchronously with the bundled KaTeX; stylesheet imported in `style.ts`). The animated components use `components/tex.ts` (`mixed()` renders `$...$` fragments). `data/latexify.py` is the one-off converter used for the hand-written slides; `data/check_latex.py` lists any visible Unicode/ASCII math substitute left (currently none). Comparison signs inside formulas use `\lt` / `\gt`.
+- All symbols, variables, units and formulas are rendered with KaTeX through the addon's [`LaTeX.vue`](../shared/slidev-addon-ztautau/components/LaTeX.vue) (same interface as the reference deck's `<LaTeX formula="..." />`, rendered synchronously with the bundled KaTeX; stylesheet imported by the component). The animated components use the addon's [`composable/tex.ts`](../shared/slidev-addon-ztautau/composable/tex.ts) (`mixed()` renders `$...$` fragments). `data/latexify.py` is the one-off converter used for the hand-written slides; `data/check_latex.py` lists any visible Unicode/ASCII math substitute left (currently none). Comparison signs inside formulas use `\lt` / `\gt`.
 - Display precision: cross sections 0.1 pb, signed MC sums integers, luminosity 46.30 pb⁻¹, fractions 3 decimals, angles 2 decimals, χ²/dof as "68.9 / 42", percentages 1 decimal. Full-precision values remain in SOURCES.md, the presenter notes and `data/`.
 - Wrapping: tags, badges, numbers, KaTeX and key-value labels never wrap; numeric table columns are right-aligned and non-wrapping. Use `text-wrap-style: pretty`, never the `text-wrap` shorthand (it resets the wrap mode and lets KaTeX break).
 
