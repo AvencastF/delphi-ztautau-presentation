@@ -51,7 +51,7 @@ npm run export -- My_Talk                # When an export is requested
 
 ## Scientific provenance
 
-- Every number on a slide must have a provenance entry in the deck's `SOURCES.md`: the file, table, or command output it was copied from, with dates and revisions. Mark values derived on the slide (sums, ratios) as derived and record how. Follow the existing [status deck SOURCES.md](Internal_Note_20261031/SOURCES.md) convention of dated sections that supersede earlier rows.
+- Every number on a slide must have a provenance entry in the deck's `SOURCES.md`: the file, table, or command output it was copied from, with dates and revisions. Mark values derived on the slide (sums, ratios) as derived and record how. Follow the existing [status deck SOURCES.md](Internal_Note/SOURCES.md) convention of dated sections that supersede earlier rows.
 - Do not invent or round away numbers, dataset names, luminosities, cut values, efficiencies, or validation outcomes. If a value is not in a local artifact or a reachable recorded source, leave a visible gap and list it in the deck README's TODO section.
 - Documentation, a runbook, or a plan is not evidence that a production, calibration, or validation was run. State the status that the source supports (planned, run, closure only, validated) and nothing stronger.
 - Label simulation-only, Asimov/expected, closure-on-simulation, and statistics-only results as such on the slide itself, not only in the notes. Do not present an uncertain or uncertified input (for example a user-supplied luminosity) as final.

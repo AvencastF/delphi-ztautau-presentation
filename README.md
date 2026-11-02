@@ -12,9 +12,9 @@ Run commands from the repository root using a current Node.js LTS release.
 
 ```bash
 npm ci
-npm run dev -- Internal_Note_20261031
-npm run build -- Internal_Note_20261031
-npm run export -- Internal_Note_20261031
+npm run dev -- Internal_Note
+npm run build -- Internal_Note
+npm run export -- Internal_Note
 ```
 
 The preview opens at http://localhost:3030. Edit the selected deck's `slides.md` and `slides/` files. Development retains `--open --remote`; remote mode exposes the preview to your network.
@@ -22,8 +22,8 @@ The preview opens at http://localhost:3030. Edit the selected deck's `slides.md`
 Extra arguments are forwarded to Slidev:
 
 ```bash
-npm run dev -- Internal_Note_20261031 --port 3031
-npm run build -- Internal_Note_20261031 --base /delphi-ztautau-presentation/Internal_Note_20261031/
+npm run dev -- Internal_Note --port 3031
+npm run build -- Internal_Note --base /delphi-ztautau-presentation/Internal_Note/
 ```
 
 Run Slidev through these scripts rather than `npx slidev` inside a deck: the launcher removes the `VSCODE_CWD` variable that Cursor/VS Code terminals export, which otherwise makes UnoCSS's icon preset skip its loader and silently drop every `i-*` icon from dev and build output.
@@ -94,7 +94,7 @@ GitHub Actions runs one root `npm ci`, builds every deck, and publishes the comp
 
 | Deck | Content | Published at |
 | --- | --- | --- |
-| [`Internal_Note_20261031`](Internal_Note_20261031/README.md) | Internal record (not a presentation): status of the 1992–1995 analysis as of 2026-10-31 (185 slides: data, simulation, selection, cutflows, data/MC, ML, spin fit) | <https://avencastf.github.io/delphi-ztautau-presentation/Internal_Note_20261031/> |
+| [`Internal_Note`](Internal_Note/README.md) | Internal record (not a presentation): status of the 1992–1995 analysis as of 2026-10-31 (185 slides: data, simulation, selection, cutflows, data/MC, ML, spin fit) | <https://avencastf.github.io/delphi-ztautau-presentation/Internal_Note/> |
 
 ## Listing a talk on the landing page
 

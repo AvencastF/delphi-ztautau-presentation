@@ -14,7 +14,7 @@ aspectRatio: 16/9
 canvasWidth: 980
 drawings:
   persist: false
-exportFilename: Internal_Note_20261031
+exportFilename: Internal_Note
 lineNumbers: false
 preload: false
 src: ./slides/cover.md

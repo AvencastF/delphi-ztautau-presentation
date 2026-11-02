@@ -17,7 +17,7 @@ function fixture(t) {
 test('names reject traversal, flags, spaces, reserved directories and empty input', () => {
   for (const value of ['', undefined, '../main', '/tmp/deck', '--help', 'a/b', 'a b', 'site', 'Site', 'node_modules', 'shared', 'tools', 'gh-pages', 'output', 'docs', 'Docs'])
     assert.throws(() => validateName(value))
-  assert.equal(validateName('Internal_Note_20261031'), 'Internal_Note_20261031')
+  assert.equal(validateName('Internal_Note'), 'Internal_Note')
 })
 
 test('scaffolding is minimal, discovers decks, and never overwrites', t => {

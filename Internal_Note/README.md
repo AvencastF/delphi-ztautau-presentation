@@ -11,13 +11,13 @@ Styled after `/Users/avencastmini/EveNet-Presentation/CCNU_Seminar` (same theme-
 ```bash
 cd /Users/avencastmini/ZtautauLEP/slides                    # repository root
 npm ci                                                      # one root install; pins @slidev/cli 52.11.3
-npm run dev -- Internal_Note_20261031                 # http://localhost:3030, opens the browser
-npm run build -- Internal_Note_20261031               # static site in Internal_Note_20261031/dist/
+npm run dev -- Internal_Note                 # http://localhost:3030, opens the browser
+npm run build -- Internal_Note               # static site in Internal_Note/dist/
 # Before the move, the standalone layout built without errors on 2026-10-23 and twice on 2026-10-31.
 # The owner presents from the dev server; PDF/PNG exports are not used (long exports also capture half-painted slides).
 ```
 
-Deployment: GitHub Pages serves the deck at https://avencastf.github.io/delphi-ztautau-presentation/Internal_Note_20261031/ (base `/delphi-ztautau-presentation/Internal_Note_20261031/`, built with every deck by `npm run build:all` from the repository root).
+Deployment: GitHub Pages serves the deck at https://avencastf.github.io/delphi-ztautau-presentation/Internal_Note/ (base `/delphi-ztautau-presentation/Internal_Note/`, built with every deck by `npm run build:all` from the repository root).
 
 ## Layout
 
