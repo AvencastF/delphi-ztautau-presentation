@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# The electron check: <LaTeX formula="E/p" /> of the <LaTeX formula="ee\gamma" /> electrons per year
+# Appendix · photon calibration: electron check, <LaTeX formula="E/p" /> of the <LaTeX formula="ee\gamma" /> electrons per year
 
 <div class="st-sub">Data/simulation of the <LaTeX formula="E/p" /> peak, <LaTeX formula="|\cos\theta|\lt0.72" />. The <LaTeX formula="ee\gamma" /> electrons have <LaTeX formula="p\gt15" /> GeV; the calibration-1 electrons <LaTeX formula="5\lt p\lt40" /> GeV.</div>
 

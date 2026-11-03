@@ -111,6 +111,27 @@
   "small_expected_bins": 7,
   "status": "ok"
  },
+ "v2/llg_eeg_iso5/lead_hpc_e_over_p_hemi0": {
+  "chi2": 63.60650329067606,
+  "dof": 37,
+  "p_value": 0.004206742307845435,
+  "small_expected_bins": 41,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/evis_over_ecm": {
+  "chi2": 50.936812782559045,
+  "dof": 23,
+  "p_value": 0.000693183025922337,
+  "small_expected_bins": 45,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/evis_over_ecm": {
+  "chi2": 66.35718834641666,
+  "dof": 28,
+  "p_value": 5.910525662261166e-05,
+  "small_expected_bins": 45,
+  "status": "ok"
+ },
  "v2/llg_eeg_iso20/single_photon_e_over_epred": {
   "chi2": 234.53448005298904,
   "dof": 97,

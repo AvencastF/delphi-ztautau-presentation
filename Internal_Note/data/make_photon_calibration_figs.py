@@ -23,7 +23,9 @@ for reg, var in V1_PLOTS:
 V2_MAIN = [('llg_eeg_iso5', 'single_photon_e_over_epred'), ('llg_mumug_iso5', 'single_photon_e_over_epred'),
            ('llg_mumug_iso5', 'single_photon_epred'), ('llg_eeg_iso5', 'single_photon_hpc_module_distance'),
            ('llg_eeg_iso5', 'single_photon_energy'), ('llg_mumug_iso5', 'single_photon_energy'),
-           ('llg_eeg_iso5', 'single_photon_track_angle_min'), ('llg_mumug_iso5', 'single_photon_track_angle_min')]
+           ('llg_eeg_iso5', 'single_photon_track_angle_min'), ('llg_mumug_iso5', 'single_photon_track_angle_min'),
+           # added 2026-11-03b (calibration-2 rewrite, step 2c): final-selection electron E/p and visible energy
+           ('llg_eeg_iso5', 'lead_hpc_e_over_p_hemi0'), ('llg_eeg_iso5', 'evis_over_ecm'), ('llg_mumug_iso5', 'evis_over_ecm')]
 V2_REGIONS = [(f'llg_{ch}_{s}', 'single_photon_e_over_epred') for ch in ('eeg', 'mumug')
               for s in ('iso20', 'iso15', 'iso10', 'iso10_2nd', 'iso10_e2', 'iso10_e1p5')]
 V2_YEARS = [(f'llg_{ch}_{s}', y) for ch in ('eeg', 'mumug') for s in ('iso5', 'iso10') for y in (1992, 1993, 1994, 1995)]
@@ -34,6 +36,9 @@ for reg, y in V2_YEARS:
                  f'{V2}/plots/llgamma-v2-{reg}/year-{y}/{reg}-selected-single_photon_e_over_epred-rate_lin.pdf'))
 for f in ['study/peak_ratio_vs_cuts.png', 'epred/k_vs_epred_iso5.png', 'epred/k_per_point.png', 'epred/width_ratio_vs_epred_iso5.png']:
     figs.append((f'v2/{os.path.basename(f)}', f'{V2}/{f}'))
+# added 2026-11-03b: before/after closure of the l+l-gamma scale (artifacts/llgamma-v2-20261103/closure/REPORT.md)
+for f in ['closure_R_comb', 'closure_R_eeg', 'closure_R_mumug', 'k_after_vs_epred']:
+    figs.append((f'closure/{f}.png', f'{V2}/closure/{f}.png'))
 
 rows = []
 for dst, src in figs:

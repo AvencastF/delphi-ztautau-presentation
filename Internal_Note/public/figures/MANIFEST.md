@@ -584,3 +584,17 @@ Made by `data/make_photon_calibration_figs.py` (also writes `data/photon-calibra
 | `photon-calibration/v2/k_vs_epred_iso5.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/epred/k_vs_epred_iso5.png` | `ebbce20d0a63ceff` | `ebbce20d0a63ceff` |
 | `photon-calibration/v2/k_per_point.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/epred/k_per_point.png` | `a0b39e4df5152277` | `a0b39e4df5152277` |
 | `photon-calibration/v2/width_ratio_vs_epred_iso5.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/epred/width_ratio_vs_epred_iso5.png` | `1f6c1fac0f847de5` | `1f6c1fac0f847de5` |
+
+### Added 2026-11-03b (calibration-2 rewrite)
+
+Same script, extended list: three final-selection (isolation ≥ 5°) data/simulation plots for step 2c and the four before/after closure figures of `artifacts/llgamma-v2-20261103/closure/` (closure study of 2026-11-03, NERSC login node; see its REPORT.md). Rerunning the script left every earlier copy byte-identical (same sha256). Photon-calibration folder now 66 files, 3.9 MB.
+
+| deck path | origin path | sha256 (copy) | sha256 (origin) |
+|---|---|---|---|
+| `photon-calibration/v2/llg_eeg_iso5-lead_hpc_e_over_p_hemi0.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/plots/llgamma-v2-llg_eeg_iso5/llg_eeg_iso5-selected-lead_hpc_e_over_p_hemi0-rate_lin.pdf` | `b8c881ac72256da3` | `d062f52312d4e29d` |
+| `photon-calibration/v2/llg_eeg_iso5-evis_over_ecm.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/plots/llgamma-v2-llg_eeg_iso5/llg_eeg_iso5-selected-evis_over_ecm-rate_lin.pdf` | `cf0d3aa14c8c4c92` | `54578f22a60bca38` |
+| `photon-calibration/v2/llg_mumug_iso5-evis_over_ecm.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/plots/llgamma-v2-llg_mumug_iso5/llg_mumug_iso5-selected-evis_over_ecm-rate_lin.pdf` | `74ee37ba99ef00e4` | `4f9dada7123830ae` |
+| `photon-calibration/closure/closure_R_comb.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/closure/closure_R_comb.png` | `445562b770648375` | `445562b770648375` |
+| `photon-calibration/closure/closure_R_eeg.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/closure/closure_R_eeg.png` | `45e1aa1779267ed4` | `45e1aa1779267ed4` |
+| `photon-calibration/closure/closure_R_mumug.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/closure/closure_R_mumug.png` | `7375d9bab0ae568f` | `7375d9bab0ae568f` |
+| `photon-calibration/closure/k_after_vs_epred.png` | `/Users/avencastmini/ZtautauLEP/artifacts/llgamma-v2-20261103/closure/k_after_vs_epred.png` | `49a9d6cd9403d719` | `49a9d6cd9403d719` |

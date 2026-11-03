@@ -313,67 +313,67 @@ src: ./slides/calib1-ptau.md
 ---
 
 ---
-src: ./slides/llg-samples.md
+src: ./slides/c2-overview.md
 ---
 
 ---
-src: ./slides/llg-cuts-1.md
+src: ./slides/c2-s1-samples.md
 ---
 
 ---
-src: ./slides/llg-cuts-2.md
+src: ./slides/c2-s2a-selection.md
 ---
 
 ---
-src: ./slides/llg-cuts-v2.md
+src: ./slides/c2-s2b-cutflow.md
 ---
 
 ---
-src: ./slides/llg-cutflow.md
+src: ./slides/c2-s2b-yields.md
 ---
 
 ---
-src: ./slides/llg-yields.md
+src: ./slides/c2-s2c-shapes.md
 ---
 
 ---
-src: ./slides/llg-datamc-v1-1.md
+src: ./slides/c2-s3-variable.md
 ---
 
 ---
-src: ./slides/llg-datamc-v1-2.md
+src: ./slides/c2-s3-rdist.md
 ---
 
 ---
-src: ./slides/llg-electron-check.md
+src: ./slides/c2-s4-k-year.md
 ---
 
 ---
-src: ./slides/llg-formula.md
+src: ./slides/c2-s5-k-energy.md
 ---
 
 ---
-src: ./slides/llg-r-dist.md
+src: ./slides/c2-s6a-closure.md
 ---
 
 ---
-src: ./slides/llg-peak-ratio.md
+src: ./slides/c2-s6b-closure-energy.md
 ---
 
 ---
-src: ./slides/llg-k-energy.md
+src: ./slides/c2-s6c-crosscheck.md
 ---
 
 ---
-src: ./slides/llg-channels-points.md
+src: ./slides/c2-s6d-points.md
 ---
 
 ---
-src: ./slides/llg-compare.md
+src: ./slides/c2-s7-result.md
 ---
 
 ---
-src: ./slides/llg-limits.md
+src: ./slides/c2-summary.md
 ---
 
 ---
@@ -478,6 +478,18 @@ src: ./slides/appendix-photon-spectra.md
 
 ---
 src: ./slides/appendix-photon-chi2.md
+---
+
+---
+src: ./slides/appendix-photon-closure-channels.md
+---
+
+---
+src: ./slides/appendix-photon-variants.md
+---
+
+---
+src: ./slides/appendix-photon-electron-check.md
 ---
 
 ---

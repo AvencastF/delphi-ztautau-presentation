@@ -2,7 +2,7 @@
 class: st pres
 ---
 
-# Calibration 2: selection v2, event-level photon and variants
+# Appendix · photon calibration: selection variants (step 2a)
 
 <div class="st-sub">Same preselection and lepton identification. New event-level photon variables remove the side split; isolation is now to the nearer of both tracks. One run, all variants.</div>
 

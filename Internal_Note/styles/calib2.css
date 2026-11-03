@@ -1,0 +1,9 @@
+/* Deck-local (2026-11-03b): calibration-2 procedure slides (class "c2").
+   Takeaway box pinned above the st-source footer; slightly smaller titles so "Calibration 2 · Step N: ..." fits. */
+.st.c2 h1 { font-size: 25px !important; line-height: 1.15; }
+.st.c2 .st-sub { margin-bottom: 8px; }
+.st .takeaway { position: absolute; left: 54px; right: 54px; bottom: 30px; border: 1px solid rgba(255,189,89,.55); border-left: 4px solid #ffbd59; background: rgba(255,189,89,.10); padding: 6px 12px; font-size: 14px; line-height: 1.3; color: var(--fg-0); text-wrap-style: pretty; }
+.st .takeaway > b:first-child { color: #ffbd59; margin-right: 6px; white-space: nowrap; }
+.st.c2 table.c2t { font-size: 12.5px; }
+.st.c2 table.c2t th, .st.c2 table.c2t td { padding: 3.5px 8px; }
+.st.c2 table.c2t td.step { color: #ffbd59; font-weight: 600; white-space: nowrap; }
