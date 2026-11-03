@@ -373,6 +373,10 @@ src: ./slides/c2-s7-result.md
 ---
 
 ---
+src: ./slides/c2-s7b-coverage.md
+---
+
+---
 src: ./slides/c2-summary.md
 ---
 

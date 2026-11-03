@@ -39,6 +39,12 @@ for f in ['study/peak_ratio_vs_cuts.png', 'epred/k_vs_epred_iso5.png', 'epred/k_
 # added 2026-11-03b: before/after closure of the l+l-gamma scale (artifacts/llgamma-v2-20261103/closure/REPORT.md)
 for f in ['closure_R_comb', 'closure_R_eeg', 'closure_R_mumug', 'k_after_vs_epred']:
     figs.append((f'closure/{f}.png', f'{V2}/closure/{f}.png'))
+# added 2026-11-03c: before/after R in the pipeline plot style (closure/after_plots/REPORT.md) and the
+# photon-energy coverage of the rho-leg pi0 (rho-polarimeter-step2-20261102/photon_energy_coverage/REPORT.md)
+for f in ['R_comb_years_summary', 'R_eeg_all', 'R_mumug_all', 'R_comb_all']:
+    figs.append((f'closure/after-{f}.png', f'{V2}/closure/after_plots/{f}.png'))
+for f in ['photon_energy_spectrum', 'pi0_energy_spectrum', 'true_energy_spectrum']:
+    figs.append((f'coverage/{f}.png', f'{S2}/photon_energy_coverage/{f}.png'))
 
 rows = []
 for dst, src in figs:

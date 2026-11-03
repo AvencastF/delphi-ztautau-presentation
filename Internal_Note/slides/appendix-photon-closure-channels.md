@@ -11,8 +11,8 @@ import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 <div class="st-sub">The combined <LaTeX formula="k(E)" /> applied to each channel's simulation; <LaTeX formula="5\le E_\mathrm{pred}\lt46" /> GeV, same events, statistical errors only.</div>
 
 <div class="st-cols st-cols-2" style="gap:14px">
-<div><div class="st-fig" style="height:250px"><ZoomablePlot src="/figures/photon-calibration/closure/closure_R_eeg.png" alt="eeg R per year before and after scaling" /></div><div class="st-cap"><LaTeX formula="ee\gamma" />, per year</div></div>
-<div><div class="st-fig" style="height:250px"><ZoomablePlot src="/figures/photon-calibration/closure/closure_R_mumug.png" alt="mumug R per year before and after scaling" /></div><div class="st-cap"><LaTeX formula="\mu\mu\gamma" />, per year</div></div>
+<div><div class="st-fig" style="height:250px"><ZoomablePlot src="/figures/photon-calibration/closure/after-R_comb_years_summary.png" alt="R per year, both channels: before (left) and after k(E) (right), pipeline style" /></div><div class="st-cap">Per year, both channels: before (left), after (right)</div></div>
+<div><div class="st-fig" style="height:250px"><ZoomablePlot src="/figures/photon-calibration/closure/after-R_eeg_all.png" alt="eeg R all years before and after scaling" /></div><div class="st-cap"><LaTeX formula="ee\gamma" />, all years: before (left), after (right); <LaTeX formula="\mu\mu\gamma" /> in the closure study</div></div>
 </div>
 
 <table class="sm num first-nw" style="margin-top:6px">
@@ -26,5 +26,6 @@ import ZoomablePlot from 'slidev-addon-ztautau/components/ZoomablePlot.vue'
 <div class="st-source">Source: closure study of the version-2 <LaTeX formula="\ell^+\ell^-\gamma" /> run (2026-11-03), sections 3 and 6</div>
 
 <!--
+Figures changed 2026-11-03c to the pipeline-style before/after plots of closure/after_plots (after-R_comb_years_summary.png, after-R_eeg_all.png); the earlier overlay figures closure_R_eeg/mumug.png remain in public/figures. 
 artifacts/llgamma-v2-20261103/closure/REPORT.md section 3 (eeg and mumug tables, comb calibration applied): eeg before 0.992 +- 0.026 / 1.047 +- 0.020 / 0.946 +- 0.014 / 1.036 +- 0.018, after smooth 0.995 +- 0.026 / 1.003 +- 0.019 / 0.990 +- 0.014 / 1.012 +- 0.017; mumug before 0.996 +- 0.025 / 1.072 +- 0.025 / 0.970 +- 0.012 / 1.028 +- 0.024, after smooth 0.990 +- 0.025 / 1.030 +- 0.024 / 1.012 +- 0.013 / 1.004 +- 0.024. The 1994 eeg - mumug difference (0.024) is unchanged by a common k. Figures closure/closure_R_eeg.png, closure_R_mumug.png (R in 0.04 bins; data points, MC before dashed, after k(E) red, after binned k dotted green; MC normalised to data in 0.6 < R < 1.4).
 -->
