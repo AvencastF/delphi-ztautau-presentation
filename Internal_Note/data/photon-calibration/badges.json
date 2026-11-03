@@ -1,0 +1,310 @@
+{
+ "v1/llg_eeg_gh0/photon_candidate_energy": {
+  "chi2": 96.43525113972807,
+  "dof": 38,
+  "p_value": 5.57098257835301e-07,
+  "small_expected_bins": 32,
+  "status": "ok"
+ },
+ "v1/llg_mumug_gh0/photon_candidate_energy": {
+  "chi2": 53.12219075571459,
+  "dof": 38,
+  "p_value": 0.05252230021368058,
+  "small_expected_bins": 27,
+  "status": "ok"
+ },
+ "v1/llg_eeg/photonid_candidate_nearest_track_angle_hemi0": {
+  "chi2": 60.814456256987896,
+  "dof": 28,
+  "p_value": 0.0003201892156800098,
+  "small_expected_bins": 16,
+  "status": "ok"
+ },
+ "v1/llg_mumug/photonid_candidate_nearest_track_angle_hemi0": {
+  "chi2": 42.46364380218357,
+  "dof": 27,
+  "p_value": 0.0296096770521803,
+  "small_expected_bins": 16,
+  "status": "ok"
+ },
+ "v1/llg_eeg/lead_hpc_e_over_p_hemi0": {
+  "chi2": 75.3243719072786,
+  "dof": 38,
+  "p_value": 0.00029430816576626884,
+  "small_expected_bins": 40,
+  "status": "ok"
+ },
+ "v1/llg_eeg/lead_hpc_e_over_p_hemi1": {
+  "chi2": 56.38256495223839,
+  "dof": 37,
+  "p_value": 0.021528044929195536,
+  "small_expected_bins": 40,
+  "status": "ok"
+ },
+ "v1/llg_eeg/evis_over_ecm": {
+  "chi2": 50.90336489730487,
+  "dof": 23,
+  "p_value": 0.0007002980893584402,
+  "small_expected_bins": 44,
+  "status": "ok"
+ },
+ "v1/llg_mumug/evis_over_ecm": {
+  "chi2": 81.02009571408873,
+  "dof": 28,
+  "p_value": 4.699856371374229e-07,
+  "small_expected_bins": 45,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/single_photon_e_over_epred": {
+  "chi2": 232.7623448841666,
+  "dof": 97,
+  "p_value": 3.607622482646733e-13,
+  "small_expected_bins": 62,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/single_photon_e_over_epred": {
+  "chi2": 240.89451121513852,
+  "dof": 97,
+  "p_value": 3.0917661070286397e-14,
+  "small_expected_bins": 57,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/single_photon_epred": {
+  "chi2": 57.65975379319736,
+  "dof": 47,
+  "p_value": 0.13709067835625185,
+  "small_expected_bins": 19,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/single_photon_hpc_module_distance": {
+  "chi2": 34.578936339320876,
+  "dof": 30,
+  "p_value": 0.2582832533549178,
+  "small_expected_bins": 0,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/single_photon_energy": {
+  "chi2": 56.4535067865768,
+  "dof": 39,
+  "p_value": 0.03487423858553497,
+  "small_expected_bins": 23,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/single_photon_energy": {
+  "chi2": 29.3341191080694,
+  "dof": 39,
+  "p_value": 0.8693784196708924,
+  "small_expected_bins": 21,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/single_photon_track_angle_min": {
+  "chi2": 144.53361470478538,
+  "dof": 85,
+  "p_value": 6.032827519971899e-05,
+  "small_expected_bins": 23,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/single_photon_track_angle_min": {
+  "chi2": 93.13327850941285,
+  "dof": 85,
+  "p_value": 0.2560072504203045,
+  "small_expected_bins": 7,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso20/single_photon_e_over_epred": {
+  "chi2": 234.53448005298904,
+  "dof": 97,
+  "p_value": 2.1218485221286905e-13,
+  "small_expected_bins": 73,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso15/single_photon_e_over_epred": {
+  "chi2": 253.36358648220747,
+  "dof": 97,
+  "p_value": 6.463944447637044e-16,
+  "small_expected_bins": 72,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso10/single_photon_e_over_epred": {
+  "chi2": 236.7073699017818,
+  "dof": 97,
+  "p_value": 1.1028880857694877e-13,
+  "small_expected_bins": 66,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso10_2nd/single_photon_e_over_epred": {
+  "chi2": 153.9330039442417,
+  "dof": 61,
+  "p_value": 5.509236101704966e-10,
+  "small_expected_bins": 100,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso10_e2/single_photon_e_over_epred": {
+  "chi2": 219.90915489224264,
+  "dof": 98,
+  "p_value": 2.375114454242394e-11,
+  "small_expected_bins": 63,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso10_e1p5/single_photon_e_over_epred": {
+  "chi2": 243.97425938456666,
+  "dof": 99,
+  "p_value": 3.0646047804307546e-14,
+  "small_expected_bins": 58,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso20/single_photon_e_over_epred": {
+  "chi2": 146.55758444930345,
+  "dof": 83,
+  "p_value": 2.1152811170853486e-05,
+  "small_expected_bins": 68,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso15/single_photon_e_over_epred": {
+  "chi2": 164.94587304243737,
+  "dof": 88,
+  "p_value": 1.293974194968589e-06,
+  "small_expected_bins": 64,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso10/single_photon_e_over_epred": {
+  "chi2": 189.1410470868401,
+  "dof": 95,
+  "p_value": 3.247559129882612e-08,
+  "small_expected_bins": 60,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso10_2nd/single_photon_e_over_epred": {
+  "chi2": 143.72150781170433,
+  "dof": 61,
+  "p_value": 1.2514878339585326e-08,
+  "small_expected_bins": 100,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso10_e2/single_photon_e_over_epred": {
+  "chi2": 201.29208341971741,
+  "dof": 97,
+  "p_value": 2.761851854078343e-09,
+  "small_expected_bins": 56,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso10_e1p5/single_photon_e_over_epred": {
+  "chi2": 183.53949657993806,
+  "dof": 98,
+  "p_value": 3.734346403354831e-07,
+  "small_expected_bins": 50,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/year-1992/single_photon_e_over_epred": {
+  "chi2": 228.3763758354826,
+  "dof": 91,
+  "p_value": 8.580544959577239e-14,
+  "small_expected_bins": 86,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/year-1993/single_photon_e_over_epred": {
+  "chi2": 264.77393956763984,
+  "dof": 90,
+  "p_value": 4.1186644083853554e-19,
+  "small_expected_bins": 83,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/year-1994/single_photon_e_over_epred": {
+  "chi2": 290.74099048195393,
+  "dof": 91,
+  "p_value": 1.0079967816939854e-22,
+  "small_expected_bins": 77,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso5/year-1995/single_photon_e_over_epred": {
+  "chi2": 244.60592240552887,
+  "dof": 91,
+  "p_value": 5.23388380529035e-16,
+  "small_expected_bins": 84,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso10/year-1992/single_photon_e_over_epred": {
+  "chi2": 212.62733110419182,
+  "dof": 86,
+  "p_value": 1.0273744988345119e-12,
+  "small_expected_bins": 88,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso10/year-1993/single_photon_e_over_epred": {
+  "chi2": 227.10452700045818,
+  "dof": 87,
+  "p_value": 1.8521570194824972e-14,
+  "small_expected_bins": 88,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso10/year-1994/single_photon_e_over_epred": {
+  "chi2": 299.26841271211777,
+  "dof": 89,
+  "p_value": 1.4943011806405397e-24,
+  "small_expected_bins": 79,
+  "status": "ok"
+ },
+ "v2/llg_eeg_iso10/year-1995/single_photon_e_over_epred": {
+  "chi2": 190.89040870771265,
+  "dof": 83,
+  "p_value": 1.763460646013644e-10,
+  "small_expected_bins": 88,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/year-1992/single_photon_e_over_epred": {
+  "chi2": 167.16488399882402,
+  "dof": 81,
+  "p_value": 6.09040386540895e-08,
+  "small_expected_bins": 82,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/year-1993/single_photon_e_over_epred": {
+  "chi2": 225.00034528536568,
+  "dof": 85,
+  "p_value": 1.3377399256726464e-14,
+  "small_expected_bins": 78,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/year-1994/single_photon_e_over_epred": {
+  "chi2": 164.32774720256768,
+  "dof": 93,
+  "p_value": 7.312317359378071e-06,
+  "small_expected_bins": 68,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso5/year-1995/single_photon_e_over_epred": {
+  "chi2": 197.13289292097483,
+  "dof": 87,
+  "p_value": 1.5958513261959558e-10,
+  "small_expected_bins": 81,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso10/year-1992/single_photon_e_over_epred": {
+  "chi2": 183.70042981664068,
+  "dof": 72,
+  "p_value": 1.0172839221531682e-11,
+  "small_expected_bins": 85,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso10/year-1993/single_photon_e_over_epred": {
+  "chi2": 173.79818626161335,
+  "dof": 73,
+  "p_value": 3.3648823144811467e-10,
+  "small_expected_bins": 81,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso10/year-1994/single_photon_e_over_epred": {
+  "chi2": 121.76261022149374,
+  "dof": 83,
+  "p_value": 0.0036037073866001927,
+  "small_expected_bins": 75,
+  "status": "ok"
+ },
+ "v2/llg_mumug_iso10/year-1995/single_photon_e_over_epred": {
+  "chi2": 211.70846112690296,
+  "dof": 75,
+  "p_value": 5.718189844776681e-15,
+  "small_expected_bins": 83,
+  "status": "ok"
+ }
+}

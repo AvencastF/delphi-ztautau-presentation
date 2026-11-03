@@ -277,6 +277,106 @@ src: ./slides/fit-caveats.md
 ---
 
 ---
+src: ./slides/ch-photon.md
+---
+
+---
+src: ./slides/photon-why.md
+---
+
+---
+src: ./slides/photon-needs.md
+---
+
+---
+src: ./slides/calib1-method.md
+---
+
+---
+src: ./slides/calib1-scale.md
+---
+
+---
+src: ./slides/calib1-migration.md
+---
+
+---
+src: ./slides/calib1-datamc-1.md
+---
+
+---
+src: ./slides/calib1-datamc-2.md
+---
+
+---
+src: ./slides/calib1-ptau.md
+---
+
+---
+src: ./slides/llg-samples.md
+---
+
+---
+src: ./slides/llg-cuts-1.md
+---
+
+---
+src: ./slides/llg-cuts-2.md
+---
+
+---
+src: ./slides/llg-cuts-v2.md
+---
+
+---
+src: ./slides/llg-cutflow.md
+---
+
+---
+src: ./slides/llg-yields.md
+---
+
+---
+src: ./slides/llg-datamc-v1-1.md
+---
+
+---
+src: ./slides/llg-datamc-v1-2.md
+---
+
+---
+src: ./slides/llg-electron-check.md
+---
+
+---
+src: ./slides/llg-formula.md
+---
+
+---
+src: ./slides/llg-r-dist.md
+---
+
+---
+src: ./slides/llg-peak-ratio.md
+---
+
+---
+src: ./slides/llg-k-energy.md
+---
+
+---
+src: ./slides/llg-channels-points.md
+---
+
+---
+src: ./slides/llg-compare.md
+---
+
+---
+src: ./slides/llg-limits.md
+---
+
+---
 src: ./slides/ch-status.md
 ---
 
@@ -334,6 +434,58 @@ src: ./slides/appendix-cutflow-1.md
 
 ---
 src: ./slides/appendix-cutflow-2.md
+---
+
+---
+src: ./slides/appendix-photon-cutflow-1.md
+---
+
+---
+src: ./slides/appendix-photon-cutflow-2.md
+---
+
+---
+src: ./slides/appendix-photon-years-eeg-iso5.md
+---
+
+---
+src: ./slides/appendix-photon-years-mumug-iso5.md
+---
+
+---
+src: ./slides/appendix-photon-years-eeg-iso10.md
+---
+
+---
+src: ./slides/appendix-photon-years-mumug-iso10.md
+---
+
+---
+src: ./slides/appendix-photon-regions-eeg.md
+---
+
+---
+src: ./slides/appendix-photon-regions-mumug.md
+---
+
+---
+src: ./slides/appendix-photon-regions-thresholds.md
+---
+
+---
+src: ./slides/appendix-photon-spectra.md
+---
+
+---
+src: ./slides/appendix-photon-chi2.md
+---
+
+---
+src: ./slides/appendix-photon-step2b-1.md
+---
+
+---
+src: ./slides/appendix-photon-step2b-2.md
 ---
 
 ---
