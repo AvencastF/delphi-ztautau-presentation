@@ -8,6 +8,7 @@ A = '/Users/avencastmini/ZtautauLEP/artifacts'
 OUT = 'public/figures/photon-calibration'
 S2, S2B = f'{A}/rho-polarimeter-step2-20261102', f'{A}/rho-polarimeter-step2b-calibration-20261102'
 V1, V2 = f'{A}/llgamma-selection-20261103', f'{A}/llgamma-v2-20261103'
+V3 = f'{A}/llgamma-v3-20261104'
 figs = []  # (deck path, origin)
 for f in ['mgg_by_year_pair', 'ptau_before_after', 'scale_functions_and_efficiency']:
     figs.append((f'step2b/{f}.png', f'{S2B}/plots/{f}.png'))
@@ -45,6 +46,11 @@ for f in ['R_comb_years_summary', 'R_eeg_all', 'R_mumug_all', 'R_comb_all']:
     figs.append((f'closure/after-{f}.png', f'{V2}/closure/after_plots/{f}.png'))
 for f in ['photon_energy_spectrum', 'pi0_energy_spectrum', 'true_energy_spectrum']:
     figs.append((f'coverage/{f}.png', f'{S2}/photon_energy_coverage/{f}.png'))
+# added 2026-11-04: version-3 l+l-gamma calibration (MAIN energy, 0.5 GeV, DELPHI d2E isolation;
+# llgamma-v3-20261104/REPORT.md); chi2/dof of the data/MC badges are in its tables.md (no agreement.json copied locally)
+for f in ['datamc_llg_eeg_e0p5_d2e', 'datamc_llg_mumug_e0p5_d2e', 'k_fit_vs_epred', 'width_ratio_fit_vs_epred',
+          'resolution_excess_variance']:
+    figs.append((f'v3/{f}.png', f'{V3}/figures/{f}.png'))
 
 rows = []
 for dst, src in figs:

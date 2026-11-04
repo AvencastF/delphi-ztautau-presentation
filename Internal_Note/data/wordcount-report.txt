@@ -63,7 +63,7 @@
  63   59 fit-hypothesis.md
  64   65 fit-significance.md
  65   70 fit-caveats.md
- 66   49 ch-photon.md
+ 66   62 ch-photon.md
  67   59 photon-why.md
  68   32 photon-needs.md
  69   39 calib1-method.md
@@ -72,7 +72,7 @@
  72   22 calib1-datamc-1.md
  73   21 calib1-datamc-2.md
  74   40 calib1-ptau.md
- 75   56 c2-overview.md
+ 75   64 c2-overview.md
  76   69 c2-s1-samples.md
  77   61 c2-s2a-selection.md
  78   57 c2-s2b-cutflow.md
@@ -82,146 +82,153 @@
  82   38 c2-s3-rdist.md
  83   57 c2-s4-k-year.md
  84   44 c2-s5-k-energy.md
- 85   44 c2-s6a-closure.md
+ 85   80 c2-s6a-closure.md  <-- over
  86   33 c2-s6b-closure-energy.md
  87   56 c2-s6c-crosscheck.md
  88   39 c2-s6d-points.md
  89   59 c2-s7-result.md
- 90   44 c2-summary.md
- 91   36 ch-status.md
- 92   52 status-next.md
- 93   43 status-1992-1995.md
- 94   61 status-open.md
- 95   61 end.md
- 96   33 appendix-divider.md
- 97   49 fit-models.md
- 98   39 fit-precision.md
- 99   36 appendix-fit-tests.md
-100    0 appendix-fit-1.md
-101    0 appendix-fit-2.md
-102    0 appendix-fit-3.md
-103    0 appendix-fit-yields.md
-104   11 appendix-cutflow-1.md
-105   11 appendix-cutflow-2.md
-106   15 appendix-photon-cutflow-1.md
-107   17 appendix-photon-cutflow-2.md
-108   11 appendix-photon-years-eeg-iso5.md
-109   11 appendix-photon-years-mumug-iso5.md
-110   11 appendix-photon-years-eeg-iso10.md
-111   11 appendix-photon-years-mumug-iso10.md
-112   10 appendix-photon-regions-eeg.md
-113   10 appendix-photon-regions-mumug.md
-114   13 appendix-photon-regions-thresholds.md
-115    4 appendix-photon-spectra.md
-116   20 appendix-photon-chi2.md
-117   13 appendix-photon-closure-channels.md
-118   32 appendix-photon-variants.md
-119   30 appendix-photon-electron-check.md
-120   16 appendix-photon-step2b-1.md
-121   23 appendix-photon-step2b-2.md
-122    0 appendix-ml-allyears-1.md
-123    0 appendix-ml-allyears-2.md
-124   39 ml-classifier.md
-125    0 ml-classifier-figs.md
-126   11 appendix-classifier.md
-127   15 ml-nu-direction.md
-128   10 ml-nu-widths.md
-129   10 ml-nu-compare.md
-130   12 appendix-versions.md
-131   14 appendix-widths.md
-132   26 ml-nu-closure.md
-133   12 appendix-closure-1.md
-134   12 appendix-closure-2.md
-135   59 ml-verdict.md
-136   18 appendix-inclusive-01.md
-137   18 appendix-inclusive-02.md
-138   18 appendix-inclusive-03.md
-139   18 appendix-inclusive-04.md
-140    6 appendix-years-01.md
-141    6 appendix-years-02.md
-142   17 appendix-child-ee-01.md
-143   17 appendix-child-ee-02.md
-144   17 appendix-child-ee-03.md
-145   17 appendix-child-ee-04.md
-146   17 appendix-child-ee-05.md
-147   17 appendix-child-ee-06.md
-148   17 appendix-child-ee-07.md
-149   15 appendix-child-emu-01.md
-150   15 appendix-child-emu-02.md
-151   15 appendix-child-emu-03.md
-152   15 appendix-child-emu-04.md
-153   15 appendix-child-emu-05.md
-154   15 appendix-child-emu-06.md
-155   15 appendix-child-emu-07.md
-156   15 appendix-child-epi-01.md
-157   15 appendix-child-epi-02.md
-158   15 appendix-child-epi-03.md
-159   15 appendix-child-epi-04.md
-160   15 appendix-child-epi-05.md
-161   15 appendix-child-epi-06.md
-162   15 appendix-child-epi-07.md
-163   15 appendix-child-erho-01.md
-164   15 appendix-child-erho-02.md
-165   15 appendix-child-erho-03.md
-166   15 appendix-child-erho-04.md
-167   15 appendix-child-erho-05.md
-168   15 appendix-child-erho-06.md
-169   15 appendix-child-erho-07.md
-170   15 appendix-child-erho-08.md
-171   15 appendix-child-erho-09.md
-172   15 appendix-child-erho-10.md
-173   17 appendix-child-mumu-01.md
-174   17 appendix-child-mumu-02.md
-175   17 appendix-child-mumu-03.md
-176   17 appendix-child-mumu-04.md
-177   17 appendix-child-mumu-05.md
-178   17 appendix-child-mumu-06.md
-179   17 appendix-child-mumu-07.md
-180   15 appendix-child-mupi-01.md
-181   15 appendix-child-mupi-02.md
-182   15 appendix-child-mupi-03.md
-183   15 appendix-child-mupi-04.md
-184   15 appendix-child-mupi-05.md
-185   15 appendix-child-mupi-06.md
-186   15 appendix-child-mupi-07.md
-187   15 appendix-child-murho-01.md
-188   15 appendix-child-murho-02.md
-189   15 appendix-child-murho-03.md
-190   15 appendix-child-murho-04.md
-191   15 appendix-child-murho-05.md
-192   15 appendix-child-murho-06.md
-193   15 appendix-child-murho-07.md
-194   15 appendix-child-murho-08.md
-195   15 appendix-child-murho-09.md
-196   15 appendix-child-murho-10.md
-197   17 appendix-child-pipi-01.md
-198   17 appendix-child-pipi-02.md
-199   17 appendix-child-pipi-03.md
-200   17 appendix-child-pipi-04.md
-201   17 appendix-child-pipi-05.md
-202   17 appendix-child-pipi-06.md
-203   17 appendix-child-pipi-07.md
-204   15 appendix-child-pirho-01.md
-205   15 appendix-child-pirho-02.md
-206   15 appendix-child-pirho-03.md
-207   15 appendix-child-pirho-04.md
-208   15 appendix-child-pirho-05.md
-209   15 appendix-child-pirho-06.md
-210   15 appendix-child-pirho-07.md
-211   15 appendix-child-pirho-08.md
-212   15 appendix-child-pirho-09.md
-213   15 appendix-child-pirho-10.md
-214   17 appendix-child-rhorho-01.md
-215   17 appendix-child-rhorho-02.md
-216   17 appendix-child-rhorho-03.md
-217   17 appendix-child-rhorho-04.md
-218   17 appendix-child-rhorho-05.md
-219   17 appendix-child-rhorho-06.md
-220   17 appendix-child-rhorho-07.md
-221   17 appendix-child-rhorho-08.md
-222   17 appendix-child-rhorho-09.md
-223   17 appendix-child-rhorho-10.md
-224   17 appendix-child-rhorho-11.md
-225   17 appendix-child-rhorho-12.md
-226   17 appendix-child-rhorho-13.md
-slides 226 over budget 0
+ 90   56 c2-s7b-coverage.md
+ 91   59 c2-v3-refs.md
+ 92   70 c2-v3-setup.md
+ 93   44 c2-v3-shapes.md
+ 94   69 c2-v3-k.md
+ 95   42 c2-v3-resolution.md
+ 96   65 c2-v3-compare.md
+ 97   65 c2-summary.md
+ 98   36 ch-status.md
+ 99   52 status-next.md
+100   43 status-1992-1995.md
+101   61 status-open.md
+102   61 end.md
+103   33 appendix-divider.md
+104   49 fit-models.md
+105   39 fit-precision.md
+106   36 appendix-fit-tests.md
+107    0 appendix-fit-1.md
+108    0 appendix-fit-2.md
+109    0 appendix-fit-3.md
+110    0 appendix-fit-yields.md
+111   11 appendix-cutflow-1.md
+112   11 appendix-cutflow-2.md
+113   15 appendix-photon-cutflow-1.md
+114   17 appendix-photon-cutflow-2.md
+115   11 appendix-photon-years-eeg-iso5.md
+116   11 appendix-photon-years-mumug-iso5.md
+117   11 appendix-photon-years-eeg-iso10.md
+118   11 appendix-photon-years-mumug-iso10.md
+119   10 appendix-photon-regions-eeg.md
+120   10 appendix-photon-regions-mumug.md
+121   13 appendix-photon-regions-thresholds.md
+122    4 appendix-photon-spectra.md
+123   20 appendix-photon-chi2.md
+124   13 appendix-photon-closure-channels.md
+125   32 appendix-photon-variants.md
+126   30 appendix-photon-electron-check.md
+127   16 appendix-photon-step2b-1.md
+128   23 appendix-photon-step2b-2.md
+129    0 appendix-ml-allyears-1.md
+130    0 appendix-ml-allyears-2.md
+131   39 ml-classifier.md
+132    0 ml-classifier-figs.md
+133   11 appendix-classifier.md
+134   15 ml-nu-direction.md
+135   10 ml-nu-widths.md
+136   10 ml-nu-compare.md
+137   12 appendix-versions.md
+138   14 appendix-widths.md
+139   26 ml-nu-closure.md
+140   12 appendix-closure-1.md
+141   12 appendix-closure-2.md
+142   59 ml-verdict.md
+143   18 appendix-inclusive-01.md
+144   18 appendix-inclusive-02.md
+145   18 appendix-inclusive-03.md
+146   18 appendix-inclusive-04.md
+147    6 appendix-years-01.md
+148    6 appendix-years-02.md
+149   17 appendix-child-ee-01.md
+150   17 appendix-child-ee-02.md
+151   17 appendix-child-ee-03.md
+152   17 appendix-child-ee-04.md
+153   17 appendix-child-ee-05.md
+154   17 appendix-child-ee-06.md
+155   17 appendix-child-ee-07.md
+156   15 appendix-child-emu-01.md
+157   15 appendix-child-emu-02.md
+158   15 appendix-child-emu-03.md
+159   15 appendix-child-emu-04.md
+160   15 appendix-child-emu-05.md
+161   15 appendix-child-emu-06.md
+162   15 appendix-child-emu-07.md
+163   15 appendix-child-epi-01.md
+164   15 appendix-child-epi-02.md
+165   15 appendix-child-epi-03.md
+166   15 appendix-child-epi-04.md
+167   15 appendix-child-epi-05.md
+168   15 appendix-child-epi-06.md
+169   15 appendix-child-epi-07.md
+170   15 appendix-child-erho-01.md
+171   15 appendix-child-erho-02.md
+172   15 appendix-child-erho-03.md
+173   15 appendix-child-erho-04.md
+174   15 appendix-child-erho-05.md
+175   15 appendix-child-erho-06.md
+176   15 appendix-child-erho-07.md
+177   15 appendix-child-erho-08.md
+178   15 appendix-child-erho-09.md
+179   15 appendix-child-erho-10.md
+180   17 appendix-child-mumu-01.md
+181   17 appendix-child-mumu-02.md
+182   17 appendix-child-mumu-03.md
+183   17 appendix-child-mumu-04.md
+184   17 appendix-child-mumu-05.md
+185   17 appendix-child-mumu-06.md
+186   17 appendix-child-mumu-07.md
+187   15 appendix-child-mupi-01.md
+188   15 appendix-child-mupi-02.md
+189   15 appendix-child-mupi-03.md
+190   15 appendix-child-mupi-04.md
+191   15 appendix-child-mupi-05.md
+192   15 appendix-child-mupi-06.md
+193   15 appendix-child-mupi-07.md
+194   15 appendix-child-murho-01.md
+195   15 appendix-child-murho-02.md
+196   15 appendix-child-murho-03.md
+197   15 appendix-child-murho-04.md
+198   15 appendix-child-murho-05.md
+199   15 appendix-child-murho-06.md
+200   15 appendix-child-murho-07.md
+201   15 appendix-child-murho-08.md
+202   15 appendix-child-murho-09.md
+203   15 appendix-child-murho-10.md
+204   17 appendix-child-pipi-01.md
+205   17 appendix-child-pipi-02.md
+206   17 appendix-child-pipi-03.md
+207   17 appendix-child-pipi-04.md
+208   17 appendix-child-pipi-05.md
+209   17 appendix-child-pipi-06.md
+210   17 appendix-child-pipi-07.md
+211   15 appendix-child-pirho-01.md
+212   15 appendix-child-pirho-02.md
+213   15 appendix-child-pirho-03.md
+214   15 appendix-child-pirho-04.md
+215   15 appendix-child-pirho-05.md
+216   15 appendix-child-pirho-06.md
+217   15 appendix-child-pirho-07.md
+218   15 appendix-child-pirho-08.md
+219   15 appendix-child-pirho-09.md
+220   15 appendix-child-pirho-10.md
+221   17 appendix-child-rhorho-01.md
+222   17 appendix-child-rhorho-02.md
+223   17 appendix-child-rhorho-03.md
+224   17 appendix-child-rhorho-04.md
+225   17 appendix-child-rhorho-05.md
+226   17 appendix-child-rhorho-06.md
+227   17 appendix-child-rhorho-07.md
+228   17 appendix-child-rhorho-08.md
+229   17 appendix-child-rhorho-09.md
+230   17 appendix-child-rhorho-10.md
+231   17 appendix-child-rhorho-11.md
+232   17 appendix-child-rhorho-12.md
+233   17 appendix-child-rhorho-13.md
+slides 233 over budget 1

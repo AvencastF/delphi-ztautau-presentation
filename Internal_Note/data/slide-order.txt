@@ -87,6 +87,13 @@ c2-s6b-closure-energy
 c2-s6c-crosscheck
 c2-s6d-points
 c2-s7-result
+c2-s7b-coverage
+c2-v3-refs
+c2-v3-setup
+c2-v3-shapes
+c2-v3-k
+c2-v3-resolution
+c2-v3-compare
 c2-summary
 ch-status
 status-next

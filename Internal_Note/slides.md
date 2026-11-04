@@ -377,6 +377,30 @@ src: ./slides/c2-s7b-coverage.md
 ---
 
 ---
+src: ./slides/c2-v3-refs.md
+---
+
+---
+src: ./slides/c2-v3-setup.md
+---
+
+---
+src: ./slides/c2-v3-shapes.md
+---
+
+---
+src: ./slides/c2-v3-k.md
+---
+
+---
+src: ./slides/c2-v3-resolution.md
+---
+
+---
+src: ./slides/c2-v3-compare.md
+---
+
+---
 src: ./slides/c2-summary.md
 ---
 
