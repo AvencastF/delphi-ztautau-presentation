@@ -401,6 +401,30 @@ src: ./slides/c2-v3-compare.md
 ---
 
 ---
+src: ./slides/c2-pi0-why.md
+---
+
+---
+src: ./slides/c2-pi0-fit.md
+---
+
+---
+src: ./slides/c2-pi0-result.md
+---
+
+---
+src: ./slides/c2-pi0-checks.md
+---
+
+---
+src: ./slides/c2-pi0-rho-closure.md
+---
+
+---
+src: ./slides/c2-pi0-nominal.md
+---
+
+---
 src: ./slides/c2-summary.md
 ---
 

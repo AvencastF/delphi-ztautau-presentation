@@ -94,6 +94,12 @@ c2-v3-shapes
 c2-v3-k
 c2-v3-resolution
 c2-v3-compare
+c2-pi0-why
+c2-pi0-fit
+c2-pi0-result
+c2-pi0-checks
+c2-pi0-rho-closure
+c2-pi0-nominal
 c2-summary
 ch-status
 status-next

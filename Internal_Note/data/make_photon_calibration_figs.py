@@ -51,6 +51,13 @@ for f in ['photon_energy_spectrum', 'pi0_energy_spectrum', 'true_energy_spectrum
 for f in ['datamc_llg_eeg_e0p5_d2e', 'datamc_llg_mumug_e0p5_d2e', 'k_fit_vs_epred', 'width_ratio_fit_vs_epred',
           'resolution_excess_variance']:
     figs.append((f'v3/{f}.png', f'{V3}/figures/{f}.png'))
+# added 2026-11-05: final pi0 step of the stored calibration v3 (pi0-final-calib-20261104/CALIBRATION_V3_REPORT.md)
+# and the rho-leg closure of the v3 production skim (rho-closure-20261104/CLOSURE_REPORT.md, v3 section)
+P3, RC3 = f'{A}/pi0-final-calib-20261104', f'{A}/rho-closure-20261104/v3'
+for f in ['k_years_v3', 'smear_v3', 'closure_odd_summary', 'mgg_odd_closure_AB']:
+    figs.append((f'pi0-v3/{f}.png', f'{P3}/figures/{f}.png'))
+for f in ['mgg_pair_before_after', 'summary_ratios']:
+    figs.append((f'rho-closure-v3/{f}.png', f'{RC3}/figures/{f}.png'))
 
 rows = []
 for dst, src in figs:
